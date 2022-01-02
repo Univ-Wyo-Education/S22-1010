@@ -1,0 +1,2700 @@
+<style>
+@font-face {
+	font-family: octicons-link;
+	src: url(data:font/woff;charset=utf-8;base64,d09GRgABAAAAAAZwABAAAAAACFQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABEU0lHAAAGaAAAAAgAAAAIAAAAAUdTVUIAAAZcAAAACgAAAAoAAQAAT1MvMgAAAyQAAABJAAAAYFYEU3RjbWFwAAADcAAAAEUAAACAAJThvmN2dCAAAATkAAAABAAAAAQAAAAAZnBnbQAAA7gAAACyAAABCUM+8IhnYXNwAAAGTAAAABAAAAAQABoAI2dseWYAAAFsAAABPAAAAZwcEq9taGVhZAAAAsgAAAA0AAAANgh4a91oaGVhAAADCAAAABoAAAAkCA8DRGhtdHgAAAL8AAAADAAAAAwGAACfbG9jYQAAAsAAAAAIAAAACABiATBtYXhwAAACqAAAABgAAAAgAA8ASm5hbWUAAAToAAABQgAAAlXu73sOcG9zdAAABiwAAAAeAAAAME3QpOBwcmVwAAAEbAAAAHYAAAB/aFGpk3jaTY6xa8JAGMW/O62BDi0tJLYQincXEypYIiGJjSgHniQ6umTsUEyLm5BV6NDBP8Tpts6F0v+k/0an2i+itHDw3v2+9+DBKTzsJNnWJNTgHEy4BgG3EMI9DCEDOGEXzDADU5hBKMIgNPZqoD3SilVaXZCER3/I7AtxEJLtzzuZfI+VVkprxTlXShWKb3TBecG11rwoNlmmn1P2WYcJczl32etSpKnziC7lQyWe1smVPy/Lt7Kc+0vWY/gAgIIEqAN9we0pwKXreiMasxvabDQMM4riO+qxM2ogwDGOZTXxwxDiycQIcoYFBLj5K3EIaSctAq2kTYiw+ymhce7vwM9jSqO8JyVd5RH9gyTt2+J/yUmYlIR0s04n6+7Vm1ozezUeLEaUjhaDSuXHwVRgvLJn1tQ7xiuVv/ocTRF42mNgZGBgYGbwZOBiAAFGJBIMAAizAFoAAABiAGIAznjaY2BkYGAA4in8zwXi+W2+MjCzMIDApSwvXzC97Z4Ig8N/BxYGZgcgl52BCSQKAA3jCV8CAABfAAAAAAQAAEB42mNgZGBg4f3vACQZQABIMjKgAmYAKEgBXgAAeNpjYGY6wTiBgZWBg2kmUxoDA4MPhGZMYzBi1AHygVLYQUCaawqDA4PChxhmh/8ODDEsvAwHgMKMIDnGL0x7gJQCAwMAJd4MFwAAAHjaY2BgYGaA4DAGRgYQkAHyGMF8NgYrIM3JIAGVYYDT+AEjAwuDFpBmA9KMDEwMCh9i/v8H8sH0/4dQc1iAmAkALaUKLgAAAHjaTY9LDsIgEIbtgqHUPpDi3gPoBVyRTmTddOmqTXThEXqrob2gQ1FjwpDvfwCBdmdXC5AVKFu3e5MfNFJ29KTQT48Ob9/lqYwOGZxeUelN2U2R6+cArgtCJpauW7UQBqnFkUsjAY/kOU1cP+DAgvxwn1chZDwUbd6CFimGXwzwF6tPbFIcjEl+vvmM/byA48e6tWrKArm4ZJlCbdsrxksL1AwWn/yBSJKpYbq8AXaaTb8AAHja28jAwOC00ZrBeQNDQOWO//sdBBgYGRiYWYAEELEwMTE4uzo5Zzo5b2BxdnFOcALxNjA6b2ByTswC8jYwg0VlNuoCTWAMqNzMzsoK1rEhNqByEyerg5PMJlYuVueETKcd/89uBpnpvIEVomeHLoMsAAe1Id4AAAAAAAB42oWQT07CQBTGv0JBhagk7HQzKxca2sJCE1hDt4QF+9JOS0nbaaYDCQfwCJ7Au3AHj+LO13FMmm6cl7785vven0kBjHCBhfpYuNa5Ph1c0e2Xu3jEvWG7UdPDLZ4N92nOm+EBXuAbHmIMSRMs+4aUEd4Nd3CHD8NdvOLTsA2GL8M9PODbcL+hD7C1xoaHeLJSEao0FEW14ckxC+TU8TxvsY6X0eLPmRhry2WVioLpkrbp84LLQPGI7c6sOiUzpWIWS5GzlSgUzzLBSikOPFTOXqly7rqx0Z1Q5BAIoZBSFihQYQOOBEdkCOgXTOHA07HAGjGWiIjaPZNW13/+lm6S9FT7rLHFJ6fQbkATOG1j2OFMucKJJsxIVfQORl+9Jyda6Sl1dUYhSCm1dyClfoeDve4qMYdLEbfqHf3O/AdDumsjAAB42mNgYoAAZQYjBmyAGYQZmdhL8zLdDEydARfoAqIAAAABAAMABwAKABMAB///AA8AAQAAAAAAAAAAAAAAAAABAAAAAA==) format('woff');
+}
+
+.markdown-body {
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	line-height: 1.5;
+	color: #24292e;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	font-size: 16px;
+	line-height: 1.5;
+	word-wrap: break-word;
+}
+
+.markdown-body .pl-c {
+	color: #6a737d;
+}
+
+.markdown-body .pl-c1,
+.markdown-body .pl-s .pl-v {
+	color: #005cc5;
+}
+
+.markdown-body .pl-e,
+.markdown-body .pl-en {
+	color: #6f42c1;
+}
+
+.markdown-body .pl-smi,
+.markdown-body .pl-s .pl-s1 {
+	color: #24292e;
+}
+
+.markdown-body .pl-ent {
+	color: #22863a;
+}
+
+.markdown-body .pl-k {
+	color: #d73a49;
+}
+
+.markdown-body .pl-s,
+.markdown-body .pl-pds,
+.markdown-body .pl-s .pl-pse .pl-s1,
+.markdown-body .pl-sr,
+.markdown-body .pl-sr .pl-cce,
+.markdown-body .pl-sr .pl-sre,
+.markdown-body .pl-sr .pl-sra {
+	color: #032f62;
+}
+
+.markdown-body .pl-v,
+.markdown-body .pl-smw {
+	color: #e36209;
+}
+
+.markdown-body .pl-bu {
+	color: #b31d28;
+}
+
+.markdown-body .pl-ii {
+	color: #fafbfc;
+	background-color: #b31d28;
+}
+
+.markdown-body .pl-c2 {
+	color: #fafbfc;
+	background-color: #d73a49;
+}
+
+.markdown-body .pl-c2::before {
+	content: "^M";
+}
+
+.markdown-body .pl-sr .pl-cce {
+	font-weight: bold;
+	color: #22863a;
+}
+
+.markdown-body .pl-ml {
+	color: #735c0f;
+}
+
+.markdown-body .pl-mh,
+.markdown-body .pl-mh .pl-en,
+.markdown-body .pl-ms {
+	font-weight: bold;
+	color: #005cc5;
+}
+
+.markdown-body .pl-mi {
+	font-style: italic;
+	color: #24292e;
+}
+
+.markdown-body .pl-mb {
+	font-weight: bold;
+	color: #24292e;
+}
+
+.markdown-body .pl-md {
+	color: #b31d28;
+	background-color: #ffeef0;
+}
+
+.markdown-body .pl-mi1 {
+	color: #22863a;
+	background-color: #f0fff4;
+}
+
+.markdown-body .pl-mc {
+	color: #e36209;
+	background-color: #ffebda;
+}
+
+.markdown-body .pl-mi2 {
+	color: #f6f8fa;
+	background-color: #005cc5;
+}
+
+.markdown-body .pl-mdr {
+	font-weight: bold;
+	color: #6f42c1;
+}
+
+.markdown-body .pl-ba {
+	color: #586069;
+}
+
+.markdown-body .pl-sg {
+	color: #959da5;
+}
+
+.markdown-body .pl-corl {
+	text-decoration: underline;
+	color: #032f62;
+}
+
+.markdown-body .octicon {
+	display: inline-block;
+	vertical-align: text-top;
+	fill: currentColor;
+}
+
+.markdown-body a {
+	background-color: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+	outline-width: 0;
+}
+
+.markdown-body strong {
+	font-weight: inherit;
+}
+
+.markdown-body strong {
+	font-weight: bolder;
+}
+
+.markdown-body h1 {
+	font-size: 2em;
+	margin: 0.67em 0;
+}
+
+.markdown-body img {
+	border-style: none;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre {
+	font-family: monospace, monospace;
+	font-size: 1em;
+}
+
+.markdown-body hr {
+	box-sizing: content-box;
+	height: 0;
+	overflow: visible;
+}
+
+.markdown-body input {
+	font: inherit;
+	margin: 0;
+}
+
+.markdown-body input {
+	overflow: visible;
+}
+
+.markdown-body [type="checkbox"] {
+	box-sizing: border-box;
+	padding: 0;
+}
+
+.markdown-body * {
+	box-sizing: border-box;
+}
+
+.markdown-body input {
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+}
+
+.markdown-body a {
+	color: #0366d6;
+	text-decoration: none;
+}
+
+.markdown-body a:hover {
+	text-decoration: underline;
+}
+
+.markdown-body strong {
+	font-weight: 600;
+}
+
+.markdown-body hr {
+	height: 0;
+	margin: 15px 0;
+	overflow: hidden;
+	background: transparent;
+	border: 0;
+	border-bottom: 1px solid #dfe2e5;
+}
+
+.markdown-body hr::before {
+	display: table;
+	content: "";
+}
+
+.markdown-body hr::after {
+	display: table;
+	clear: both;
+	content: "";
+}
+
+.markdown-body table {
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+
+.markdown-body td,
+.markdown-body th {
+	padding: 0;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.markdown-body h1 {
+	font-size: 32px;
+	font-weight: 600;
+}
+
+.markdown-body h2 {
+	font-size: 24px;
+	font-weight: 600;
+}
+
+.markdown-body h3 {
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.markdown-body h4 {
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.markdown-body h5 {
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.markdown-body h6 {
+	font-size: 12px;
+	font-weight: 600;
+}
+
+.markdown-body p {
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+
+.markdown-body blockquote {
+	margin: 0;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+	padding-left: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+	x-list-style-type: lower-roman;
+	  list-style-type: decimal;
+}
+
+.markdown-body ul ul ol,
+.markdown-body ul ol ol,
+.markdown-body ol ul ol,
+.markdown-body ol ol ol {
+	list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+	margin-left: 0;
+}
+
+.markdown-body code {
+	font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+	font-size: 12px;
+}
+
+.markdown-body pre {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+	font-size: 12px;
+}
+
+.markdown-body .octicon {
+	vertical-align: text-bottom;
+}
+
+.markdown-body .pl-0 {
+	padding-left: 0 !important;
+}
+
+.markdown-body .pl-1 {
+	padding-left: 4px !important;
+}
+
+.markdown-body .pl-2 {
+	padding-left: 8px !important;
+}
+
+.markdown-body .pl-3 {
+	padding-left: 16px !important;
+}
+
+.markdown-body .pl-4 {
+	padding-left: 24px !important;
+}
+
+.markdown-body .pl-5 {
+	padding-left: 32px !important;
+}
+
+.markdown-body .pl-6 {
+	padding-left: 40px !important;
+}
+
+.markdown-body::before {
+	display: table;
+	content: "";
+}
+
+.markdown-body::after {
+	display: table;
+	clear: both;
+	content: "";
+}
+
+.markdown-body>*:first-child {
+	margin-top: 0 !important;
+}
+
+.markdown-body>*:last-child {
+	margin-bottom: 0 !important;
+}
+
+.markdown-body a:not([href]) {
+	color: inherit;
+	text-decoration: none;
+}
+
+.markdown-body .anchor {
+	float: left;
+	padding-right: 4px;
+	margin-left: -20px;
+	line-height: 1;
+}
+
+.markdown-body .anchor:focus {
+	outline: none;
+}
+
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre {
+	margin-top: 0;
+	margin-bottom: 16px;
+}
+
+.markdown-body hr {
+	height: 0.25em;
+	padding: 0;
+	margin: 24px 0;
+	background-color: #e1e4e8;
+	border: 0;
+}
+
+.markdown-body blockquote {
+	padding: 0 1em;
+	color: #6a737d;
+	border-left: 0.25em solid #dfe2e5;
+}
+
+.markdown-body blockquote>:first-child {
+	margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+	margin-bottom: 0;
+}
+
+.markdown-body kbd {
+	display: inline-block;
+	padding: 3px 5px;
+	font-size: 11px;
+	line-height: 10px;
+	color: #444d56;
+	vertical-align: middle;
+	background-color: #fafbfc;
+	border: solid 1px #c6cbd1;
+	border-bottom-color: #959da5;
+	border-radius: 3px;
+	box-shadow: inset 0 -1px 0 #959da5;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+	margin-top: 24px;
+	margin-bottom: 16px;
+	font-weight: 600;
+	line-height: 1.25;
+}
+
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
+	color: #1b1f23;
+	vertical-align: middle;
+	visibility: hidden;
+}
+
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
+	text-decoration: none;
+}
+
+.markdown-body h1:hover .anchor .octicon-link,
+.markdown-body h2:hover .anchor .octicon-link,
+.markdown-body h3:hover .anchor .octicon-link,
+.markdown-body h4:hover .anchor .octicon-link,
+.markdown-body h5:hover .anchor .octicon-link,
+.markdown-body h6:hover .anchor .octicon-link {
+	visibility: visible;
+}
+
+.markdown-body h1 {
+	padding-bottom: 0.3em;
+	font-size: 2em;
+	border-bottom: 1px solid #eaecef;
+}
+
+.markdown-body h2 {
+	padding-bottom: 0.3em;
+	font-size: 1.5em;
+	border-bottom: 1px solid #eaecef;
+}
+
+.markdown-body h3 {
+	font-size: 1.25em;
+}
+
+.markdown-body h4 {
+	font-size: 1em;
+}
+
+.markdown-body h5 {
+	font-size: 0.875em;
+}
+
+.markdown-body h6 {
+	font-size: 0.85em;
+	color: #6a737d;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+	padding-left: 2em;
+}
+
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.markdown-body li {
+	word-wrap: break-all;
+}
+
+.markdown-body li>p {
+	margin-top: 16px;
+}
+
+.markdown-body li+li {
+	margin-top: 0.25em;
+}
+
+.markdown-body dl {
+	padding: 0;
+}
+
+.markdown-body dl dt {
+	padding: 0;
+	margin-top: 16px;
+	font-size: 1em;
+	font-style: italic;
+	font-weight: 600;
+}
+
+.markdown-body dl dd {
+	padding: 0 16px;
+	margin-bottom: 16px;
+}
+
+.markdown-body table {
+	display: block;
+	width: 100%;
+	overflow: auto;
+}
+
+.markdown-body table th {
+	font-weight: 600;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+	padding: 6px 13px;
+	border: 1px solid #dfe2e5;
+}
+
+.markdown-body table tr {
+	background-color: #fff;
+	border-top: 1px solid #c6cbd1;
+}
+
+.markdown-body table tr:nth-child(2n) {
+	background-color: #f6f8fa;
+}
+
+.markdown-body img {
+	max-width: 100%;
+	box-sizing: content-box;
+	background-color: #fff;
+}
+
+.markdown-body img[align=right] {
+	padding-left: 20px;
+}
+
+.markdown-body img[align=left] {
+	padding-right: 20px;
+}
+
+.markdown-body code {
+	padding: 0.2em 0.4em;
+	margin: 0;
+	font-size: 85%;
+	background-color: rgba(27,31,35,0.05);
+	border-radius: 3px;
+}
+
+.markdown-body pre {
+	word-wrap: normal;
+}
+
+.markdown-body pre>code {
+	padding: 0;
+	margin: 0;
+	font-size: 100%;
+	word-break: normal;
+	white-space: pre;
+	background: transparent;
+	border: 0;
+}
+
+.markdown-body .highlight {
+	margin-bottom: 16px;
+}
+
+.markdown-body .highlight pre {
+	margin-bottom: 0;
+	word-break: normal;
+}
+
+.markdown-body .highlight pre,
+.markdown-body pre {
+	padding: 16px;
+	overflow: auto;
+	font-size: 85%;
+	line-height: 1.45;
+	background-color: #f6f8fa;
+	border-radius: 3px;
+}
+
+.markdown-body pre code {
+	display: inline;
+	max-width: auto;
+	padding: 0;
+	margin: 0;
+	overflow: visible;
+	line-height: inherit;
+	word-wrap: normal;
+	background-color: transparent;
+	border: 0;
+}
+
+.markdown-body .full-commit .btn-outline:not(:disabled):hover {
+	color: #005cc5;
+	border-color: #005cc5;
+}
+
+.markdown-body kbd {
+	display: inline-block;
+	padding: 3px 5px;
+	font: 11px "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+	line-height: 10px;
+	color: #444d56;
+	vertical-align: middle;
+	background-color: #fafbfc;
+	border: solid 1px #d1d5da;
+	border-bottom-color: #c6cbd1;
+	border-radius: 3px;
+	box-shadow: inset 0 -1px 0 #c6cbd1;
+}
+
+.markdown-body :checked+.radio-label {
+	position: relative;
+	z-index: 1;
+	border-color: #0366d6;
+}
+
+.markdown-body .task-list-item {
+	list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+	margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+	margin: 0 0.2em 0.25em -1.6em;
+	vertical-align: middle;
+}
+
+.markdown-body hr {
+	border-bottom-color: #eee;
+}
+
+</style>
+<style>
+ol {
+    display: block;
+    list-style-type: decimal;
+}
+.pagebreak { page-break-before: always; }
+.half { height: 200px; }
+</style>
+
+<div class="markdown-body">
+
+<style>
+.pagebreak { page-break-before: always; }
+.half { height: 200px; }
+.markdown-body {
+    font-size: 12px;
+}
+.markdown-body td {
+    font-size: 12px;
+}
+
+</style>
+
+<h1>Class: 1010 Intro Computer Science</h1>
+
+<h1>Class Time</h1>
+
+<p>Lecture: Tu/Th 11:10 AM - 12:25 - Room 310 Class Room Building (CR) xyzzy</p>
+
+<p>Attendance is required.</p>
+
+<h1>Lab Times</h1>
+
+<p>Lab 10: Tu 3:20pm - 5:10pm - Enzi STEM Room 315 xyzzy</p>
+
+<p>Lab 11: Tu 6:20pm - 8:10pm - Enzi STEM Room 315 xyzzy</p>
+
+<p>Lab 12: Th 3:20pm - 5:10pm - Enzi STEM Room 315 xyzzy</p>
+
+<p>Lab 13: Th 6:20pm - 8:10pm - Enzi STEM Room 315 xyzzy</p>
+
+<p>Attendance is required.</p>
+
+<h1>Final Time</h1>
+
+<p>Thursday the final will be December 16 10:15 a.m. – 12:15 p.m.  In this room.       xyzzy</p>
+
+<h2>Instructor</h2>
+
+<ul>
+<li>Prof Philip Schlump</li>
+<li>Office: 4081B in the Engineering Building.   My office is right across the hall from the Computer Science Department Office.</li>
+<li>Office hours will be Tuesday from 9:00am to 10:45am xyzzy, Thursday from 8:00am to 9:00am and by appointment.   Appointments can include using zoom.com for remote office hours.</li>
+<li>Contact via email (pschlump@uwyo.edu) or (for emergencies only): 720-209-7888 (my personal cell)
+and pschlump@gmail.com (personal email).  For using GIT and inviting me to have access to your files/projects use pschlump@uwyo.edu as the email address.</li>
+<li>Class Time:  Turn off phones and other internet connected devices during class and lab.</li>
+</ul>
+
+<p>If you call me to set up an appointment, you will need to send me a SMS message
+first so that I enter your name into my contact list.  I get 10+ robo-calls a day and
+I will not answer a random number.  Text me with your name and that you are a student
+in 1010 class.</p>
+
+<h2>Overview of the class</h2>
+
+<p>Python is becoming a more important language.  In some analysis is is the most
+important language.  Job sites show that Python is the most in-demand job.
+Python was designed to be easy to learn.</p>
+
+<p>In this class we will cover the basics of programming, automated testing,
+source code control (git), and how to convert requirements into programs.
+Some time will be spent using a variety of tools that are common to
+most modern software development.</p>
+
+<p>In the second half of the class we will focus on using TensorFlow 2.x.  and Kereas
+a library on top of TensorFlow that makes the creation of data pipelines and
+machine learning relatively easy.   A significant emphasis will also be on using
+Pandas and NumPy to engineer data so that it is suitable for use in a
+machine learning context.   The experience with advanced data manipulation
+libraries like Pandas and NumPy is useful outside the area of Machine Learning.</p>
+
+<p>Throughout the class we will be using a number of tools.
+Visual Studio Code will be used for editing text and other files.
+Python 3.8 will be the version of Python that we are working with.  This is the Anaconda install version of Python.
+The exact version of Python is the Anaconda 64 bit release of Python.
+We will use TensorFlow 2.x.
+Realistically you should install these tools on on your own computer.    They work on Mac,
+Windows, and Linux.   I do 80% of my development on a Linux system, 15%
+on Mac and 5% on Windows.  We will also use a tool called Jupyter Notebooks.
+This is a layer on top of Python.</p>
+
+<p>Visual Studio Code:
+<a href="https://code.visualstudio.com/download">https://code.visualstudio.com/download</a></p>
+
+<p>Python 3.8 - Anaconda:
+<a href="https://www.anaconda.com/products/individual">https://www.anaconda.com/products/individual</a></p>
+
+<p>Iron Python and Jupyter Notebooks:
+<a href="https://jupyter.org/install">https://jupyter.org/install</a></p>
+
+<p>(You won&rsquo;t need this installed for a while, but&hellip;)
+TensorFlow 2.x: <a href="https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/install.html">https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/install.html</a>
+Also if you have difficulty installing this on your own computer the University has provided
+virtual systems that you can install and run this on and Google has provided a system that
+we can run tensorflow across the web.</p>
+
+<h2>Required texts</h2>
+
+<p>We will be covering the first <sup>1</sup>&frasl;<sub>2</sub> of the book in learning Python
+(pages 1 &hellip; 318).<br />
+<em>Python Crash Course</em> by Eric Mathers, 2nd edition.
+At this point in time Amazon notes that it
+is the best selling Python book of all time.</p>
+
+<p>There will be outside reading also.  I will provide links or .pdfs.</p>
+
+<h2>Homework is Required</h2>
+
+<p>Most of the class grade comes from the homework.  Specifically 30% of the semester grade is
+from the midterm and the final.  15% from Midterm, 15% from Final.  The final is cumulative.</p>
+
+<h2>Extra credit</h2>
+
+<p>No extra credit is planned at this time.</p>
+
+<div class="pagebreak"> </div>
+
+<h1>Class Dates and Schedule.</h1>
+
+<p>Note - This is the current &ldquo;Plan&rdquo; - if this is updated it will
+be announced in class and posted to the Github.com site for the
+class.</p>
+
+<table>
+<thead>
+<tr>
+<th>Date</th>
+<th>Lect. No</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><em>Week 1</em></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>Tue Aug 24</td>
+<td>1</td>
+<td>Cover Syllabus  - Class Rules</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td>Why Computer Science.</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td>Your first program (Excel/Google Sheet)</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td>Your first program - Python.</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td>Lab starts next week!</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>Thr Aug 26</td>
+<td>2</td>
+<td>Python Mental Model.</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td>Basic Operators.</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td>Variables / Types</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td><em>Textbook Chapter 1</em></td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td><em>Week 2</em></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>Tue Aug 31</td>
+<td>3</td>
+<td>Code Re usability. <code>def</code>.</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td>Unit Conversions.  Mikes to km.</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td>Big Numbers.  Encryption.</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td>A Model of Solar System</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td>How computers represent data.</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td><em>Textbook Chapter 2</em></td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>Thr Sep 2</td>
+<td>4</td>
+<td>Lists.  Data Structures.</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td>Files, Modules.</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td>Input / Output in Python.</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td>Use of Command Line</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td><em>Textbook Chapter 3</em></td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td><em>Week 3</em></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>Tue Sep 7</td>
+<td>5</td>
+<td>How important testing is.</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td>Testing Code</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td>Automated Testing</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td>Formal Verification</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td><em>Textbook Chapter 11 - Testing</em></td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>Thr Sep 9</td>
+<td>6</td>
+<td>More on Lists, Dictionaries Maps.</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td>Very basic use of Git.</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td><em>Textbook Chapter 4</em></td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td><em>Week 4</em></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>Tue Sep 14</td>
+<td>7</td>
+<td>Control Flow / If Statements</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td><em>Textbook Chapter 5</em></td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>Tue Sep 16</td>
+<td>8</td>
+<td>Control Flow / Loops</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td>Outside Data - SQLite3</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td>Outside Data - Pandas</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td><em>Textbook Chapter 6</em></td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td><em>Week 5</em></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>Tue Sep 21</td>
+<td>9</td>
+<td>Dictionaries</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td>How DNA encodes proteins.</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td>Fetch/Execute cycle and loops.</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td><em>Textbook Chapter 7 - Loops</em></td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>Thr Sep 23</td>
+<td></td>
+<td>NO CLASS - Wyoming Hack-A-Thon.</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td>Yes you still have lab(s).</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td>You should go and attend some of the</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td>Hack-A-Thon.</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td><em>Week 6</em></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>Tue Sep 28</td>
+<td>10</td>
+<td>String Processing.  Representation.</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td>Searching Genetic Data.</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td><em>Textbook Chapter 7 - User Input</em></td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>Tue Sep 30</td>
+<td>11</td>
+<td>Functions / Recursion</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td><em>Textbook Chapter 8</em></td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td><em>Week 7</em></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>Tue Oct 5</td>
+<td>12</td>
+<td>Midterm Review.</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>Thr Oct 7</td>
+<td>13</td>
+<td>Midterm Test</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td><em>Week 8</em></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>Tue Oct 12</td>
+<td>14</td>
+<td>Object Oriented Programming.</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td><em>Textbook Chapter 9</em></td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>Thr Oct 14</td>
+<td>15</td>
+<td>More on Objects.</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td>Objects and Testing.</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td>How the web works.</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td>A bit of HTML, CSS, JS.</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td>A bit of bottle.</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td><em>Week 9</em></td>
+<td>16</td>
+<td>Understanding data.</td>
+</tr>
+
+<tr>
+<td>Tue Oct 19</td>
+<td></td>
+<td>Data Engineering.</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td>What is TensorFLow (TF) what is a</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td>Tensor.</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>Thr Oct 21</td>
+<td>17</td>
+<td>Example of Classification.</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td>Uses of ML in the real world.</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td><em>Week 10</em></td>
+<td>18</td>
+<td>Overfit and Underfit.</td>
+</tr>
+
+<tr>
+<td>Tue Oct 26</td>
+<td></td>
+<td>Using Pandas and NumPy.</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>Thr Oct 28</td>
+<td>19</td>
+<td>Building a data Pipeline.</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td>Managing data.  Image data.</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td>Test data. CSV files.</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td><em>Week 11</em></td>
+<td>20</td>
+<td>Limitations of Machine Learning.</td>
+</tr>
+
+<tr>
+<td>Tue Nov 2</td>
+<td></td>
+<td>&ldquo;You are a Thing and I Love You&rdquo;</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td>Machine learning and social context.</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td>ML and the law.</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>Thr Nov 4</td>
+<td>21</td>
+<td>ML and future of work.</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td><em>Week 12</em></td>
+<td>22</td>
+<td>Regression with TF.</td>
+</tr>
+
+<tr>
+<td>Tue Nov 9</td>
+<td></td>
+<td>Predicting Housing Prices.</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>Thr Nov 11</td>
+<td>23</td>
+<td>Real world example of ML.</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td><em>Week 13</em></td>
+<td>24</td>
+<td>Text Classification with TF Hub.</td>
+</tr>
+
+<tr>
+<td>Tue Nov 16</td>
+<td></td>
+<td>Reuse of Models.</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>Thr Nov 18</td>
+<td>25</td>
+<td>ML and Privacy.</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>Nov 22-26</td>
+<td>26</td>
+<td>Thanksgiving Break.</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td><em>Week 14</em></td>
+<td>27</td>
+<td>Sentiment Analysis.</td>
+</tr>
+
+<tr>
+<td>Tue Nov 30</td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>Thr Dec 3</td>
+<td>28</td>
+<td>Computer Security / Authentication.</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td><em>Week 15</em></td>
+<td>29</td>
+<td>Blockchain and economic impact.</td>
+</tr>
+
+<tr>
+<td>Tue Dec 7</td>
+<td></td>
+<td>Future of Computing.</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>Thr Dec 9</td>
+<td>30</td>
+<td>Final Review.</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<div class="pagebreak"> </div>
+
+<h1>Lab Schedule</h1>
+
+<p>This is the schedule for the lab.  Lab assignments should be turned
+in during lab but you have until the following Monday at midnight
+to get them turned in.  They are uploaded to the wyoweb (instructure) site.</p>
+
+<table>
+<thead>
+<tr>
+<th>Date</th>
+<th>Week</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><em>Week 2</em></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>Aug 31, Sep 2,</td>
+<td>2</td>
+<td>Installation of Python, Compeer Setup</td>
+</tr>
+
+<tr>
+<td>Sep 3</td>
+<td></td>
+<td>Hello World Program.</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td>Lab Goal: Be able to edit a file.</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td>Lab Goal: Be able to write a program.</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td><em>Week 3</em></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>Sep 7, 9, 10</td>
+<td>3</td>
+<td>File System.</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td>Editing Text Files.</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td>Lab Goal: Be able to write a program.</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td>1st part of Unit Conversion.</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td><em>Week 3</em></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>Sep 14, 16, 17</td>
+<td>3</td>
+<td>Solar System Distances Lab.</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td>Lab Write and Test 2 Program(s).</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td>Get output of Test.</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td>Run Programs to answer Lab Questions.</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td>Creating text file (Markdown) for</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td>homework.</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td><em>Week 4</em></td>
+<td>4</td>
+<td>CSV reading and a Dictionary</td>
+</tr>
+
+<tr>
+<td>Sep 21, 23, 24</td>
+<td></td>
+<td>Basic use of Git/Github.com</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td><em>Week 5</em></td>
+<td>5</td>
+<td>SQLite3 Data Analysis</td>
+</tr>
+
+<tr>
+<td>Sep 28, 30,</td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>Oct 1</td>
+<td></td>
+<td>Pull out data.  Draw Graphs.</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td><em>Week 6</em></td>
+<td>6</td>
+<td>Search Genetic Data.</td>
+</tr>
+
+<tr>
+<td>Oct 5, 7, 8</td>
+<td></td>
+<td>Determine if Steffie Lee has CF.</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td><em>Week 7</em></td>
+<td>7</td>
+<td>Recursive Calculation</td>
+</tr>
+
+<tr>
+<td>Oct 12, 14, 15</td>
+<td></td>
+<td>Calculate Fibonacci</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td>Find the largest value in a list.</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td><em>Week 8</em></td>
+<td>8</td>
+<td>A simple form with a web page and form.</td>
+</tr>
+
+<tr>
+<td>Oct 19, 21, 22</td>
+<td></td>
+<td>Render a page with a form.</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td>POST - save data to SQLite3.</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td><em>Week 9</em></td>
+<td>9</td>
+<td>Tensor Flow Install - Hello World</td>
+</tr>
+
+<tr>
+<td>Oct 26, 28, 29</td>
+<td></td>
+<td>Basic test of TensorFlow</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td>Read some data, draw a graph.</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td><em>Week 10</em></td>
+<td>10</td>
+<td>Data Analysis</td>
+</tr>
+
+<tr>
+<td>Nov 2, 4, 5</td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td><em>Week 11</em></td>
+<td>11</td>
+<td>Image Classification</td>
+</tr>
+
+<tr>
+<td>Nov 9, 11, 12</td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td><em>Week 12</em></td>
+<td>12</td>
+<td>Hand Writing Analysis</td>
+</tr>
+
+<tr>
+<td>Nov 16, 18, 19</td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td><em>Week 13</em></td>
+<td>13</td>
+<td>Sentiment Analysis.</td>
+</tr>
+
+<tr>
+<td>Nov 30,</td>
+<td></td>
+<td>Compeer Security Worksheet.</td>
+</tr>
+
+<tr>
+<td>Dec 2,3</td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td><em>Week 14</em></td>
+<td>14</td>
+<td>TBD.  Makeup lab?</td>
+</tr>
+
+<tr>
+<td>Dec 7, 9, 10</td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<div class="pagebreak"> </div>
+
+<h2>Homework/Assignments Due Dates</h2>
+
+<p>Note that the lab would be the week prior to this due date.  It is preferred
+if you get your lab work done and turned in during the lab.</p>
+
+<table>
+<thead>
+<tr>
+<th>Assignment #</th>
+<th>Date Due</th>
+<th>Pts</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>1</td>
+<td>Mon Sep 6</td>
+<td>100</td>
+<td>Lab 1: Hello World in Python</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>Due as a part of your lab.</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>2</td>
+<td>Mon Sep 13</td>
+<td>100</td>
+<td>Assignment 2: Distance to Planets (with test code)</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td>100</td>
+<td>Lab 3: Planet/Star Distances questions Due.</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>Due as a part of your lab.</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>3</td>
+<td>Mon Sep 20</td>
+<td>100</td>
+<td>Assignment 3: Count the words in a file.</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td>100</td>
+<td>Lab 3: Use git to get to some files.</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>4</td>
+<td>Mon Sep 27</td>
+<td>100</td>
+<td>Assignment 3: Read in a list and search it.</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td>100</td>
+<td>Lab 4: Setup and use git and a branch.</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>5</td>
+<td>Mon Oct 4</td>
+<td>100</td>
+<td>Sort and Search data. Read csv, sort, output.</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td>100</td>
+<td>Lab 5: Read/Edit CSV file.  File formats.</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>Using a text editor (vim)</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>6</td>
+<td>Mon Oct 11</td>
+<td>100</td>
+<td>Search genetic data.</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td>100</td>
+<td>Lab 6: Convert genetic codes to proteins.</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>7</td>
+<td>Mon Oct 18</td>
+<td>100</td>
+<td>Recursion Calculating Fibinachi Numbers</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td>100</td>
+<td>Lab 7: Recursive sort - quicksort.</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>8</td>
+<td>Mon Oct 26</td>
+<td>100</td>
+<td>Web server - Serve simple page with bottle.</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td>100</td>
+<td>Lab 8: Better HTML and CSS.</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>9</td>
+<td>Mon Nov 1</td>
+<td>100</td>
+<td>OOP - why and how - Battery Management System.</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td>100</td>
+<td>Lab 9: Tensor Flow Install and test.</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>10</td>
+<td>Mon Nov 8</td>
+<td>100</td>
+<td>Data analysis and graphs.  Regression.</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td>100</td>
+<td>Lab 10: Correlation is not causation.</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>11</td>
+<td>Mon Nov 15</td>
+<td>100</td>
+<td>Image Clasification.</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td>100</td>
+<td>Lab 11: xImage Clasification.</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>12</td>
+<td>Mon Nov 22</td>
+<td>100</td>
+<td>Hand writing analysis.</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td>100</td>
+<td>Lab 12: Hand writing analysis.</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>13</td>
+<td>Mon Nov 29</td>
+<td>100</td>
+<td>Web Scraping.</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td>100</td>
+<td>Lab 13: Using Web Sceraping for Sentiment.</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>14</td>
+<td>Mon Dec 6</td>
+<td>200</td>
+<td>Sentiment Analysis.</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td>100</td>
+<td>Lab 14: Sentiment Analysis.</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>Total</td>
+<td></td>
+<td>2800</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<div class="pagebreak"> </div>
+
+<!--
+
+Lists
+https://www.pyforschool.com/assignment/lists.html
+
+OOP
+    https://sea-c45-python.readthedocs.io/en/latest/session6.html
+
+Possible: https://github.com/T101J/Translating_RNA_to_Protein.git
+
+
+   September 2021     
+Su Mo Tu We Th Fr Sa  
+          1  2  3  4  
+ 5  6  7  8  9 10 11  
+12 13 14 15 16 17 18  
+19 20 21 22 23 24 25  
+26 27 28 29 30        
+                      
+    October 2021      
+Su Mo Tu We Th Fr Sa  
+                1  2  
+ 3  4  5  6  7  8  9  
+10 11 12 13 14 15 16  
+17 18 19 20 21 22 23  
+24 25 26 27 28 29 30  
+31                    
+   November 2021      
+Su Mo Tu We Th Fr Sa  
+    1  2  3  4  5  6  
+ 7  8  9 10 11 12 13  
+14 15 16 17 18 19 20  
+21 22 23 24 25 26 27  
+28 29 30              
+                      
+
+
+-->
+
+<h2>Grading</h2>
+
+<table>
+<thead>
+<tr>
+<th align="right">Points</th>
+<th align="center">Percentage of Semester Grade</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="right">1400</td>
+<td align="center">35%</td>
+<td align="left">Homework / Assignments</td>
+</tr>
+
+<tr>
+<td align="right">1400</td>
+<td align="center">35%</td>
+<td align="left">Labs</td>
+</tr>
+
+<tr>
+<td align="right">600</td>
+<td align="center">15%</td>
+<td align="left">Midterm</td>
+</tr>
+
+<tr>
+<td align="right">600</td>
+<td align="center">15%</td>
+<td align="left">Final</td>
+</tr>
+</tbody>
+</table>
+
+<p>4000 points total for the semester.</p>
+
+<table>
+<thead>
+<tr>
+<th>Letter Grade</th>
+<th>Point Range</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>A</td>
+<td>4000 to 3600</td>
+</tr>
+
+<tr>
+<td>B</td>
+<td>3599 to 3200</td>
+</tr>
+
+<tr>
+<td>C</td>
+<td>3199 to 2800</td>
+</tr>
+
+<tr>
+<td>D</td>
+<td>2799 to 2400</td>
+</tr>
+
+<tr>
+<td>F</td>
+<td>2399 and below</td>
+</tr>
+</tbody>
+</table>
+
+<h2>Install</h2>
+
+<h3>Tools</h3>
+
+<ol>
+<li>Anaconda Python</li>
+<li>Iron Python (Jupyter Notebooks)</li>
+<li>Visual Studio Code</li>
+<li>GIT</li>
+<li>VIM</li>
+</ol>
+
+<h3>Python Packages to Install</h3>
+
+<p>This is not a complete list but we will use all of the following Python Libraries.
+You should import all of these in your &ldquo;Hello World&rdquo; so that you verify that
+you have them installed.</p>
+
+<ol>
+<li>pandas</li>
+<li>numpy</li>
+<li>bottle</li>
+<li>SQLite3</li>
+<li>tensorflow</li>
+<li>keras</li>
+<li>matplotlib</li>
+<li>BeautifluSoup</li>
+</ol>
+
+<h2>Late work.</h2>
+
+<p>Generally it is a good idea to get the homework done on time.   Normally I take 10% off for each
+week day that a homework is late until it is worth only 40% of the original points.  The last day
+for turning in homework is Dec 10 at Midnight.  No homework will be accepted after this point.</p>
+
+<h2>Original work policy (in this class).</h2>
+
+<p>Homework is turned in online via file upload.   The homework is really, really important.  Do your own work.
+That is how you learn.  If you use google or other web sources, then note where you got the code or answer from.
+If you copy from the web, then expect that on a one-on-one basis I will be asking you how the code works.   You can
+help each other on homework and in the Lab.  Tests (Midterm and Final) you are not allowed to help each other.
+It is legitimate in this class to use the web for homework and lab work, (it may not be in other classes).   If you
+do then note it in comments your code.  Code is very unique to each person.  If two of you turn in the same code
+and do not clearly note that you helped each other - that is very bad.  If you note that you worked on it together
+- and then I ask each of you to explain how it works - that&rsquo;s alright.  If you have questions about this email me.
+If you use code from the web then expect that I will be asking about what the copyright and license terms are for the
+code.  Not all code that is published can be reused.    Also be aware that I put hidden data flaws into assignments.
+For example the accurate size of a tennis ball is 2.575 inches.  In previous years I have used 2.5, 2.6 and
+ this year 2.75 inches.  If you ask a previous year student for the answers and turn that in
+you will have  wrong result.  If you just copy from the web you will have a wrong result.</p>
+
+<h2>Title IX – Duty to Report</h2>
+
+<p>The University of Wyoming faculty are committed to helping create a safe learning environment for all students and for
+the university as a whole. If you have experienced any form of gender or sex-based discrimination or harassment,
+including sexual assault, sexual harassment, relationship violence, or stalking, know that help and support are
+available. The University has staff members trained to support survivors in navigating campus life, accessing health and
+counseling services, providing academic and housing accommodations, and more. The University strongly encourages all
+students to report any such incidents to the University. Please be aware that all University of Wyoming employees,
+including student staff, are required to report all Title IX related concerns to the Title IX Coordinator or their
+supervisor. This means that if you tell a faculty member about a situation of sexual harassment or sexual violence, or
+other related misconduct, the faculty member must share that information with the University’s Title IX Coordinator.
+UW’s Title IX Coordinator is Jim Osborn (Manager of Investigations, Equal Opportunity Report and Response). He is
+located in Room 320 of the Bureau of Mines Building, and can be reached via email at report-it@uwyo.edu or via phone at
+766-5200 or 766-5228. For more information, go to:
+<a href="http://www.uwyo.edu/reportit/learn-more/faqs.html">http://www.uwyo.edu/reportit/learn-more/faqs.html</a> .</p>
+
+<h2>Classroom Behavior Policy</h2>
+
+<p>(This section is not really applicable to this class - we will have class discussions that this applies to)</p>
+
+<p>At all times, treat your presence in the classroom and your enrollment in this course as you would a job. Act
+professionally, arrive on time, pay attention, complete your work in a timely and professional manner. You will be
+respectful towards your classmates and instructor. Spirited debate and disagreement are to be expected in any classroom
+and all views will be heard fully, but at all times we will behave civilly and with respect towards one another.
+Personal attacks, offensive language, name-calling, and dismissive gestures are not warranted in a learning atmosphere.
+As the instructor, I have the right to dismiss you from the classroom.</p>
+
+<h2>Classroom Statement on Diversity</h2>
+
+<p>The University of Wyoming values an educational environment that is diverse, equitable, and inclusive. The diversity
+that students and faculty bring to class, including age, country of origin, culture, disability, economic class,
+ethnicity, gender identity, immigration status, linguistic, political affiliation, race, religion, sexual orientation,
+veteran status, worldview, and other social and cultural diversity is valued, respected, and considered a resource for
+learning.</p>
+
+<h2>Disability Support</h2>
+
+<p>If you have a physical, learning, sensory or psychological disability and require accommodations, please register as
+soon as possible and provide documentation of your disability to Disability Support Services (DSS), Room 109 Knight
+Hall. You may also contact DSS at (307) 766-3073 or udss@uwyo.edu. Visit their website for more
+information: www.uwyo.edu/udss</p>
+
+<h2>Academic Dishonesty Policies</h2>
+
+<p>Don&rsquo;t cheat on the exams. I expect you to take full advantage of all the online resources you can get your hands on.
+That includes Stack Overflow, Github etc. If you do use someone else&rsquo;s code, put in a link to where you found it.
+Don&rsquo;t cheat on the projects - do you own work.  Most of the learning in the class is from <em>doing</em> the projects.</p>
+
+<h2>Substantive changes to syllabus</h2>
+
+<p>All deadlines, requirements, and course structure are subject to change if deemed necessary by the instructor. Students
+will be notified verbally in class, on our WyoCourses page announcement, and via email of these changes. I do travel
+during the semester. Class could be canceled or assignments due dates changed.</p>
+
+<h1>Copyright</h1>
+
+<p>Copyright &copy; University of Wyoming, 2021.</p>
+
+</div>
+
