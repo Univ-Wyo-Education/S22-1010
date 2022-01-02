@@ -76,18 +76,20 @@ Python 3.8 will be the version of Python that we are working with.  This is the 
 The exact version of Python is the Anaconda 64 bit release of Python.
 We will use TensorFlow 2.x.
 Realistically you should install these tools on on your own computer.    They work on Mac,
-Windows, and Linux.   I do 80% of my development on a Linux system, 15%
-on Mac and 5% on Windows.  We will also use a tool called Jupyter Notebooks.
-This is a layer on top of Python.
+Windows, and Linux.   I do 80% of my development on a Mac system, 10%
+on Linux and 5% on Windows.  
+
+### Original Class Notes
+
+All of the originals for the class are at [https://github.com/Univ-Wyo-Education/S22-1010](https://github.com/Univ-Wyo-Education/S22-1010)
+
+### Tools
 
 Visual Studio Code:
 [https://code.visualstudio.com/download](https://code.visualstudio.com/download)
 
-Python 3.8 - Anaconda:
+Python 3.9 - Anaconda:
 [https://www.anaconda.com/products/individual](https://www.anaconda.com/products/individual)
-
-Iron Python and Jupyter Notebooks:
-[https://jupyter.org/install](https://jupyter.org/install)
 
 
 (You won't need this installed for a while, but...)
@@ -95,6 +97,8 @@ TensorFlow 2.x: https://tensorflow-object-detection-api-tutorial.readthedocs.io/
 Also if you have difficulty installing this on your own computer the University has provided 
 virtual systems that you can install and run this on and Google has provided a system that
 we can run tensorflow across the web.
+
+
 
 ## Required texts
 

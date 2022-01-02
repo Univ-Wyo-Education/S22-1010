@@ -88,18 +88,20 @@ Python 3.8 will be the version of Python that we are working with.  This is the 
 The exact version of Python is the Anaconda 64 bit release of Python.
 We will use TensorFlow 2.x.
 Realistically you should install these tools on on your own computer.    They work on Mac,
-Windows, and Linux.   I do 80% of my development on a Linux system, 15%
-on Mac and 5% on Windows.  We will also use a tool called Jupyter Notebooks.
-This is a layer on top of Python.
+Windows, and Linux.   I do 80% of my development on a Mac system, 10%
+on Linux and 5% on Windows.  
+
+### Original Class Notes
+
+All of the originals for the class are at [https://github.com/Univ-Wyo-Education/S22-1010](https://github.com/Univ-Wyo-Education/S22-1010)
+
+### Tools
 
 Visual Studio Code:
 [https://code.visualstudio.com/download](https://code.visualstudio.com/download)
 
-Python 3.8 - Anaconda:
+Python 3.9 - Anaconda:
 [https://www.anaconda.com/products/individual](https://www.anaconda.com/products/individual)
-
-Iron Python and Jupyter Notebooks:
-[https://jupyter.org/install](https://jupyter.org/install)
 
 
 (You won't need this installed for a while, but...)
@@ -107,6 +109,8 @@ TensorFlow 2.x: https://tensorflow-object-detection-api-tutorial.readthedocs.io/
 Also if you have difficulty installing this on your own computer the University has provided 
 virtual systems that you can install and run this on and Google has provided a system that
 we can run tensorflow across the web.
+
+
 
 ## Required texts
 
@@ -136,6 +140,7 @@ Note - This is the current "Plan" - if this is updated it will
 be announced in class and posted to the Github.com site for the
 class.
 
+xyzzy
 
 | Date        | Lect. No | Description                             |
 |-------------|----------|-----------------------------------------|
@@ -295,6 +300,7 @@ This is the schedule for the lab.  Lab assignments should be turned
 in during lab but you have until the following Monday at midnight
 to get them turned in.  They are uploaded to the wyoweb (instructure) site.
 
+xyzzy
 
 | Date           | Week | Description                              |
 |----------------|------|------------------------------------------|
@@ -383,6 +389,7 @@ to get them turned in.  They are uploaded to the wyoweb (instructure) site.
 Note that the lab would be the week prior to this due date.  It is preferred
 if you get your lab work done and turned in during the lab.  
 
+xyzzy
 
 | Assignment # | Date Due   | Pts  |  Description                                       |
 |--------------|------------|------|----------------------------------------------------|
@@ -449,32 +456,49 @@ OOP
 Possible: https://github.com/T101J/Translating_RNA_to_Protein.git
 
 
-   September 2021     
+    January 2022      
 Su Mo Tu We Th Fr Sa  
-          1  2  3  4  
- 5  6  7  8  9 10 11  
-12 13 14 15 16 17 18  
-19 20 21 22 23 24 25  
-26 27 28 29 30        
+                   1  
+ 2  3  4  5  6  7  8  
+ 9 10 11 12 13 14 15  
+16 17 18 19 20 21 22  
+       ^===================== 1st class
+23 24 25 26 27 28 29  
+30 31                 
+
+   February 2022      
+Su Mo Tu We Th Fr Sa  
+       1  2  3  4  5  
+ 6  7  8  9 10 11 12  
+13 14 15 16 17 18 19  
+20 21 22 23 24 25 26  
+27 28 
+                
+     March 2022       
+Su Mo Tu We Th Fr Sa  
+       1  2  3  4  5  
+ 6  7  8  9 10 11 12  
+13 14 15 16 17 18 19  
+20 21 22 23 24 25 26  
+27 28 29 30 31        
                       
-    October 2021      
+     April 2022       
 Su Mo Tu We Th Fr Sa  
                 1  2  
  3  4  5  6  7  8  9  
 10 11 12 13 14 15 16  
 17 18 19 20 21 22 23  
 24 25 26 27 28 29 30  
-31                    
-   November 2021      
-Su Mo Tu We Th Fr Sa  
-    1  2  3  4  5  6  
- 7  8  9 10 11 12 13  
-14 15 16 17 18 19 20  
-21 22 23 24 25 26 27  
-28 29 30              
                       
-
-
+      May 2022        
+Su Mo Tu We Th Fr Sa  
+ 1  2  3  4  5  6  7  
+ 8  9 10 11 12 13 14  
+    ^^^^^^^^^^^^^================ Finals
+15 16 17 18 19 20 21  
+22 23 24 25 26 27 28  
+29 30 31              
+                      
 -->
 
 ## Grading
