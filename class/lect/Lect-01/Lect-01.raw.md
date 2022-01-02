@@ -12,7 +12,6 @@ Can you make Money at computer science?
 Yes - it pays.  The level of opportunity has never been better.  The opportunity in computer science has never been
 bigger.  Computers are eating the world.
 
-
 What it takes to be successful?  Success is Easy to explain.  Be willing to do what other people are unwilling to do.
 How this applies to you - right now.  When you learn to program you are dogging something that most people are unwilling
 to do.  Programming is hard.  It is the most difficult computer game ever.  There is never a day that it is "easy".  It
@@ -50,6 +49,15 @@ Bureau of Labor Statistics.  Depending on your major you may make less than the 
 ![img_144_3237ed1-dolphins-and-agii.jpg](./img_144_3237ed1-dolphins-and-agii.jpg)
 <br>Image (C) Philip Schlump, 2011.
 
+![dsc-26950-beach-cambrige-03-edit1.jpg](dsc-26950-beach-cambrige-03-edit1.jpg)
+<br>Image (C) Philip Schlump, 2010.
+
+Steve Jobs said: “Life can be so much broader, once you discover
+one simple fact, and that is that everything around you that you
+call ‘life’ was made up by people who were no smarter than you. And
+you can change it, you can influence it, you can build your own
+things that other people can use. Once you learn that, you’ll never
+be the same again.”
 
 ## How the Gig economy works
 
@@ -60,6 +68,25 @@ Who is me article in Time: [https://time.com/6085525/big-tech-data-centers/](htt
 3. Big businesses have lots of leverage v.s. small city organizations.
 4. Cost of Replacement is very high.  It costs $25k to $50k to hire a new person.
 5. Jobs are only worth what the "kind" of a job pays.   If a programmer pays 100k to 105k that is it.  If you as a programmer are way better than others you still get 100k to 105k.   If you want more then you have to get out of the "employee" mentality and build some form of a business.
+
+
+## Class Overview
+
+1. Tools for programming.  A large proportion of people today view computes as the "user interface" that they get to see.  This is an iPhone, a Google search, a web page, an Instagram post.  When you program you have to have a different view of what a computer is.   You need to step back to Files and Folders and Communication between systems. 
+2. Python - our programming language - Why Python ? - then - What is the structure of a program.  Like English it has a grammar, and rules and syntax.   If you learn French it is hard.  To learn a language that is used to communicate between a human and both humans and computes like python is also hard.  It has unusual constructs.
+3. Other tools that relate to developing software but can be used outside of the "programming" field - like "git".
+4. Programming as a *super* power - how and why computer programs can make a difference.
+5. Machine learning - and a touch of economics.
+
+One common thread (and there will be a number of these) in this class is that useful programs work outside of the field of computer science.  Programs for the sake of programs tends to be a rather
+un-interesting field.  Programs applied to outside data and information - that is interesting.  So we are going to touch on a bunch of different outside fields.
+
+1. Astronomy and the solar system.
+2. Biometrics - genetics and biological systems.
+3. The Impact of software on ethics and our social fabric.
+4. How computers are changing the world.
+
+
 
 # Copyright
 
