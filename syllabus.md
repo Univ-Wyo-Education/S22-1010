@@ -2,59 +2,49 @@
 <style>
 .pagebreak { page-break-before: always; }
 .half { height: 200px; }
+</style>
+<style>
+.pagebreak { page-break-before: always; }
+.half { height: 200px; }
 .markdown-body {
 	font-size: 12px;
 }
 .markdown-body td {
 	font-size: 12px;
 }
-
 </style>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 # Class: 1010 Intro Computer Science
 
 # Class Time
 
-Lecture: Tu/Th 11:10 AM - 12:25 - Room 310 Class Room Building (CR) xyzzy
+Lecture: Tu/Th 11:00 AM - 12:15 - Room 310 Class Room Building (CR) 
 
 Attendance is required.
 
 # Lab Times
 
-Lab 10: Tu 3:20pm - 5:10pm - Enzi STEM Room 315	xyzzy
+Lab 10: Tu 2:45pm - 4:35pm - Enzi STEM Room 315	
 
-Lab 11: Tu 6:20pm - 8:10pm - Enzi STEM Room 315	xyzzy
+Lab 11: Tu 6:10pm - 8:00pm - Enzi STEM Room 315	
 
-Lab 12: Th 3:20pm - 5:10pm - Enzi STEM Room 315	xyzzy
+Lab 12: Th 2:45pm - 4:35pm - Enzi STEM Room 315
 
-Lab 13: Th 6:20pm - 8:10pm - Enzi STEM Room 315	xyzzy
+Lab 13: Th 6:10pm - 8:00pm - Enzi STEM Room 315
 
-Attendance is required.
+Attendance is required.  
 
 # Final Time
 
-Thursday the final will be December 16 10:15 a.m. – 12:15 p.m.  In this room.		xyzzy
+Thursday the final will be a take home due May 12, 2022  12:00 midnight.
 
 
 ## Instructor
 
 - Prof Philip Schlump
 - Office: 4081B in the Engineering Building.   My office is right across the hall from the Computer Science Department Office.
-- Office hours will be Tuesday from 9:00am to 10:45am xyzzy, Thursday from 8:00am to 9:00am and by appointment.   Appointments can include using zoom.com for remote office hours.
+- Office: Office hours will be  Tu/Th from 9:25am to 10:50am (immediately following this class) and by appointment.  
 - Contact via email (pschlump@uwyo.edu) or (for emergencies only): 720-209-7888 (my personal cell)
 and pschlump@gmail.com (personal email).  For using GIT and inviting me to have access to your files/projects use pschlump@uwyo.edu as the email address.
 - Class Time:  Turn off phones and other internet connected devices during class and lab.
@@ -140,32 +130,30 @@ Note - This is the current "Plan" - if this is updated it will
 be announced in class and posted to the Github.com site for the
 class.
 
-xyzzy
-
 | Date        | Lect. No | Description                             |
 |-------------|----------|-----------------------------------------|
 | *Week 1*    |          |                                         |
-| Tue Aug 24  | 1        | Cover Syllabus  - Class Rules           |
+| Tue Jan 18  | 1        | Cover Syllabus  - Class Rules           |
 |             |          | Why Computer Science.                   |
 |             |          | Your first program (Excel/Google Sheet) |
 |             |          | Your first program - Python.            |
 |             |          | Lab starts next week!                   |
 |             |          |                                         |
-| Thr Aug 26  | 2        | Python Mental Model.                    |
+| Thr Jan 20  | 2        | Python Mental Model.                    |
 |             |          | Basic Operators.                        |
 |             |          | Variables / Types                       |
 |             |          | *Textbook Chapter 1*                    |
 |             |          |                                         |
 |             |          |                                         |
 | *Week 2*    |          |                                         |
-| Tue Aug 31  | 3        | Code Re usability. `def`.               |
+| Tue Jan 25  | 3        | Code Re usability. `def`.               |
 |             |          | Unit Conversions.  Mikes to km.         |
 |             |          | Big Numbers.  Encryption.               |
 |             |          | A Model of Solar System                 |
 |             |          | How computers represent data.           |
 |             |          | *Textbook Chapter 2*                    |
 |             |          |                                         |
-| Thr Sep 2   | 4        | Lists.  Data Structures.                |
+| Thr Jan 27   | 4        | Lists.  Data Structures.                |
 |             |          | Files, Modules.                         |
 |             |          | Input / Output in Python.               |
 |             |          | Use of Command Line                     |
@@ -173,118 +161,118 @@ xyzzy
 |             |          |                                         |
 |             |          |                                         |
 | *Week 3*    |          |                                         |
-| Tue Sep 7   | 5        | How important testing is.               |
+| Tue Feb 01   | 5        | How important testing is.               |
 |             |          | Testing Code                            |
 |             |          | Automated Testing                       |
 |             |          | Formal Verification                     |
 |             |          | *Textbook Chapter 11 - Testing*         |
 |             |          |                                         |
-| Thr Sep 9   | 6        | More on Lists, Dictionaries Maps.       |
+| Thr Feb 03   | 6        | More on Lists, Dictionaries Maps.       |
 |             |          | Very basic use of Git.                  |
 |             |          | *Textbook Chapter 4*                    |
 |             |          |                                         |
 |             |          |                                         |
 | *Week 4*    |          |                                         |
-| Tue Sep 14  | 7        | Control Flow / If Statements            |
+| Tue Feb 08  | 7        | Control Flow / If Statements            |
 |             |          | *Textbook Chapter 5*                    |
 |             |          |                                         |
-| Tue Sep 16  | 8        | Control Flow / Loops                    |
+| Tue Feb 10  | 8        | Control Flow / Loops                    |
 |             |          | Outside Data - SQLite3                  |
 |             |          | Outside Data - Pandas                   |
 |             |          | *Textbook Chapter 6*                    |
 |             |          |                                         |
 |             |          |                                         |
 | *Week 5*    |          |                                         |
-| Tue Sep 21  | 9        | Dictionaries                            |
+| Tue Feb 15  | 9        | Dictionaries                            |
 |             |          | How DNA encodes proteins.               |
 |             |          | Fetch/Execute cycle and loops.          |
 |             |          | *Textbook Chapter 7 - Loops*            |
 |             |          |                                         |
-| Thr Sep 23  |          | NO CLASS - Wyoming Hack-A-Thon.         |
+| Thr Feb 17  |          | NO CLASS                                |
 |             |          | Yes you still have lab(s).              |
-|             |          | You should go and attend some of the    |
-|             |          | Hack-A-Thon.                            |
+|             |          |                                         |
+|             |          |                                         |
 |             |          |                                         |
 |             |          |                                         |
 | *Week 6*    |          |                                         |
-| Tue Sep 28  | 10       | String Processing.  Representation.     |
+| Tue Feb 22  | 10       | String Processing.  Representation.     |
 |             |          | Searching Genetic Data.                 |
 |             |          | *Textbook Chapter 7 - User Input*       |
 |             |          |                                         |
-| Tue Sep 30  | 11       | Functions / Recursion                   |
+| Thr Feb 24  | 11       | Functions / Recursion                   |
 |             |          | *Textbook Chapter 8*                    |
 |             |          |                                         |
 |             |          |                                         |
 | *Week 7*    |          |                                         |
-| Tue Oct 5   | 12       | Midterm Review.                         |
+| Tue Mar 01  | 12       | Midterm Review.                         |
 |             |          |                                         |
-| Thr Oct 7   | 13       | Midterm Test                            |
+| Thr Mar 03  | 13       | Midterm Test                            |
 |             |          |                                         |
 |             |          |                                         |
 | *Week 8*    |          |                                         |
-| Tue Oct 12  | 14       | Object Oriented Programming.            |
+| Tue Mar 08  | 14       | Object Oriented Programming.            |
 |             |          | *Textbook Chapter 9*                    |
 |             |          |                                         |
-| Thr Oct 14  | 15       | More on Objects.                        |
+| Thr Mar 10  | 15       | More on Objects.                        |
 |             |          | Objects and Testing.                    |
 |             |          | How the web works.                      |
 |             |          | A bit of HTML, CSS, JS.                 |
 |             |          | A bit of bottle.                        |
 |             |          |                                         |
+| Mar-10      |          | Spring Break - No Class                 |
+|  to Mar-18  |          |                                         |
+|             |          |                                         |
 |             |          |                                         |
 | *Week 9*    | 16       | Understanding data.                     |
-| Tue Oct 19  |          | Data Engineering.                       |
+| Tue Mar 22  |          | Data Engineering.                       |
 |             |          | What is TensorFLow (TF) what is a       |
 |             |          | Tensor.                                 |
 |             |          |                                         |
 |             |          |                                         |
-| Thr Oct 21  | 17       | Example of Classification.              |
+| Thr Mar 24  | 17       | Example of Classification.              |
 |             |          | Uses of ML in the real world.           |
 |             |          |                                         |
 |             |          |                                         |
 | *Week 10*   | 18       | Overfit and Underfit.                   |
-| Tue Oct 26  |          | Using Pandas and NumPy.                 |
+| Tue Mar 29  |          | Using Pandas and NumPy.                 |
 |             |          |                                         |
-| Thr Oct 28  | 19       | Building a data Pipeline.               |
+| Thr Mar 31  | 19       | Building a data Pipeline.               |
 |             |          | Managing data.  Image data.             |
 |             |          | Test data. CSV files.                   |
 |             |          |                                         |
 |             |          |                                         |
 | *Week 11*   | 20       | Limitations of Machine Learning.        |
-| Tue Nov 2   |          | "You are a Thing and I Love You"        |
+| Tue Apr 05  |          | "You are a Thing and I Love You"        |
 |             |          | Machine learning and social context.    |
 |             |          | ML and the law.                         |
 |             |          |                                         |
-| Thr Nov 4   | 21       | ML and future of work.                  |
+| Thr Apr 07  | 21       | ML and future of work.                  |
 |             |          |                                         |
 |             |          |                                         |
 |             |          |                                         |
 | *Week 12*   | 22       | Regression with TF.                     |
-| Tue Nov 9   |          | Predicting Housing Prices.              |
+| Tue Apr 12  |          | Predicting Housing Prices.              |
 |             |          |                                         |
-| Thr Nov 11  | 23       | Real world example of ML.               |
+| Thr Apr 14  | 23       | Real world example of ML.               |
 |             |          |                                         |
 |             |          |                                         |
 |             |          |                                         |
 | *Week 13*   | 24       | Text Classification with TF Hub.        |
-| Tue Nov 16  |          | Reuse of Models.                        |
+| Tue Apr 19  |          | Reuse of Models.                        |
 |             |          |                                         |
-| Thr Nov 18  | 25       | ML and Privacy.                         |
-|             |          |                                         |
-|             |          |                                         |
-| Nov 22-26   | 26       | Thanksgiving Break.                     |
+| Thr Apr 21  | 25       | ML and Privacy.                         |
 |             |          |                                         |
 |             |          |                                         |
 | *Week 14*   | 27       | Sentiment Analysis.                     |
-| Tue Nov 30  |          |                                         |
+| Tue Apr 26  |          |                                         |
 |             |          |                                         |
-| Thr Dec 3   | 28       | Computer Security / Authentication.     |
+| Thr Apr 28  | 28       | Computer Security / Authentication.     |
 |             |          |                                         |
 |             |          |                                         |
 | *Week 15*   | 29       | Blockchain and economic impact.         |
-| Tue Dec 7   |          | Future of Computing.                    |
+| Tue May 03  |          | Future of Computing.                    |
 |             |          |                                         |
-| Thr Dec 9   | 30       | Final Review.                           |
+| Thr May 05  | 30       | Final Review.                           |
 |             |          |                                         |
 
 
@@ -445,61 +433,7 @@ xyzzy
 <div class="pagebreak"> </div>
 
 
-<!--
 
-Lists
-https://www.pyforschool.com/assignment/lists.html
-
-OOP
-	https://sea-c45-python.readthedocs.io/en/latest/session6.html
-
-Possible: https://github.com/T101J/Translating_RNA_to_Protein.git
-
-
-    January 2022      
-Su Mo Tu We Th Fr Sa  
-                   1  
- 2  3  4  5  6  7  8  
- 9 10 11 12 13 14 15  
-16 17 18 19 20 21 22  
-       ^===================== 1st class
-23 24 25 26 27 28 29  
-30 31                 
-
-   February 2022      
-Su Mo Tu We Th Fr Sa  
-       1  2  3  4  5  
- 6  7  8  9 10 11 12  
-13 14 15 16 17 18 19  
-20 21 22 23 24 25 26  
-27 28 
-                
-     March 2022       
-Su Mo Tu We Th Fr Sa  
-       1  2  3  4  5  
- 6  7  8  9 10 11 12  
-13 14 15 16 17 18 19  
-20 21 22 23 24 25 26  
-27 28 29 30 31        
-                      
-     April 2022       
-Su Mo Tu We Th Fr Sa  
-                1  2  
- 3  4  5  6  7  8  9  
-10 11 12 13 14 15 16  
-17 18 19 20 21 22 23  
-24 25 26 27 28 29 30  
-                      
-      May 2022        
-Su Mo Tu We Th Fr Sa  
- 1  2  3  4  5  6  7  
- 8  9 10 11 12 13 14  
-    ^^^^^^^^^^^^^================ Finals
-15 16 17 18 19 20 21  
-22 23 24 25 26 27 28  
-29 30 31              
-                      
--->
 
 ## Grading
 
