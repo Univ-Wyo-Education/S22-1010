@@ -173,7 +173,7 @@ class.
 |             |          | Fetch/Execute cycle and loops.          |
 |             |          | *Textbook Chapter 7 - Loops*            |
 |             |          |                                         |
-| Thr Feb 17  |          | NO CLASS                                |
+| Thr Feb 17  |          | NO CLASS (You may have a pre-recorded video) |
 |             |          | Yes you still have lab(s).              |
 |             |          |                                         |
 |             |          |                                         |
@@ -601,6 +601,6 @@ during the semester. Class could be canceled or assignments due dates changed.
 
 # Copyright
 
-Copyright (C) University of Wyoming, 2021.
+Copyright (C) University of Wyoming, 2021-2022.
 
 
