@@ -1,13 +1,10 @@
-
-# Step 5 - with function and a test.
-
-import mi_to_km
+# Step 3 - inline after fixing type
 
 print ( "Enter Miles" )
 
 miles_str = input()
 miles = int(miles_str)
-
-km = mi_to_km.mi_to_km(miles)
+conv = 1.60934
+km = miles * conv
 
 print ( "km = {}".format(km) )

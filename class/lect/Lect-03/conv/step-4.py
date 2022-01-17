@@ -1,4 +1,3 @@
-
 # Step 4 - After making a function
 
 def mi_to_km ( mi ):

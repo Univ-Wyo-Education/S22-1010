@@ -708,6 +708,115 @@ ol {
 
 <div class="markdown-body">
 
+<style>
+.pagebreak { page-break-before: always; }
+.half { height: 200px; }
+</style>
+<style>
+.pagebreak { page-break-before: always; }
+.half { height: 200px; }
+.markdown-body {
+    font-size: 12px;
+}
+.markdown-body td {
+    font-size: 12px;
+}
+</style>
+
+<h1>Lecture 3 - Converting Values</h1>
+
+<h2>Overview</h2>
+
+<p>You may want to refer back to the record video of this is lecture if you want to go back
+to it.  We are going to cover a bunch of stuff - that is in
+a lot of chapters in the book, 1, 2, 3, some 4, some 5, some 6 and
+some 7 all in one set of examples.</p>
+
+<p>Also the lecture notes are online in the lect-02 github.
+<a href="https://github.com/Univ-Wyo-Education/F21-1010/tree/main/class/lect/Lect-02">https://github.com/Univ-Wyo-Education/F21-1010/tree/main/class/lect/Lect-02</a></p>
+
+<p>There is a ./conv directory that has a series of steps where you can
+go back to this and see the code as I develop it.</p>
+
+<h3>The &ldquo;Process&rdquo; that we often use</h3>
+
+<ol>
+<li>Collect Requirements</li>
+<li>Produce a &ldquo;design&rdquo; / or a Requirements Document</li>
+<li>Convert Requirements into a Prototype</li>
+<li>Take the Prototype and build test data from it</li>
+<li>Build the &ldquo;application&rdquo; from the Prototype</li>
+<li>Build automated tests</li>
+<li>Document results</li>
+</ol>
+
+<h3>Demo - of this in browser.</h3>
+
+<p>A lot of what happens when you program seems so simple - until you
+have to learn a non-human language.  Programs are formal languages.
+English is an informal language.   For example I can make a sentence
+that most of you will not understand, at first, but with some explanation
+I can show that it is using proper English crammer.</p>
+
+<p>&ldquo;The old man the boat.&rdquo;</p>
+
+<p>In this context the old is a type of person.  &ldquo;man&rdquo; is to get on board
+the boat and operate it.  It is a verb.</p>
+
+<p>So&hellip; The sentence is roughly equivalent to &ldquo;The old people get on the
+boat and operate it.&rdquo;</p>
+
+<p>Python is a formal language.  It uses a rigorous syntax.   As humans
+we are not used to this.</p>
+
+<p>One of the realities of development is that you are not using &ldquo;one&rdquo; tool.
+vim - for editing, or notepad++ on windows (don&rsquo;t use notepad it will mess you up).
+VSCode - for debugging - and building and running projects.
+Python - command line for running programs.<br />
+Jupiter Notebooks (Iron Python) for mixing code and output in a human readable form.
+Different types of files.  .py for python, .txt for text, .csv for comma separated
+values, .mk for markdown, images in .svg and .jpg and .png etc.</p>
+
+<h2>Software Engineering</h2>
+
+<p>This is a very &ldquo;software engineering&rdquo; approach to code development.
+Learning to code effectively is a &ldquo;process&rdquo;.   Creativity tends to be
+innate - it is a talent.   Programming is a set of skills.</p>
+
+<h2>Topics Covered</h2>
+
+<ol>
+<li>Files and Directories</li>
+<li>Editing</li>
+<li>Operators, <code>*</code> is multiply.</li>
+<li>Other operators like <code>+</code>, <code>-</code>, <code>/</code>, <code>%</code>, and unary <code>-</code>.  There are more.</li>
+<li><code>def</code> code reusability</li>
+<li>Float, int and string data types</li>
+<li>Basic testing</li>
+<li>Functions - parameters - return values</li>
+<li>if</li>
+<li>Comparison for equality, <code>==</code> operator.  Also <code>!=</code> not equal.</li>
+<li>if / else</li>
+<li>&lsquo;:&rsquo; starts a block</li>
+<li>Indentation</li>
+<li>a = a + 1 - not algebra</li>
+<li>Files</li>
+<li>Import of files</li>
+<li>Input</li>
+<li>Output</li>
+<li>Formatting of output</li>
+<li>Patterns in code</li>
+<li>Fast and Slow Learning</li>
+</ol>
+
+<h2>Requirements</h2>
+
+<p>Implement a python function that will convert from miles to
+kilometers and return that value.</p>
+
+<p>Implement a program that will use the function, prompt for
+input in miles and then print out the result in kilometers.</p>
+
 <h2>Step 1</h2>
 
 <p>Convert from miles to kilometers.</p>
@@ -718,13 +827,11 @@ ol {
 
 <h3>Demo - lookup conversion from miles to kilometers</h3>
 
-<pre><code>     1    
-     2    # Step 1 - constants
-     3    
-     4    miles = 3
-     5    conv = 1.60934
-     6    km = miles * conv
-     7    
+<pre><code>  1: # Step 1 - constants
+  2: 
+  3: miles = 3
+  4: conv = 1.60934
+  5: km = miles * conv
 
 </code></pre>
 
@@ -732,55 +839,51 @@ ol {
 
 <h2>Step 2 - Input with error</h2>
 
-<pre><code>     1    
-     2    # Step 2 - will error with type error
-     3    
-     4    print ( &quot;Enter Miles&quot; )
-     5    
-     6    miles = input()
-     7    
-     8    conv = 1.60934
-     9    km = miles * conv
-    10    
-    11    print ( &quot;km = {}&quot;.format(km) )
-    12    
+<pre><code>  1: # Step 2 - will error with type error
+  2: 
+  3: print ( &quot;Enter Miles&quot; )
+  4: 
+  5: miles = input()
+  6: 
+  7: conv = 1.60934
+  8: km = miles * conv
+  9: 
+ 10: print ( &quot;km = {}&quot;.format(km) )
 
 </code></pre>
 
 <h2>Step 3 - Fixed error / Types</h2>
 
-<pre><code>     1    
-     2    # Step 3 - inline after fixing type
-     3    
-     4    print ( &quot;Enter Miles&quot; )
-     5    
-     6    miles_str = input()
-     7    miles = int(miles_str)
-     8    conv = 1.60934
-     9    km = miles * conv
-    10    
-    11    print ( &quot;km = {}&quot;.format(km) )
+<pre><code>  1: # Step 3 - inline after fixing type
+  2: 
+  3: print ( &quot;Enter Miles&quot; )
+  4: 
+  5: miles_str = input()
+  6: miles = int(miles_str)
+  7: conv = 1.60934
+  8: km = miles * conv
+  9: 
+ 10: print ( &quot;km = {}&quot;.format(km) )
 
 </code></pre>
 
 <h2>Step 4 - Make a function</h2>
 
-<pre><code>     1    
-     2    # Step 4 - After making a function
-     3    
-     4    def mi_to_km ( mi ):
-     5        conv = 1.60934
-     6        km = mi * conv
-     7        return (km)
-     8    
-     9    print ( &quot;Enter Miles&quot; )
-    10    
-    11    miles_str = input()
-    12    miles = int(miles_str)
-    13    
-    14    km = mi_to_km(miles)
-    15    
-    16    print ( &quot;km = {}&quot;.format(km) )
+<pre><code>  1: # Step 4 - After making a function
+  2: 
+  3: def mi_to_km ( mi ):
+  4:     conv = 1.60934
+  5:     km = mi * conv
+  6:     return (km)
+  7: 
+  8: print ( &quot;Enter Miles&quot; )
+  9: 
+ 10: miles_str = input()
+ 11: miles = int(miles_str)
+ 12: 
+ 13: km = mi_to_km(miles)
+ 14: 
+ 15: print ( &quot;km = {}&quot;.format(km) )
 
 </code></pre>
 
@@ -788,48 +891,47 @@ ol {
 
 <p>step-5.py:</p>
 
-<pre><code>     1    
-     2    # Step 5 - with function and a test.
-     3    
-     4    import mi_to_km
-     5    
-     6    print ( &quot;Enter Miles&quot; )
-     7    
-     8    miles_str = input()
-     9    miles = int(miles_str)
-    10    
-    11    km = mi_to_km.mi_to_km(miles)
-    12    
-    13    print ( &quot;km = {}&quot;.format(km) )
+<pre><code>  1: # Step 5 - with function and a test.
+  2: 
+  3: import mi_to_km
+  4: 
+  5: print ( &quot;Enter Miles&quot; )
+  6: 
+  7: miles_str = input()
+  8: miles = int(miles_str)
+  9: 
+ 10: km = mi_to_km.mi_to_km(miles)
+ 11: 
+ 12: print ( &quot;km = {}&quot;.format(km) )
 
 </code></pre>
 
 <p>conv/mi_to_km.py:</p>
 
-<pre><code>     1    
-     2    # mi_to_km converts from miles as an integer or float to kilometers.  
-     3    def mi_to_km ( mi ):
-     4        conv = 1.60934
-     5        km = mi * conv
-     6        return (km)
-     7    
-     8    # Automated Test
-     9    if __name__ == &quot;__main__&quot;:
-    10        n_err = 0
-    11        x = mi_to_km ( 3 )
-    12        if x !=  4.82802:
-    13            n_err = n_err + 1
-    14            print ( &quot;Error: Test 1: conversion not working, expected {} got {}&quot;.format (  4.82802, x ) )
-    15        x = mi_to_km ( 0 )
-    16        if x != 0:
-    17            n_err = n_err + 1
-    18            print ( &quot;Error: Test 2: conversion not working, expected {} got {}&quot;.format ( 0, x ) )
-    19    
-    20        if n_err == 0 :
-    21            print ( &quot;PASS&quot; )
-    22        else:
-    23            print ( &quot;FAILED&quot; )
-    24    
+<pre><code>  1: # mi_to_km converts from miles as an integer or float to kilometers.  
+  2: def mi_to_km ( mi ):
+  3:     conv = 1.60934
+  4:     km = mi * conv
+  5:     return (km)
+  6: 
+  7: # Automated Test
+  8: if __name__ == &quot;__main__&quot;:
+  9:     n_err = 0
+ 10:     x = mi_to_km ( 3 )
+ 11:     if x !=  4.82802:
+ 12:         n_err = n_err + 1
+ 13:         print ( &quot;Error: Test 1: conversion not working, expected {} got {}&quot;.
+ 14:                 format (  4.82802, x ) )
+ 15:     x = mi_to_km ( 0 )
+ 16:     if x != 0:
+ 17:         n_err = n_err + 1
+ 18:         print ( &quot;Error: Test 2: conversion not working, expected {} got {}&quot;.
+ 19:                 format ( 0, x ) )
+ 20: 
+ 21:     if n_err == 0 :
+ 22:         print ( &quot;PASS&quot; )
+ 23:     else:
+ 24:         print ( &quot;FAILED&quot; )
 
 </code></pre>
 
@@ -837,27 +939,35 @@ ol {
 
 <p>This is really a little step in this program - but a really important one for this class..</p>
 
-<pre><code>     1    
-     2    # Author: Philip Schlump
-     3    # Email: pschlump@uwyo.edu
-     4    
-     5    # Main program to read in values and convert from miles (mi) to kilometers (km)
-     6    
-     7    # Step 5 - with function and a test.
-     8    
-     9    import mi_to_km
-    10    
-    11    print ( &quot;Enter Miles&quot; )
-    12    
-    13    miles_str = input()
-    14    miles = int(miles_str)
-    15    
-    16    km = mi_to_km.mi_to_km(miles)
-    17    
-    18    print ( &quot;km = {}&quot;.format(km) )
-    19    
+<pre><code>  1: # Author: Philip Schlump
+  2: # Email: pschlump@uwyo.edu
+  3: 
+  4: # Main program to read in values and convert from miles (mi) to kilometers (km)
+  5: 
+  6: # Step 6 - with function and a test.
+  7: 
+  8: import mi_to_km
+  9: 
+ 10: print ( &quot;Enter Miles&quot; )
+ 11: 
+ 12: miles_str = input()
+ 13: miles = int(miles_str)
+ 14: 
+ 15: km = mi_to_km.mi_to_km(miles)
+ 16: 
+ 17: print ( &quot;km = {}&quot;.format(km) )
 
 </code></pre>
+
+<h2>This is the BEST time ever to be in this field</h2>
+
+<p>Blockchain, Growth, IoT, AI / Machine Larning!</p>
+
+<p><a href="https://youtu.be/eAn_oiZwUXA">https://youtu.be/eAn_oiZwUXA</a></p>
+
+<h1>Copyright</h1>
+
+<p>Copyright &copy; University of Wyoming, 2021-2022.</p>
 
 </div>
 

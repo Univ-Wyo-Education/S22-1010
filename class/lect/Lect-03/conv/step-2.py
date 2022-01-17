@@ -1,10 +1,9 @@
-
-# Step 3 - inline after fixing type
+# Step 2 - will error with type error
 
 print ( "Enter Miles" )
 
-miles_str = input()
-miles = int(miles_str)
+miles = input()
+
 conv = 1.60934
 km = miles * conv
 
