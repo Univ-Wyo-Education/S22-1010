@@ -144,7 +144,6 @@ class.
 |             |          | Variables / Types                       |
 |             |          | *Textbook Chapter 1*                    |
 |             |          |                                         |
-|             |          |                                         |
 | *Week 2*    |          |                                         |
 | Tue Jan 25  | 3        | Code Re usability. `def`.               |
 |             |          | Unit Conversions.  Mikes to km.         |
@@ -153,24 +152,22 @@ class.
 |             |          | How computers represent data.           |
 |             |          | *Textbook Chapter 2*                    |
 |             |          |                                         |
-| Thr Jan 27   | 4        | Lists.  Data Structures.                |
+| Thr Jan 27  | 4        | Lists.  Data Structures.                |
 |             |          | Files, Modules.                         |
 |             |          | Input / Output in Python.               |
 |             |          | Use of Command Line                     |
 |             |          | *Textbook Chapter 3*                    |
 |             |          |                                         |
-|             |          |                                         |
 | *Week 3*    |          |                                         |
-| Tue Feb 01   | 5        | How important testing is.               |
+| Tue Feb 01  | 5        | How important testing is.               |
 |             |          | Testing Code                            |
 |             |          | Automated Testing                       |
 |             |          | Formal Verification                     |
 |             |          | *Textbook Chapter 11 - Testing*         |
 |             |          |                                         |
-| Thr Feb 03   | 6        | More on Lists, Dictionaries Maps.       |
+| Thr Feb 03  | 6        | More on Lists, Dictionaries Maps.       |
 |             |          | Very basic use of Git.                  |
 |             |          | *Textbook Chapter 4*                    |
-|             |          |                                         |
 |             |          |                                         |
 | *Week 4*    |          |                                         |
 | Tue Feb 08  | 7        | Control Flow / If Statements            |
@@ -181,7 +178,6 @@ class.
 |             |          | Outside Data - Pandas                   |
 |             |          | *Textbook Chapter 6*                    |
 |             |          |                                         |
-|             |          |                                         |
 | *Week 5*    |          |                                         |
 | Tue Feb 15  | 9        | Dictionaries                            |
 |             |          | How DNA encodes proteins.               |
@@ -191,9 +187,6 @@ class.
 | Thr Feb 17  |          | NO CLASS (You may have a pre-recorded video) |
 |             |          | Yes you still have lab(s).              |
 |             |          |                                         |
-|             |          |                                         |
-|             |          |                                         |
-|             |          |                                         |
 | *Week 6*    |          |                                         |
 | Tue Feb 22  | 10       | String Processing.  Representation.     |
 |             |          | Searching Genetic Data.                 |
@@ -202,12 +195,10 @@ class.
 | Thr Feb 24  | 11       | Functions / Recursion                   |
 |             |          | *Textbook Chapter 8*                    |
 |             |          |                                         |
-|             |          |                                         |
 | *Week 7*    |          |                                         |
 | Tue Mar 01  | 12       | Midterm Review.                         |
 |             |          |                                         |
 | Thr Mar 03  | 13       | Midterm Test                            |
-|             |          |                                         |
 |             |          |                                         |
 | *Week 8*    |          |                                         |
 | Tue Mar 08  | 14       | Object Oriented Programming.            |
@@ -222,16 +213,13 @@ class.
 | Mar-10      |          | Spring Break - No Class                 |
 |  to Mar-18  |          |                                         |
 |             |          |                                         |
-|             |          |                                         |
 | *Week 9*    | 16       | Understanding data.                     |
 | Tue Mar 22  |          | Data Engineering.                       |
 |             |          | What is TensorFLow (TF) what is a       |
 |             |          | Tensor.                                 |
 |             |          |                                         |
-|             |          |                                         |
 | Thr Mar 24  | 17       | Example of Classification.              |
 |             |          | Uses of ML in the real world.           |
-|             |          |                                         |
 |             |          |                                         |
 | *Week 10*   | 18       | Overfit and Underfit.                   |
 | Tue Mar 29  |          | Using Pandas and NumPy.                 |
@@ -240,6 +228,7 @@ class.
 |             |          | Managing data.  Image data.             |
 |             |          | Test data. CSV files.                   |
 |             |          |                                         |
+|             |          |                    |
 |             |          |                                         |
 | *Week 11*   | 20       | Limitations of Machine Learning.        |
 | Tue Apr 05  |          | "You are a Thing and I Love You"        |
@@ -248,32 +237,25 @@ class.
 |             |          |                                         |
 | Thr Apr 07  | 21       | ML and future of work.                  |
 |             |          |                                         |
-|             |          |                                         |
-|             |          |                                         |
 | *Week 12*   | 22       | Regression with TF.                     |
 | Tue Apr 12  |          | Predicting Housing Prices.              |
 |             |          |                                         |
 | Thr Apr 14  | 23       | Real world example of ML.               |
-|             |          |                                         |
-|             |          |                                         |
 |             |          |                                         |
 | *Week 13*   | 24       | Text Classification with TF Hub.        |
 | Tue Apr 19  |          | Reuse of Models.                        |
 |             |          |                                         |
 | Thr Apr 21  | 25       | ML and Privacy.                         |
 |             |          |                                         |
-|             |          |                                         |
 | *Week 14*   | 27       | Sentiment Analysis.                     |
 | Tue Apr 26  |          |                                         |
 |             |          |                                         |
 | Thr Apr 28  | 28       | Computer Security / Authentication.     |
 |             |          |                                         |
-|             |          |                                         |
 | *Week 15*   | 29       | Blockchain and economic impact.         |
 | Tue May 03  |          | Future of Computing.                    |
 |             |          |                                         |
 | Thr May 05  | 30       | Final Review.                           |
-|             |          |                                         |
 
 
 
@@ -288,24 +270,23 @@ This is the schedule for the lab.  Lab assignments should be turned
 in during lab but you have until the following Monday at midnight
 to get them turned in.  They are uploaded to the wyoweb (instructure) site.
 
-xyzzy
 
 | Date           | Week | Description                              |
 |----------------|------|------------------------------------------|
 | *Week 2*       |      |                                          |
-| Aug 31, Sep 2, | 2    | Installation of Python, Compeer Setup    |
-| Sep 3          |      | Hello World Program.                     |
+| Jan 25, Jan 27 | 2    | Installation of Python, Compeer Setup    |
+|                |      | Hello World Program.                     |
 |                |      | Lab Goal: Be able to edit a file.        |
 |                |      | Lab Goal: Be able to write a program.    |
 |                |      |                                          |
 | *Week 3*       |      |                                          |
-| Sep 7, 9, 10   | 3    | File System.                             |
+| Feb 1, 3       | 3    | File System.                             |
 |                |      | Editing Text Files.                      |
 |                |      | Lab Goal: Be able to write a program.    |
 |                |      | 1st part of Unit Conversion.             |
 |                |      |                                          |
 | *Week 3*       |      |                                          |
-| Sep 14, 16, 17 | 3    | Solar System Distances Lab.              |
+| Feb 7, 8       | 3    | Solar System Distances Lab.              |
 |                |      | Lab Write and Test 2 Program(s).         |
 |                |      | Get output of Test.                      |
 |                |      | Run Programs to answer Lab Questions.    |
@@ -314,53 +295,40 @@ xyzzy
 |                |      |                                          |
 |                |      |                                          |
 | *Week 4*       | 4    | CSV reading and a Dictionary             |
-| Sep 21, 23, 24 |      | Basic use of Git/Github.com              |
+| Feb 15, 27     |      | Basic use of Git/Github.com              |
 |                |      |                                          |
-|                |      |                                          |
-| *Week 5*       | 5    | SQLite3 Data Analysis                    |
-| Sep 28, 30,    |      |                                          |
-| Oct 1          |      | Pull out data.  Draw Graphs.             |
-|                |      |                                          |
+| *Week 5*       | 5    | Data Analysis                            |
+| Feb 22, 24     |      |                                          |
+|                |      | Pull out data.  Draw Graphs.             |
 |                |      |                                          |
 | *Week 6*       | 6    | Search Genetic Data.                     |
-| Oct 5, 7, 8    |      | Determine if Steffie Lee has CF.         |
-|                |      |                                          |
+| Mar 1, 3       |      | Determine if Steffie Lee has CF.         |
 |                |      |                                          |
 | *Week 7*       | 7    | Recursive Calculation                    |
-| Oct 12, 14, 15 |      | Calculate Fibonacci                      |
+| Mar 8, 10      |      | Calculate Fibonacci                      |
 |                |      | Find the largest value in a list.        |
 |                |      |                                          |
-|                |      |                                          |
 | *Week 8*       | 8    | A simple form with a web page and form.  |
-| Oct 19, 21, 22 |      | Render a page with a form.               |
-|                |      | POST - save data to SQLite3.             |
-|                |      |                                          |
+| Mar 15, 18     |      | Render a page with a form.               |
 |                |      |                                          |
 | *Week 9*       | 9    | Tensor Flow Install - Hello World        |
-| Oct 26, 28, 29 |      | Basic test of TensorFlow                 |
+| Mar 22, 24     |      | Basic test of TensorFlow                 |
 |                |      | Read some data, draw a graph.            |
 |                |      |                                          |
-|                |      |                                          |
 | *Week 10*      | 10   | Data Analysis                            |
-| Nov 2, 4, 5    |      |                                          |
-|                |      |                                          |
+| Mar 29, 31     |      |                                          |
 |                |      |                                          |
 | *Week 11*      | 11   | Image Classification                     |
-| Nov 9, 11, 12  |      |                                          |
-|                |      |                                          |
+| Apr 5, 7       |      |                                          |
 |                |      |                                          |
 | *Week 12*      | 12   | Hand Writing Analysis                    |
-| Nov 16, 18, 19 |      |                                          |
-|                |      |                                          |
+| Apr 12, 14     |      |                                          |
 |                |      |                                          |
 | *Week 13*      | 13   | Sentiment Analysis.                      |
-| Nov 30,        |      | Compeer Security Worksheet.              |
-| Dec 2,3        |      |                                          |
-|                |      |                                          |
+| Apr 19, 21     |      | Compeer Security Worksheet.              |
 |                |      |                                          |
 | *Week 14*      | 14   | TBD.  Makeup lab?                        |
-| Dec 7, 9, 10   |      |                                          |
-|                |      |                                          |
+| Apr, 26, 28    |      |                                          |
 
 
 
@@ -377,54 +345,51 @@ xyzzy
 Note that the lab would be the week prior to this due date.  It is preferred
 if you get your lab work done and turned in during the lab.  
 
-xyzzy
-
 | Assignment # | Date Due   | Pts  |  Description                                       |
 |--------------|------------|------|----------------------------------------------------|
-| 1            | Mon Sep 6  | 100  | Lab 1: Hello World in Python                       |
+| 1            | Mon Jan 31  | 100  | Lab 1: Hello World in Python                      |
 |              |            |      | Due as a part of your lab.                         |
 |              |            |      |                                                    |
-| 2            | Mon Sep 13 | 100  | Assignment 2: Distance to Planets (with test code) |
+| 2            | Mon Feb 7  | 100  | Assignment 2: Distance to Planets (with test code) |
 |              |            | 100  | Lab 3: Planet/Star Distances questions Due.        |
 |              |            |      | Due as a part of your lab.                         |
 |              |            |      |                                                    |
-| 3            | Mon Sep 20 | 100  | Assignment 3: Count the words in a file.           |
+| 3            | Mon Feb 14 | 100  | Assignment 3: Count the words in a file.           |
 |              |            | 100  | Lab 3: Use git to get to some files.               |
 |              |            |      |                                                    |
-| 4            | Mon Sep 27 | 100  | Assignment 3: Read in a list and search it.        |
+| 4            | Mon Feb 21 | 100  | Assignment 3: Read in a list and search it.        |
 |              |            | 100  | Lab 4: Setup and use git and a branch.             |
 |              |            |      |                                                    |
-| 5            | Mon Oct 4  | 100  | Sort and Search data. Read csv, sort, output.      |
+| 5            | Mon Feb 28 | 100  | Sort and Search data. Read csv, sort, output.      |
 |              |            | 100  | Lab 5: Read/Edit CSV file.  File formats.          |
 |              |            |      | Using a text editor (vim)                          |
 |              |            |      |                                                    |
-| 6            | Mon Oct 11 | 100  | Search genetic data.                               |
+| 6            | Mon Mar 7  | 100  | Search genetic data.                               |
 |              |            | 100  | Lab 6: Convert genetic codes to proteins.          |
 |              |            |      |                                                    |
-| 7            | Mon Oct 18 | 100  | Recursion Calculating Fibinachi Numbers            |
+| 7            | Mon Mar 14 | 100  | Recursion Calculating Fibinachi Numbers            |
 |              |            | 100  | Lab 7: Recursive sort - quicksort.                 |
 |              |            |      |                                                    |
-| 8            | Mon Oct 26 | 100  | Web server - Serve simple page with bottle.        |
+| 8            | Mon Mar 21 | 100  | Web server - Serve simple page with bottle.        |
 |              |            | 100  | Lab 8: Better HTML and CSS.                        |
 |              |            |      |                                                    |
-| 9            | Mon Nov 1  | 100  | OOP - why and how - Battery Management System.     |
+| 9            | Mon Mar 28 | 100  | OOP - why and how - Battery Management System.     |
 |              |            | 100  | Lab 9: Tensor Flow Install and test.               |
 |              |            |      |                                                    |
-| 10           | Mon Nov 8  | 100  | Data analysis and graphs.  Regression.             |
+| 10           | Mon Apr 4  | 100  | Data analysis and graphs.  Regression.             |
 |              |            | 100  | Lab 10: Correlation is not causation.              |
 |              |            |      |                                                    |
-| 11           | Mon Nov 15 | 100  | Image Clasification.                               |
-|              |            | 100  | Lab 11: xImage Clasification.                      |
+| 11           | Mon Apr 11 | 100  | Image Classification.                              |
+|              |            | 100  | Lab 11: xImage Classification.                     |
 |              |            |      |                                                    |
-| 12           | Mon Nov 22 | 100  | Hand writing analysis.                             |
+| 12           | Mon Apr 18 | 100  | Hand writing analysis.                             |
 |              |            | 100  | Lab 12: Hand writing analysis.                     |
 |              |            |      |                                                    |
-| 13           | Mon Nov 29 | 100  | Web Scraping.                                      |
-|              |            | 100  | Lab 13: Using Web Sceraping for Sentiment.         |
+| 13           | Mon Apr 25 | 100  | Web Scraping.                                      |
+|              |            | 100  | Lab 13: Using Web Scraping for Sentiment.          |
 |              |            |      |                                                    |
-| 14           | Mon Dec 6  | 200  | Sentiment Analysis.                                |
+| 14           | Mon May 2  | 200  | Sentiment Analysis.                                |
 |              |            | 100  | Lab 14: Sentiment Analysis.                        |
-|              |            |      |                                                    |
 |              |            |      |                                                    |
 | Total        |            | 2800 |                                                    |
 
