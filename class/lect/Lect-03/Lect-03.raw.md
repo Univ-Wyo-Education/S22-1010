@@ -4,13 +4,8 @@ m4_include(../../../setup.m4)
 
 ## Overview
 
-You may want to refer back to the record video of this is lecture if you want to go back
-to it.  We are going to cover a bunch of stuff - that is in
-a lot of chapters in the book, 1, 2, 3, some 4, some 5, some 6 and
-some 7 all in one set of examples.
-
-Also the lecture notes are online in the lect-02 github.
-[https://github.com/Univ-Wyo-Education/F21-1010/tree/main/class/lect/Lect-02](https://github.com/Univ-Wyo-Education/F21-1010/tree/main/class/lect/Lect-02)
+Also the lecture notes are online in the Lect-03 github.
+[https://github.com/Univ-Wyo-Education/S22-1010/tree/main/class/lect/lect-03](https://github.com/Univ-Wyo-Education/S22-1010/tree/main/class/lect/Lect-03)
 
 There is a ./conv directory that has a series of steps where you can 
 go back to this and see the code as I develop it.
@@ -62,10 +57,7 @@ innate - it is a talent.   Programming is a set of skills.
 
 1. Files and Directories
 2. Editing
-3. Operators, `*` is multiply.
-4. Other operators like `+`, `-`, `/`, `%`, and unary `-`.  There are more.
 5. `def` code reusability
-6. Float, int and string data types
 7. Basic testing
 8. Functions - parameters - return values
 9. if
@@ -75,18 +67,14 @@ innate - it is a talent.   Programming is a set of skills.
 13. Indentation
 14. a = a + 1 - not algebra
 15. Files
-16. Import of files
-17. Input
-18. Output
-19. Formatting of output
 20. Patterns in code
-21. Fast and Slow Learning
 
 
 ## Requirements
 
-Implement a python function that will convert from miles to 
-kilometers and return that value.
+Implement a python function that will convert from size of sun to 
+the size of a tennis ball (2.75 inches) and return that value.
+Input should be in miles, output in inches.
 
 Implement a program that will use the function, prompt for
 input in miles and then print out the result in kilometers.
@@ -148,12 +136,6 @@ This is really a little step in this program - but a really important one for th
 ```
 m4_include(conv/step-6.py.nu)
 ```
-
-## This is the BEST time ever to be in this field
-
-Blockchain, Growth, IoT, AI / Machine Larning!
-
-[https://youtu.be/eAn_oiZwUXA](https://youtu.be/eAn_oiZwUXA)
 
 # Copyright
 
