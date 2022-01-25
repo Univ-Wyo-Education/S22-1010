@@ -1,12 +1,12 @@
 # Step 5 - with function and a test.
 
-import mi_to_km
+import conv_mi_to_inch
 
 print ( "Enter Miles" )
 
 miles_str = input()
-miles = int(miles_str)
+miles = float(miles_str)
 
-km = mi_to_km.mi_to_km(miles)
+inch = conv_mi_to_inch.mi_to_inch(miles)
 
-print ( "km = {}".format(km) )
+print ( "inch = {}".format(inch) )

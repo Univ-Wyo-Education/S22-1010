@@ -4,7 +4,7 @@
   4: 
   5: miles = input()
   6: 
-  7: conv = 1.60934
-  8: km = miles * conv
+  7: conv = 5280 * 12
+  8: inch = miles * conv
   9: 
- 10: print ( "km = {}".format(km) )
+ 10: print ( "inch = {}".format(inch) )

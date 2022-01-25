@@ -83,6 +83,7 @@ innate - it is a talent.   Programming is a set of skills.
 14. a = a + 1 - not algebra
 15. Files
 20. Patterns in code
+21. Better testing
 
 
 ## Requirements
@@ -94,9 +95,20 @@ Input should be in miles, output in inches.
 Implement a program that will use the function, prompt for
 input in miles and then print out the result in kilometers.
 
+## Step 0
+
+Break the problem down.  
+
+When we start with the
+sun in miles and the tennis ball in inches - we have to have
+a common unit.  
+To do this we need a conversion
+capability from miles into inches.  
+
+
 ## Step 1
 
-Convert from miles to kilometers.
+Convert from miles to inches.
 
 Conversion generally is ( ( X + k1 ) * C ) + k2
 
@@ -108,8 +120,10 @@ In our case k1 and k2 are 0.  So we just get X * C
   1: # Step 1 - constants
   2: 
   3: miles = 3
-  4: conv = 1.60934
-  5: km = miles * conv
+  4: conv = 5280 * 12
+  5: inch = miles * conv
+  6: print ( inch )
+  7: 
 
 ```
 
@@ -126,10 +140,10 @@ In our case k1 and k2 are 0.  So we just get X * C
   4: 
   5: miles = input()
   6: 
-  7: conv = 1.60934
-  8: km = miles * conv
+  7: conv = 5280 * 12
+  8: inch = miles * conv
   9: 
- 10: print ( "km = {}".format(km) )
+ 10: print ( "inch = {}".format(inch) )
 
 ```
 
@@ -141,11 +155,11 @@ In our case k1 and k2 are 0.  So we just get X * C
   3: print ( "Enter Miles" )
   4: 
   5: miles_str = input()
-  6: miles = int(miles_str)
-  7: conv = 1.60934
-  8: km = miles * conv
+  6: miles = float(miles_str)
+  7: conv = 5280 * 12
+  8: inch = miles * conv
   9: 
- 10: print ( "km = {}".format(km) )
+ 10: print ( "inch = {}".format(inch) )
 
 ```
 
@@ -154,19 +168,19 @@ In our case k1 and k2 are 0.  So we just get X * C
 ```
   1: # Step 4 - After making a function
   2: 
-  3: def mi_to_km ( mi ):
-  4:     conv = 1.60934
-  5:     km = mi * conv
-  6:     return (km)
+  3: def mi_to_inch ( mi ):
+  4:     conv = 5280 * 12
+  5:     inch = mi * conv
+  6:     return (inch)
   7: 
   8: print ( "Enter Miles" )
   9: 
  10: miles_str = input()
- 11: miles = int(miles_str)
+ 11: miles = float(miles_str)
  12: 
- 13: km = mi_to_km(miles)
+ 13: inch = mi_to_inch(miles)
  14: 
- 15: print ( "km = {}".format(km) )
+ 15: print ( "inch = {}".format(inch) )
 
 ```
 
@@ -177,37 +191,37 @@ step-5.py:
 ```
   1: # Step 5 - with function and a test.
   2: 
-  3: import mi_to_km
+  3: import conv_mi_to_inch
   4: 
   5: print ( "Enter Miles" )
   6: 
   7: miles_str = input()
-  8: miles = int(miles_str)
+  8: miles = float(miles_str)
   9: 
- 10: km = mi_to_km.mi_to_km(miles)
+ 10: inch = conv_mi_to_inch.mi_to_inch(miles)
  11: 
- 12: print ( "km = {}".format(km) )
+ 12: print ( "inch = {}".format(inch) )
 
 ```
 
 conv/mi_to_km.py:
 
 ```
-  1: # mi_to_km converts from miles as an integer or float to kilometers.  
-  2: def mi_to_km ( mi ):
-  3:     conv = 1.60934
-  4:     km = mi * conv
-  5:     return (km)
+  1: # mi_to_in converts from miles as an integer or float to inches.  
+  2: def mi_to_inch ( mi ):
+  3:     conv = 5280 * 12
+  4:     inch = mi * conv
+  5:     return (inch)
   6: 
   7: # Automated Test
   8: if __name__ == "__main__":
   9:     n_err = 0
- 10:     x = mi_to_km ( 3 )
- 11:     if x !=  4.82802:
+ 10:     x = mi_to_inch ( 3 )
+ 11:     if x !=  190080.0: # is equal to 5280 * 12 * 3
  12:         n_err = n_err + 1
  13:         print ( "Error: Test 1: conversion not working, expected {} got {}".
  14:                 format (  4.82802, x ) )
- 15:     x = mi_to_km ( 0 )
+ 15:     x = mi_to_inch ( 0 )
  16:     if x != 0:
  17:         n_err = n_err + 1
  18:         print ( "Error: Test 2: conversion not working, expected {} got {}".
@@ -228,22 +242,47 @@ This is really a little step in this program - but a really important one for th
   1: # Author: Philip Schlump
   2: # Email: pschlump@uwyo.edu
   3: 
-  4: # Main program to read in values and convert from miles (mi) to kilometers (km)
+  4: # Main program to read in values and convert from miles (mi) to kilometers (inch)
   5: 
   6: # Step 6 - with function and a test.
   7: 
-  8: import mi_to_km
+  8: import conv_mi_to_inch
   9: 
  10: print ( "Enter Miles" )
  11: 
  12: miles_str = input()
- 13: miles = int(miles_str)
+ 13: miles = float(miles_str)
  14: 
- 15: km = mi_to_km.mi_to_km(miles)
+ 15: inch = conv_mi_to_inch.mi_to_inch(miles)
  16: 
- 17: print ( "km = {}".format(km) )
+ 17: print ( "inch = {}".format(inch) )
 
 ```
+
+And our final version
+
+```
+  1: # Author: Philip Schlump
+  2: # Email: pschlump@uwyo.edu
+  3: 
+  4: # Main program to read in values and convert from miles (mi) to kilometers (inch)
+  5: 
+  6: # Step 6 - with function and a test.
+  7: 
+  8: import conv_mi_to_inch
+  9: 
+ 10: print ( "Enter Miles" )
+ 11: 
+ 12: miles_str = input()
+ 13: miles = float(miles_str)
+ 14: 
+ 15: inch = conv_mi_to_inch.mi_to_inch(miles)
+ 16: 
+ 17: print ( "inch = {}".format(inch) )
+
+```
+
+
 
 # Copyright
 

@@ -3,8 +3,8 @@
   3: print ( "Enter Miles" )
   4: 
   5: miles_str = input()
-  6: miles = int(miles_str)
-  7: conv = 1.60934
-  8: km = miles * conv
+  6: miles = float(miles_str)
+  7: conv = 5280 * 12
+  8: inch = miles * conv
   9: 
- 10: print ( "km = {}".format(km) )
+ 10: print ( "inch = {}".format(inch) )

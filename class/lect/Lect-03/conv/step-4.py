@@ -1,15 +1,15 @@
 # Step 4 - After making a function
 
-def mi_to_km ( mi ):
-    conv = 1.60934
-    km = mi * conv
-    return (km)
+def mi_to_inch ( mi ):
+    conv = 5280 * 12
+    inch = mi * conv
+    return (inch)
 
 print ( "Enter Miles" )
 
 miles_str = input()
-miles = int(miles_str)
+miles = float(miles_str)
 
-km = mi_to_km(miles)
+inch = mi_to_inch(miles)
 
-print ( "km = {}".format(km) )
+print ( "inch = {}".format(inch) )

@@ -3,8 +3,8 @@
 print ( "Enter Miles" )
 
 miles_str = input()
-miles = int(miles_str)
-conv = 1.60934
-km = miles * conv
+miles = float(miles_str)
+conv = 5280 * 12
+inch = miles * conv
 
-print ( "km = {}".format(km) )
+print ( "inch = {}".format(inch) )

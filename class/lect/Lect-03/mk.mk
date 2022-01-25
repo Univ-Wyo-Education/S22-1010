@@ -1,14 +1,20 @@
 
 PP=`pwd`
 FN=Lect-03
-FN2=differences-between-us-and-machines
-FN3=intellegence
-FN4=security
+# DIR=../F20-1015
 DIR=../../../
 IMG=
-PY= 
+PY= Makefile \
+	conv/conv_mi_to_mi.py \
+	conv/conv_main.py \
+	conv/step-1.py \
+	conv/step-2.py \
+	conv/step-3.py \
+	conv/step-4.py \
+	conv/step-5.py \
+	conv/step-6.py
 
-all: all0 ${FN}.html ${FN2}.html ${FN3}.html ${FN4}.html 
+all: all0 ${FN}.html 
 
 all0:
 	../mk_all_nu.sh

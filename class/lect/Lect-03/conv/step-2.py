@@ -4,7 +4,7 @@ print ( "Enter Miles" )
 
 miles = input()
 
-conv = 1.60934
-km = miles * conv
+conv = 5280 * 12
+inch = miles * conv
 
-print ( "km = {}".format(km) )
+print ( "inch = {}".format(inch) )

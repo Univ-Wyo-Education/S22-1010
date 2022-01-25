@@ -68,6 +68,7 @@ innate - it is a talent.   Programming is a set of skills.
 14. a = a + 1 - not algebra
 15. Files
 20. Patterns in code
+21. Better testing
 
 
 ## Requirements
@@ -79,9 +80,20 @@ Input should be in miles, output in inches.
 Implement a program that will use the function, prompt for
 input in miles and then print out the result in kilometers.
 
+## Step 0
+
+Break the problem down.  
+
+When we start with the
+sun in miles and the tennis ball in inches - we have to have
+a common unit.  
+To do this we need a conversion
+capability from miles into inches.  
+
+
 ## Step 1
 
-Convert from miles to kilometers.
+Convert from miles to inches.
 
 Conversion generally is ( ( X + k1 ) * C ) + k2
 
@@ -126,7 +138,7 @@ m4_include(conv/step-5.py.nu)
 conv/mi_to_km.py:
 
 ```
-m4_include(conv/mi_to_km.py.nu)
+m4_include(conv/conv_mi_to_inch.py.nu)
 ```
 
 ## Step 6 - Add documentation
@@ -136,6 +148,14 @@ This is really a little step in this program - but a really important one for th
 ```
 m4_include(conv/step-6.py.nu)
 ```
+
+And our final version
+
+```
+m4_include(conv/conv_main.py.nu)
+```
+
+
 
 # Copyright
 
