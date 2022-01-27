@@ -33,7 +33,7 @@
  33: print ( "Moon in TB 1000/th-of-Inches {}".format(moon_in_tb_1000) )
  34: 
  35: sirius_in_ly = 8.611
- 36: ly_to_mi = 5.879e12
+ 36: ly_to_mi = 5878612843200
  37: sirius_in_mi = sirius_in_ly * ly_to_mi 
  38: 
  39: sirius_in_inch = conv_mi_to_inch.mi_to_inch ( sirius_in_mi )

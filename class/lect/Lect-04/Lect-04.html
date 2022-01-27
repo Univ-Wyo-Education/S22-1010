@@ -723,7 +723,13 @@ ol {
 }
 </style>
 
-<h1>Lecture 4 -</h1>
+<h1>Lecture 4 - Scale model of the solar system and beoynd</h1>
+
+<p>Common model of Solar System: <br>
+<img src="Planets2008.jpg" alt="Planets2008.jpg" /></p>
+
+<p>Beautiful model <br>
+<img src="Planetarium_in_Putnam_Gallery_2-2009-11-24.jpg" alt="Planetarium_in_Putnam_Gallery_2-2009-11-24.jpg" /></p>
 
 <h2>Data</h2>
 
@@ -736,6 +742,221 @@ ol {
 <p>463.81 million mi - Jupiter to Sun</p>
 
 <p>920.1 million mi - Saturn to Sun</p>
+
+<p>Jupiter/Diameter 86,881 miles</p>
+
+<p>Saturn/Diameter 72,367 miles</p>
+
+<pre><code>  1: 
+  2: import conv_mi_to_inch
+  3: 
+  4: sun_in_mi = 865370
+  5: tb_in_in = 2.75
+  6: earth_in_mi = 7917.5
+  7: moon_in_mi = 2159.1
+  8: 
+  9: sun_in_inch = conv_mi_to_inch.mi_to_inch ( sun_in_mi )
+ 10: 
+ 11: print ( &quot;Diameter of Sun in Inches = {}&quot;.format(sun_in_inch) )
+ 12: 
+ 13: conv_sun_to_tb = sun_in_inch / tb_in_in
+ 14: 
+ 15: print ( &quot;Conversion Factor  {}&quot;.format(conv_sun_to_tb) )
+ 16: 
+ 17: earth_in_inch = conv_mi_to_inch.mi_to_inch ( earth_in_mi )
+ 18: 
+ 19: earth_in_tb = earth_in_inch / conv_sun_to_tb 
+ 20: 
+ 21: earth_in_tb_1000 = earth_in_tb * 1000
+ 22: 
+ 23: print ( &quot;Earth in TB Inches {}&quot;.format(earth_in_tb) )
+ 24: print ( &quot;Earth in TB 1000/th-of-Inches {}&quot;.format(earth_in_tb_1000) )
+ 25: 
+ 26: moon_in_inch = conv_mi_to_inch.mi_to_inch ( moon_in_mi )
+ 27: 
+ 28: moon_in_tb = moon_in_inch / conv_sun_to_tb 
+ 29: 
+ 30: moon_in_tb_1000 = moon_in_tb * 1000
+ 31: 
+ 32: print ( &quot;Moon in TB Inches {}&quot;.format(moon_in_tb) )
+ 33: print ( &quot;Moon in TB 1000/th-of-Inches {}&quot;.format(moon_in_tb_1000) )
+ 34: 
+ 35: sirius_in_ly = 8.611
+ 36: ly_to_mi = 5878612843200
+ 37: sirius_in_mi = sirius_in_ly * ly_to_mi 
+ 38: 
+ 39: sirius_in_inch = conv_mi_to_inch.mi_to_inch ( sirius_in_mi )
+ 40: 
+ 41: sirius_in_tb = sirius_in_inch / conv_sun_to_tb 
+ 42: 
+ 43: sirius_in_tb_miles = sirius_in_tb / ( 5280 * 12 )
+ 44: 
+ 45: print ( &quot;Sirius in TB Units (miles) = {}&quot;.format ( sirius_in_tb_miles ) )
+ 46: 
+
+</code></pre>
+
+<p>To run this :</p>
+
+<pre><code>$ python conv-factor.py
+</code></pre>
+
+<p>To put the output in a file:</p>
+
+<pre><code>$ python conv-factor.py &gt; conv-factor.out
+</code></pre>
+
+<p>And the Output:</p>
+
+<pre><code>Diameter of Sun in Inches = 54829843200
+Conversion Factor  19938124800.0
+Earth in TB Inches 0.025160480488114912
+Earth in TB 1000/th-of-Inches 25.160480488114914
+Moon in TB Inches 0.006861255878988178
+Moon in TB 1000/th-of-Inches 6.861255878988178
+Sirius in TB Units (miles) = 2538.891480546616
+</code></pre>
+
+<p>Important:</p>
+
+<p><em>Conversion Factor  19938124800.0</em></p>
+
+<pre><code># inch_to_tb converts from miles as an integer or float to tb.  
+def inch_to_tb ( mi ):
+    conv = 19938124800
+    inch = mi / conv
+    return (inch)
+</code></pre>
+
+<h2>How computers represent stuff</h2>
+
+<p>At a low level computers represent everything as an electrical signal
+that is either on or off.</p>
+
+<p>We collect sets of these electrical signals and usually consider off
+to be a 0 and on to be a 1.  (Not always sometimes on is a 0 and off
+is a 1).</p>
+
+<p>In sets these on/off values of 0/1 are used to make bigger numbers.
+All of this is in base 2.  Base 2 has digits 0 and 1.  Base 10 has
+0 to 9.   Most humans are familiar with base 10 and base 60.
+The clock on the wall is base 60 - there are 60 minutes to the hour
+and 60 seconds to the minute.  Computers use base 2.</p>
+
+<p>So if I have a base 10 number, let&rsquo;s say 13 then it is going to
+take more 0&rsquo;s and 1&rsquo;s to represent it in binary.</p>
+
+<table>
+<thead>
+<tr>
+<th>Base 10</th>
+<th>Base 2</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>0</td>
+<td>0 0 0 0</td>
+</tr>
+
+<tr>
+<td>1</td>
+<td>0 0 0 1</td>
+</tr>
+
+<tr>
+<td>2</td>
+<td>0 0 1 0</td>
+</tr>
+
+<tr>
+<td>3</td>
+<td>0 0 1 1</td>
+</tr>
+
+<tr>
+<td>4</td>
+<td>0 1 0 0</td>
+</tr>
+
+<tr>
+<td>5</td>
+<td>0 1 0 1</td>
+</tr>
+
+<tr>
+<td>6</td>
+<td>0 1 1 0</td>
+</tr>
+
+<tr>
+<td>7</td>
+<td>0 1 1 1</td>
+</tr>
+
+<tr>
+<td>8</td>
+<td>1 0 0 0</td>
+</tr>
+
+<tr>
+<td>9</td>
+<td>1 0 0 1</td>
+</tr>
+
+<tr>
+<td>10</td>
+<td>1 0 1 0</td>
+</tr>
+
+<tr>
+<td>11</td>
+<td>1 0 1 1</td>
+</tr>
+
+<tr>
+<td>12</td>
+<td>1 1 0 0</td>
+</tr>
+
+<tr>
+<td>13</td>
+<td>1 1 0 0</td>
+</tr>
+
+<tr>
+<td>14</td>
+<td>1 1 1 0</td>
+</tr>
+
+<tr>
+<td>15</td>
+<td>1 1 1 1</td>
+</tr>
+</tbody>
+</table>
+
+<p>Computers only have signals that are on/off - that is it.
+So characters are represented as numbers.  The letter &lsquo;a&rsquo;
+is encoded as a numeric value.  In the most popular encoding
+&lsquo;a&rsquo; is a 97 in decimal.  &lsquo;b&rsquo; is a 98.  So in a certain way
+<code>'a' + 1 == 'b'</code></p>
+
+<p>Bigger numbers require more bits to represent.  The computers
+that we commonly use have 64 bits for numbers.  Since lots of
+people want to represent negative numbers we take 1 bit and
+make it the sign bit, leaving 63 bits for the number.</p>
+
+<p>Floating point numbers are represented as two parts.
+First is the exponent.  The second is the number.  Each
+has a sign bit.  Roughly 53 bits are for the number and
+11 to 12 bits are for the exponent.</p>
+
+<p>This has lots of implications.</p>
+
+<p>The string &ldquo;12&rdquo; is not the same as the integer 12
+and is not the same as the float 12.0.</p>
 
 </div>
 

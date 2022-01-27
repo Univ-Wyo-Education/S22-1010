@@ -1,4 +1,4 @@
-  1: # mi_to_in converts from miles as an integer or float to inches.  
+  1: # mi_to_inch converts from miles as an integer or float to inches.  
   2: def mi_to_inch ( mi ):
   3:     conv = 5280 * 12
   4:     inch = mi * conv

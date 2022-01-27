@@ -11,7 +11,7 @@ if __name__ == "__main__":
     if x !=  190080.0: # is equal to 5280 * 12 * 3
         n_err = n_err + 1
         print ( "Error: Test 1: conversion not working, expected {} got {}".
-                format (  4.82802, x ) )
+                format (  190080.0, x ) )
     x = mi_to_inch ( 0 )
     if x != 0:
         n_err = n_err + 1

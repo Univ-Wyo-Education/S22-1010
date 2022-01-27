@@ -1,6 +1,12 @@
 # Author: Philip Schlump
 # Email: pschlump@uwyo.edu
 
+"""
+This is a comment
+that is on more than 
+one line
+"""
+
 # Main program to read in values and convert from miles (mi) to kilometers (inch)
 
 # Step 6 - with function and a test.
