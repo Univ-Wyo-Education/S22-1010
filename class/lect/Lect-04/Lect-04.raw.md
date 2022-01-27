@@ -2,6 +2,8 @@ m4_include(../../../setup.m4)
 
 # Lecture 4 - Scale model of the solar system and beoynd
 
+## Thu Jan 27 2022
+
 Common model of Solar System: <br>
 ![Planets2008.jpg](Planets2008.jpg)
 
