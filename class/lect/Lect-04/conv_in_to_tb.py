@@ -1,18 +1,18 @@
-# mi_to_inch converts from miles as an integer or float to inches.  
-def mi_to_inch ( mi ):
+# inch_to_tb converts from miles as an integer or float to inches.  
+def inch_to_tb ( mi ):
     conv = 5280 * 12
-    inch = mi / conv
+    inch = mi * conv
     return (inch)
 
 # Automated Test
 if __name__ == "__main__":
     n_err = 0
-    x = mi_to_inch ( 3 )
+    x = inch_to_tb ( 3 )
     if x !=  190080.0: # is equal to 5280 * 12 * 3
         n_err = n_err + 1
         print ( "Error: Test 1: conversion not working, expected {} got {}".
                 format (  190080.0, x ) )
-    x = mi_to_inch ( 0 )
+    x = inch_to_tb ( 0 )
     if x != 0:
         n_err = n_err + 1
         print ( "Error: Test 2: conversion not working, expected {} got {}".

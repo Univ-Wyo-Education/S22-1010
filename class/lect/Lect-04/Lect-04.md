@@ -135,6 +135,10 @@ def inch_to_tb ( mi ):
 
 
 
+
+
+
+
 ## How computers represent stuff
 
 At a low level computers represent everything as an electrical signal
