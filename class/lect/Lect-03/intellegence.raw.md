@@ -1,5 +1,7 @@
 
-9 Kinds of Intelligence
+m4_include(../../../setup.m4)
+
+# 9 Kinds of Intelligence
 
 IQ Tests measures the first 2
 
@@ -20,6 +22,9 @@ If you are programming a musical application then you also need 3.
 4 is really important.  This is how you design software - you walk through it in your imagination.
 
 
-https://www.youtube.com/watch?v=oY2C4YgXm7I
+m4_comment([[[
+A much more detailed presentation on this:
 
+https://www.youtube.com/watch?v=oY2C4YgXm7I
+]]])
 

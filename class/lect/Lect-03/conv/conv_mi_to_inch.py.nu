@@ -11,7 +11,7 @@
  11:     if x !=  190080.0: # is equal to 5280 * 12 * 3
  12:         n_err = n_err + 1
  13:         print ( "Error: Test 1: conversion not working, expected {} got {}".
- 14:                 format (  4.82802, x ) )
+ 14:                 format (  190080.0, x ) )
  15:     x = mi_to_inch ( 0 )
  16:     if x != 0:
  17:         n_err = n_err + 1
