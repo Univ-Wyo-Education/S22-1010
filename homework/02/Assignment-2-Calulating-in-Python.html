@@ -728,7 +728,7 @@ ol {
 <p>Due: Mon Feb 7</p>
 
 <p>Points: 200 total.
-Turn in your code and the answers to the 4 questions.</p>
+Turn in your code and the answers to the 6 questions.</p>
 
 <h1>The Solar system and Exoplanets</h1>
 
@@ -745,7 +745,7 @@ inaccuracies.  That is not to say that it is not useful.
 This is useful in showing the relative size and the order
 of the planets in our solar system.</p>
 
-<p>It is way, way, way off in giving you a sence of the scale of
+<p>It is way, way, way off in giving you a sense of the scale of
 the solar system.  In our model we will use the size
 of a tennis ball as our model Sun and then calculate
 the sizes of the planets and distances to other
@@ -823,17 +823,16 @@ Unit conversion errors are a serious thing.  $125 million probe lost because of 
 </tbody>
 </table>
 
-<p>The Sun is 865,370 miles (1,391,400km) in diameter.</p>
+<p>The Sun is 865,370 miles in diameter.</p>
 
 <h2>Planet Distances from the Sun</h2>
-
-<p>xyzzy -</p>
 
 <table>
 <thead>
 <tr>
 <th>Planet</th>
 <th align="right">Distance from Sun (km)</th>
+<th align="right">Distances from sun(miles)</th>
 </tr>
 </thead>
 
@@ -841,44 +840,62 @@ Unit conversion errors are a serious thing.  $125 million probe lost because of 
 <tr>
 <td>Mercury</td>
 <td align="right">57,900,000</td>
+<td align="right">35,977,481</td>
 </tr>
 
 <tr>
 <td>Venus</td>
 <td align="right">108,200,000</td>
+<td align="right">67,232,530</td>
 </tr>
 
 <tr>
 <td>Earth</td>
 <td align="right">149,600,000</td>
+<td align="right">92,957,361</td>
 </tr>
 
 <tr>
 <td>Mars</td>
 <td align="right">227,900,000</td>
+<td align="right">141,610,847</td>
 </tr>
 
 <tr>
 <td>Jupiter</td>
 <td align="right">778,600,000</td>
+<td align="right">483,800,813</td>
 </tr>
 
 <tr>
 <td>Saturn</td>
 <td align="right">1,433,500,000</td>
+<td align="right">890,737,818</td>
 </tr>
 
 <tr>
 <td>Uranus</td>
 <td align="right">2,872,500,000</td>
+<td align="right">1,784,893,186</td>
 </tr>
 
 <tr>
 <td>Neptune</td>
 <td align="right">4,495,100,000</td>
+<td align="right">2,793,132,589</td>
 </tr>
 </tbody>
 </table>
+
+<h2>Conversion Factor</h2>
+
+<p><em>To convert from the size in miles to tennis ball units (tb), divide the
+miles by
+19,938,124,800.0</em>
+.  This returns inches!  So if you get a
+small value (like the size of earth) you will want to multiply by 1000
+to get 1/1000th of an inch.  If you get a large value (like the distance
+to a nearby star you will want to convert to miles)</p>
 
 <h2>Miles/Kilometers per Light Year</h2>
 
@@ -894,16 +911,6 @@ Unit conversion errors are a serious thing.  $125 million probe lost because of 
 An acre is 10 square chains.  All very convenient.  10 chains is 1 furlong.
 so an acre is 1 furlong by 1 furlong.</p>
 
-<p>Let us do some calculation and fix this misconception.</p>
-
-<p>Read about the TRAPPIST-1 star system.
-<a href="https://exoplanets.nasa.gov/trappist1/">https://exoplanets.nasa.gov/trappist1/</a></p>
-
-<p>There is a set of exoplantes that have been found around
-a star that is 35 light years from our local star (The Sun).
-Read the article: <a href="https://earthsky.org/astronomy-essentials/how-far-is-a-light-year/">https://earthsky.org/astronomy-essentials/how-far-is-a-light-year/</a>
-Find in the article where the author describes 35 light years as &ldquo;close&rdquo; to us.</p>
-
 <h2>Learning Goals</h2>
 
 <ol>
@@ -916,7 +923,6 @@ Find in the article where the author describes 35 light years as &ldquo;close&rd
 <li>What are files.</li>
 <li>Organization of code.</li>
 <li>Calculation with big numbers.</li>
-<li>Differences between integer and float.  Data Types. String data types.</li>
 <li>A model of how big the solar system is.</li>
 </ol>
 
@@ -973,8 +979,7 @@ H:\&gt; cd hw2
 
 <p>main program (main.py)</p>
 
-<pre><code>
-# Step 5 - with function and a test.
+<pre><code># Read and call a function
 
 import conv
 
@@ -991,8 +996,7 @@ print ( &quot;km = {}&quot;.format(km) )
 
 <p>main program (conv.py)</p>
 
-<pre><code>
-# mi_to_km converts from miles as an integer or float to kilometers.  
+<pre><code># mi_to_km converts from miles as an integer or float to kilometers.  
 def mi_to_km ( mi ):
     conv = 1.60934
     km = mi * conv
@@ -1046,7 +1050,9 @@ returns inches, so you need to devide by 12, then by 5280
 to get miles.</li>
 </ol>
 
-<p>Write up your answers in a text file (not Microsoft Word, or .pdf).</p>
+<p>Write up your answers in a text file , <code>homework2.txt</code> , using Visual Studio Code. (not Microsoft Word, or .pdf).</p>
+
+<p>Turning your answers, and the code you developed and tested.</p>
 
 <h1>Copyright</h1>
 

@@ -6,7 +6,7 @@ m4_include(../../setup.m4)
 Due: Mon Feb 7
 
 Points: 200 total. 
-Turn in your code and the answers to the 4 questions.
+Turn in your code and the answers to the 6 questions.
 
 # The Solar system and Exoplanets
 
@@ -23,7 +23,7 @@ inaccuracies.  That is not to say that it is not useful.
 This is useful in showing the relative size and the order
 of the planets in our solar system.
 
-It is way, way, way off in giving you a sence of the scale of
+It is way, way, way off in giving you a sense of the scale of
 the solar system.  In our model we will use the size
 of a tennis ball as our model Sun and then calculate
 the sizes of the planets and distances to other
@@ -52,22 +52,34 @@ The sizes of the planets in our solar system:
 | Uranus  | 15,759mi (25,362km)    | 4x Earth’s size                                |
 | Neptune | 15,299mi (24,622km)    | only slightly smaller than Uranus              |
 
-The Sun is 865,370 miles (1,391,400km) in diameter.
+The Sun is 865,370 miles in diameter.
 
 ## Planet Distances from the Sun
 
-xyzzy -
 
-| Planet   |    Distance from Sun (km)      |
-|----------|-------------------------------:|
-| Mercury  |    57,900,000                  |
-| Venus    |    108,200,000                 |
-| Earth    |    149,600,000                 |
-| Mars     |    227,900,000                 |
-| Jupiter  |    778,600,000                 |
-| Saturn   |    1,433,500,000               |
-| Uranus   |    2,872,500,000               |
-| Neptune  |    4,495,100,000               |
+| Planet   |    Distance from Sun (km)      | Distances from sun(miles) |
+|----------|-------------------------------:|--------------------------:|
+| Mercury  |    57,900,000                  |    35,977,481             |
+| Venus    |    108,200,000                 |    67,232,530             |
+| Earth    |    149,600,000                 |    92,957,361             |
+| Mars     |    227,900,000                 |   141,610,847             |
+| Jupiter  |    778,600,000                 |   483,800,813             |
+| Saturn   |    1,433,500,000               |   890,737,818             |
+| Uranus   |    2,872,500,000               | 1,784,893,186             |
+| Neptune  |    4,495,100,000               | 2,793,132,589             |
+
+## Conversion Factor
+
+_To convert from the size in miles to tennis ball units (tb), divide the
+miles by 
+19,938,124,800.0_
+.  This returns inches!  So if you get a
+small value (like the size of earth) you will want to multiply by 1000
+to get 1/1000th of an inch.  If you get a large value (like the distance
+to a nearby star you will want to convert to miles)
+
+m4_comment([[[ Conversion Factor  19938124800.0 ]]])
+m4_comment([[[ Conversion Factor  19 938 124 800.0 ]]])
 
 ## Miles/Kilometers per Light Year
 
@@ -83,17 +95,6 @@ A mile is 80 chains, a chain is 22 yards.   A yard is 3 feet so a mile is 5280 f
 An acre is 10 square chains.  All very convenient.  10 chains is 1 furlong.
 so an acre is 1 furlong by 1 furlong.
 
-Let us do some calculation and fix this misconception.
-
-Read about the TRAPPIST-1 star system. 
-[https://exoplanets.nasa.gov/trappist1/](https://exoplanets.nasa.gov/trappist1/)
-
-There is a set of exoplantes that have been found around
-a star that is 35 light years from our local star (The Sun).
-Read the article: [https://earthsky.org/astronomy-essentials/how-far-is-a-light-year/](https://earthsky.org/astronomy-essentials/how-far-is-a-light-year/)
-Find in the article where the author describes 35 light years as "close" to us.
-
-
 ## Learning Goals
 
 1. Read in a value, calculate on it, print out results.
@@ -105,7 +106,6 @@ Find in the article where the author describes 35 light years as "close" to us.
 7. What are files.
 9. Organization of code.
 10. Calculation with big numbers.
-11. Differences between integer and float.  Data Types. String data types.
 12. A model of how big the solar system is.
 
 ## Program
@@ -177,7 +177,9 @@ This portion should be turned in as a part of your lab.
 	returns inches, so you need to devide by 12, then by 5280
 	to get miles.
 
-Write up your answers in a text file (not Microsoft Word, or .pdf).
+Write up your answers in a text file , `homework2.txt` , using Visual Studio Code. (not Microsoft Word, or .pdf).
+
+Turning your answers, and the code you developed and tested.
 
 
 

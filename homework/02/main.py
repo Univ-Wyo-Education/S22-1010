@@ -1,5 +1,4 @@
-
-# Step 5 - with function and a test.
+# Read and call a function
 
 import conv
 
