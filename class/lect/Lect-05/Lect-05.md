@@ -1,7 +1,22 @@
 
-m4_include(../../../setup.m4)
 
-# Lecture 6 - Lists, Modules.
+<style>
+.pagebreak { page-break-before: always; }
+.half { height: 200px; }
+</style>
+<style>
+.pagebreak { page-break-before: always; }
+.half { height: 200px; }
+.markdown-body {
+	font-size: 12px;
+}
+.markdown-body td {
+	font-size: 12px;
+}
+</style>
+
+
+# Lecture 5 - Lists, Modules.
 
 ## Feb 1, 2022
 
@@ -34,7 +49,14 @@ Let's build a simple function that calculates the length
 of the hypotenuse of a right triangle.
 
 ```
-m4_include(hyp_1.py.nu)
+  1: import math
+  2: 
+  3: def hypotenuse ( a, b ) :
+  4:     h = math.sqrt ( ( a * a ) + ( b * b ) )
+  5:     return h
+  6: 
+  7: print ( hypotenuse ( 3, 4 ) )
+
 ```
 
 Let's try it with some variables:
@@ -79,13 +101,23 @@ performs 400,000,000 requests a second.  That is scale.
 A list in python.
 
 ```
-m4_include(cars.py.nu)
+  1: cars = ['Tesla','Bmw','Mercedes-Benz','Aion']
+  2: cars
+  3: print(cars)
+  4: cars.sort()
+  5: print(cars)
+
 ```
 
 An important note about upper/lower case characters.
 
 ```
-m4_include(cars2.py.nu)
+  1: cars = ['Tesla','bmw','Mercedes-Benz','Aion']
+  2: cars
+  3: print(cars)
+  4: cars.sort()
+  5: print(cars)
+
 ```
 
 ## What are lists - syntax for them.
@@ -93,13 +125,21 @@ m4_include(cars2.py.nu)
 Use square for lists, round for tuples.
 
 ```
-m4_include(a-list.py.nu)
+  1: list1 = [ "abc", 3 ]
+
 ```
 
 ## Accessing the elements in a list.
 
 ```
-m4_include(list-mod.py.nu)
+  1: a = list1[0]
+  2: list1[0] = "def"
+  3: list1.remove ( 3 )
+  4: list1.append ( 4 )
+  5: print ( list1 )
+  6: del list1[1:2]
+  7: print ( list1 )
+
 ```
 
 The value inside the `list1[0]` - in the square brackets is often referred to as the subscript.
@@ -107,7 +147,20 @@ The value inside the `list1[0]` - in the square brackets is often referred to as
 ## List Comprehensions
 
 ```
-m4_include(list-comp.py.nu)
+  1: list1 = [ 4, 2, 20, 1,0,10,3 ]
+  2: 
+  3: l2 = [ i for i in list1 if i < 10 ]
+  4: print ( l2 )
+  5: 
+  6: for i in range(10):
+  7:     print i
+  8: 
+  9: sqr = [ i*i for i in range(10) ]
+ 10: sqr2 = [ i**2 for i in range(10) ]
+ 11: 
+ 12: obj = ["Even" if i%2==0 else "Odd" for i in range(10)]
+ 13: print(obj)
+
 ```
 
 ## Let's build a string - list processor.
