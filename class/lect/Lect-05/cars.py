@@ -1,4 +1,3 @@
-
 cars = ['Tesla','Bmw','Mercedes-Benz','Aion']
 cars
 print(cars)

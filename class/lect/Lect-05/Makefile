@@ -1,9 +1,30 @@
 
 PP=`pwd`
-FN=Lect-05
+FN=Lect-06
 DIR=../../../
 IMG=
-PY= 
+PY=  \
+	a-list.py \
+	cars.py \
+	cars2.py \
+	ex1/ex1-v1.py \
+	ex1/ex1-v2.py \
+	ex1/ex1-v3.py \
+	ex1/ex1-v4.py \
+	ex1/ex1.py \
+	ex2/ex1-v1.py \
+	ex2/ex1-v2.py \
+	ex2/ex1-v3.py \
+	ex2/ex1-v4.py \
+	ex2/ex1.py \
+	ex3/ex1-v1.py \
+	ex3/ex1-v2.py \
+	ex3/ex1-v3.py \
+	ex3/ex1-v4.py \
+	ex3/ex1.py \
+	hyp_1.py \
+	list-comp.py \
+	list-mod.py 
 
 all: all0 ${FN}.html 
 

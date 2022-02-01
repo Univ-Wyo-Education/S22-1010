@@ -3,6 +3,8 @@ m4_include(../../../setup.m4)
 
 # Lecture 6 - Lists, Modules.
 
+## Feb 1, 2022
+
 This is from Chapter 3 in the book.
 
 ## A little note on Starting Businesses

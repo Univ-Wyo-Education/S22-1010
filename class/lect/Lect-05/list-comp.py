@@ -1,4 +1,3 @@
-
 list1 = [ 4, 2, 20, 1,0,10,3 ]
 
 l2 = [ i for i in list1 if i < 10 ]

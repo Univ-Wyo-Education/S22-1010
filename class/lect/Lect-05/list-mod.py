@@ -1,4 +1,3 @@
-
 a = list1[0]
 list1[0] = "def"
 list1.remove ( 3 )

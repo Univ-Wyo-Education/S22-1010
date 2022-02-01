@@ -1,7 +1,5 @@
-  1: 
-  2: 
-  3: cars = ['Tesla','bmw','Mercedes-Benz','Aion']
-  4: cars
+  1: cars = ['Tesla','bmw','Mercedes-Benz','Aion']
+  2: cars
+  3: print(cars)
+  4: cars.sort()
   5: print(cars)
-  6: cars.sort()
-  7: print(cars)
