@@ -140,16 +140,16 @@ H:\> mkdir hw2
 H:\> cd hw2
 ```
 0. Open visual studio code, open the folder/directory hw2.  Edit the files.
-1. use a "def" in `tb_to_inch.py` for the conversions
+1. use a "def" in `miles_to_tb.py` for the conversions
 2. Have a test section at the bottom to test the function.
 	- Write automated test code that will check that your conversion is correct.
 	- Make it so that if you just run the conversion code it will run the test.
 3. Run the test code - get this section to work.
 4. Call the main program in the folder, `main.py`.
 5. The main program will
-	- `imort tb_to_inch`
+	- `imort miles_to_tb`
 	- Print out a prompt for the value, `print ( "Enter Miles" )`
-	- Print out a prompt for the value, `input(miles_str)`
+	- read in the string, `input(miles_str)`
 	- Convert to a number, `miles = float(miles_str)`
 	- Apply a conversion from that unit to tennis ball model. (Call the function)
 	- Output a value in miles, kilometers and feet plus inches (or fractions of an inch).
