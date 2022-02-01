@@ -1,0 +1,1056 @@
+<style>
+@font-face {
+	font-family: octicons-link;
+	src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+.markdown-body {
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	line-height: 1.5;
+	color: #24292e;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	font-size: 16px;
+	line-height: 1.5;
+	word-wrap: break-word;
+}
+
+.markdown-body .pl-c {
+	color: #6a737d;
+}
+
+.markdown-body .pl-c1,
+.markdown-body .pl-s .pl-v {
+	color: #005cc5;
+}
+
+.markdown-body .pl-e,
+.markdown-body .pl-en {
+	color: #6f42c1;
+}
+
+.markdown-body .pl-smi,
+.markdown-body .pl-s .pl-s1 {
+	color: #24292e;
+}
+
+.markdown-body .pl-ent {
+	color: #22863a;
+}
+
+.markdown-body .pl-k {
+	color: #d73a49;
+}
+
+.markdown-body .pl-s,
+.markdown-body .pl-pds,
+.markdown-body .pl-s .pl-pse .pl-s1,
+.markdown-body .pl-sr,
+.markdown-body .pl-sr .pl-cce,
+.markdown-body .pl-sr .pl-sre,
+.markdown-body .pl-sr .pl-sra {
+	color: #032f62;
+}
+
+.markdown-body .pl-v,
+.markdown-body .pl-smw {
+	color: #e36209;
+}
+
+.markdown-body .pl-bu {
+	color: #b31d28;
+}
+
+.markdown-body .pl-ii {
+	color: #fafbfc;
+	background-color: #b31d28;
+}
+
+.markdown-body .pl-c2 {
+	color: #fafbfc;
+	background-color: #d73a49;
+}
+
+.markdown-body .pl-c2::before {
+	content: "^M";
+}
+
+.markdown-body .pl-sr .pl-cce {
+	font-weight: bold;
+	color: #22863a;
+}
+
+.markdown-body .pl-ml {
+	color: #735c0f;
+}
+
+.markdown-body .pl-mh,
+.markdown-body .pl-mh .pl-en,
+.markdown-body .pl-ms {
+	font-weight: bold;
+	color: #005cc5;
+}
+
+.markdown-body .pl-mi {
+	font-style: italic;
+	color: #24292e;
+}
+
+.markdown-body .pl-mb {
+	font-weight: bold;
+	color: #24292e;
+}
+
+.markdown-body .pl-md {
+	color: #b31d28;
+	background-color: #ffeef0;
+}
+
+.markdown-body .pl-mi1 {
+	color: #22863a;
+	background-color: #f0fff4;
+}
+
+.markdown-body .pl-mc {
+	color: #e36209;
+	background-color: #ffebda;
+}
+
+.markdown-body .pl-mi2 {
+	color: #f6f8fa;
+	background-color: #005cc5;
+}
+
+.markdown-body .pl-mdr {
+	font-weight: bold;
+	color: #6f42c1;
+}
+
+.markdown-body .pl-ba {
+	color: #586069;
+}
+
+.markdown-body .pl-sg {
+	color: #959da5;
+}
+
+.markdown-body .pl-corl {
+	text-decoration: underline;
+	color: #032f62;
+}
+
+.markdown-body .octicon {
+	display: inline-block;
+	vertical-align: text-top;
+	fill: currentColor;
+}
+
+.markdown-body a {
+	background-color: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+	outline-width: 0;
+}
+
+.markdown-body strong {
+	font-weight: inherit;
+}
+
+.markdown-body strong {
+	font-weight: bolder;
+}
+
+.markdown-body h1 {
+	font-size: 2em;
+	margin: 0.67em 0;
+}
+
+.markdown-body img {
+	border-style: none;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre {
+	font-family: monospace, monospace;
+	font-size: 1em;
+}
+
+.markdown-body hr {
+	box-sizing: content-box;
+	height: 0;
+	overflow: visible;
+}
+
+.markdown-body input {
+	font: inherit;
+	margin: 0;
+}
+
+.markdown-body input {
+	overflow: visible;
+}
+
+.markdown-body [type="checkbox"] {
+	box-sizing: border-box;
+	padding: 0;
+}
+
+.markdown-body * {
+	box-sizing: border-box;
+}
+
+.markdown-body input {
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+}
+
+.markdown-body a {
+	color: #0366d6;
+	text-decoration: none;
+}
+
+.markdown-body a:hover {
+	text-decoration: underline;
+}
+
+.markdown-body strong {
+	font-weight: 600;
+}
+
+.markdown-body hr {
+	height: 0;
+	margin: 15px 0;
+	overflow: hidden;
+	background: transparent;
+	border: 0;
+	border-bottom: 1px solid #dfe2e5;
+}
+
+.markdown-body hr::before {
+	display: table;
+	content: "";
+}
+
+.markdown-body hr::after {
+	display: table;
+	clear: both;
+	content: "";
+}
+
+.markdown-body table {
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+
+.markdown-body td,
+.markdown-body th {
+	padding: 0;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.markdown-body h1 {
+	font-size: 32px;
+	font-weight: 600;
+}
+
+.markdown-body h2 {
+	font-size: 24px;
+	font-weight: 600;
+}
+
+.markdown-body h3 {
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.markdown-body h4 {
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.markdown-body h5 {
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.markdown-body h6 {
+	font-size: 12px;
+	font-weight: 600;
+}
+
+.markdown-body p {
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+
+.markdown-body blockquote {
+	margin: 0;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+	padding-left: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+	x-list-style-type: lower-roman;
+	  list-style-type: decimal;
+}
+
+.markdown-body ul ul ol,
+.markdown-body ul ol ol,
+.markdown-body ol ul ol,
+.markdown-body ol ol ol {
+	list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+	margin-left: 0;
+}
+
+.markdown-body code {
+	font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+	font-size: 12px;
+}
+
+.markdown-body pre {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+	font-size: 12px;
+}
+
+.markdown-body .octicon {
+	vertical-align: text-bottom;
+}
+
+.markdown-body .pl-0 {
+	padding-left: 0 !important;
+}
+
+.markdown-body .pl-1 {
+	padding-left: 4px !important;
+}
+
+.markdown-body .pl-2 {
+	padding-left: 8px !important;
+}
+
+.markdown-body .pl-3 {
+	padding-left: 16px !important;
+}
+
+.markdown-body .pl-4 {
+	padding-left: 24px !important;
+}
+
+.markdown-body .pl-5 {
+	padding-left: 32px !important;
+}
+
+.markdown-body .pl-6 {
+	padding-left: 40px !important;
+}
+
+.markdown-body::before {
+	display: table;
+	content: "";
+}
+
+.markdown-body::after {
+	display: table;
+	clear: both;
+	content: "";
+}
+
+.markdown-body>*:first-child {
+	margin-top: 0 !important;
+}
+
+.markdown-body>*:last-child {
+	margin-bottom: 0 !important;
+}
+
+.markdown-body a:not([href]) {
+	color: inherit;
+	text-decoration: none;
+}
+
+.markdown-body .anchor {
+	float: left;
+	padding-right: 4px;
+	margin-left: -20px;
+	line-height: 1;
+}
+
+.markdown-body .anchor:focus {
+	outline: none;
+}
+
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre {
+	margin-top: 0;
+	margin-bottom: 16px;
+}
+
+.markdown-body hr {
+	height: 0.25em;
+	padding: 0;
+	margin: 24px 0;
+	background-color: #e1e4e8;
+	border: 0;
+}
+
+.markdown-body blockquote {
+	padding: 0 1em;
+	color: #6a737d;
+	border-left: 0.25em solid #dfe2e5;
+}
+
+.markdown-body blockquote>:first-child {
+	margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+	margin-bottom: 0;
+}
+
+.markdown-body kbd {
+	display: inline-block;
+	padding: 3px 5px;
+	font-size: 11px;
+	line-height: 10px;
+	color: #444d56;
+	vertical-align: middle;
+	background-color: #fafbfc;
+	border: solid 1px #c6cbd1;
+	border-bottom-color: #959da5;
+	border-radius: 3px;
+	box-shadow: inset 0 -1px 0 #959da5;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+	margin-top: 24px;
+	margin-bottom: 16px;
+	font-weight: 600;
+	line-height: 1.25;
+}
+
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
+	color: #1b1f23;
+	vertical-align: middle;
+	visibility: hidden;
+}
+
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
+	text-decoration: none;
+}
+
+.markdown-body h1:hover .anchor .octicon-link,
+.markdown-body h2:hover .anchor .octicon-link,
+.markdown-body h3:hover .anchor .octicon-link,
+.markdown-body h4:hover .anchor .octicon-link,
+.markdown-body h5:hover .anchor .octicon-link,
+.markdown-body h6:hover .anchor .octicon-link {
+	visibility: visible;
+}
+
+.markdown-body h1 {
+	padding-bottom: 0.3em;
+	font-size: 2em;
+	border-bottom: 1px solid #eaecef;
+}
+
+.markdown-body h2 {
+	padding-bottom: 0.3em;
+	font-size: 1.5em;
+	border-bottom: 1px solid #eaecef;
+}
+
+.markdown-body h3 {
+	font-size: 1.25em;
+}
+
+.markdown-body h4 {
+	font-size: 1em;
+}
+
+.markdown-body h5 {
+	font-size: 0.875em;
+}
+
+.markdown-body h6 {
+	font-size: 0.85em;
+	color: #6a737d;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+	padding-left: 2em;
+}
+
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.markdown-body li {
+	word-wrap: break-all;
+}
+
+.markdown-body li>p {
+	margin-top: 16px;
+}
+
+.markdown-body li+li {
+	margin-top: 0.25em;
+}
+
+.markdown-body dl {
+	padding: 0;
+}
+
+.markdown-body dl dt {
+	padding: 0;
+	margin-top: 16px;
+	font-size: 1em;
+	font-style: italic;
+	font-weight: 600;
+}
+
+.markdown-body dl dd {
+	padding: 0 16px;
+	margin-bottom: 16px;
+}
+
+.markdown-body table {
+	display: block;
+	width: 100%;
+	overflow: auto;
+}
+
+.markdown-body table th {
+	font-weight: 600;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+	padding: 6px 13px;
+	border: 1px solid #dfe2e5;
+}
+
+.markdown-body table tr {
+	background-color: #fff;
+	border-top: 1px solid #c6cbd1;
+}
+
+.markdown-body table tr:nth-child(2n) {
+	background-color: #f6f8fa;
+}
+
+.markdown-body img {
+	max-width: 100%;
+	box-sizing: content-box;
+	background-color: #fff;
+}
+
+.markdown-body img[align=right] {
+	padding-left: 20px;
+}
+
+.markdown-body img[align=left] {
+	padding-right: 20px;
+}
+
+.markdown-body code {
+	padding: 0.2em 0.4em;
+	margin: 0;
+	font-size: 85%;
+	background-color: rgba(27,31,35,0.05);
+	border-radius: 3px;
+}
+
+.markdown-body pre {
+	word-wrap: normal;
+}
+
+.markdown-body pre>code {
+	padding: 0;
+	margin: 0;
+	font-size: 100%;
+	word-break: normal;
+	white-space: pre;
+	background: transparent;
+	border: 0;
+}
+
+.markdown-body .highlight {
+	margin-bottom: 16px;
+}
+
+.markdown-body .highlight pre {
+	margin-bottom: 0;
+	word-break: normal;
+}
+
+.markdown-body .highlight pre,
+.markdown-body pre {
+	padding: 16px;
+	overflow: auto;
+	font-size: 85%;
+	line-height: 1.45;
+	background-color: #f6f8fa;
+	border-radius: 3px;
+}
+
+.markdown-body pre code {
+	display: inline;
+	max-width: auto;
+	padding: 0;
+	margin: 0;
+	overflow: visible;
+	line-height: inherit;
+	word-wrap: normal;
+	background-color: transparent;
+	border: 0;
+}
+
+.markdown-body .full-commit .btn-outline:not(:disabled):hover {
+	color: #005cc5;
+	border-color: #005cc5;
+}
+
+.markdown-body kbd {
+	display: inline-block;
+	padding: 3px 5px;
+	font: 11px "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+	line-height: 10px;
+	color: #444d56;
+	vertical-align: middle;
+	background-color: #fafbfc;
+	border: solid 1px #d1d5da;
+	border-bottom-color: #c6cbd1;
+	border-radius: 3px;
+	box-shadow: inset 0 -1px 0 #c6cbd1;
+}
+
+.markdown-body :checked+.radio-label {
+	position: relative;
+	z-index: 1;
+	border-color: #0366d6;
+}
+
+.markdown-body .task-list-item {
+	list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+	margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+	margin: 0 0.2em 0.25em -1.6em;
+	vertical-align: middle;
+}
+
+.markdown-body hr {
+	border-bottom-color: #eee;
+}
+
+</style>
+<style>
+ol {
+    display: block;
+    list-style-type: decimal;
+}
+.pagebreak { page-break-before: always; }
+.half { height: 200px; }
+</style>
+
+<div class="markdown-body">
+
+<style>
+.pagebreak { page-break-before: always; }
+.half { height: 200px; }
+</style>
+<style>
+.pagebreak { page-break-before: always; }
+.half { height: 200px; }
+.markdown-body {
+    font-size: 12px;
+}
+.markdown-body td {
+    font-size: 12px;
+}
+</style>
+
+<h1>Homework 2 - Distances to Planets and Stars</h1>
+
+<p>Due: Mon Feb 7</p>
+
+<p>Points: 200 total.
+Turn in your code and the answers to the 4 questions.</p>
+
+<h1>The Solar system and Exoplanets</h1>
+
+<p>Lots of you have seen models in school of the solar system.</p>
+
+<p><img src="./Planets2013.svg.png" alt="Planets2013.svg.png" /></p>
+
+<p><a href="https://creativecommons.org/licenses/by-sa/3.0/deed.en">Image From Wikipedia!</a>  That is fun!!!</p>
+
+<div class="pagebreak"></div>
+
+<p>But very inaccurate.  Whenever you have a model you have
+inaccuracies.  That is not to say that it is not useful.
+This is useful in showing the relative size and the order
+of the planets in our solar system.</p>
+
+<p>It is way, way, way off in giving you a sence of the scale of
+the solar system.  In our model we will use the size
+of a tennis ball as our model Sun and then calculate
+the sizes of the planets and distances to other
+stars.</p>
+
+<p>For our calculations a tennis ball is 2.75 inches in diameter.
+Note that some of our data is diameter and some is radius.
+Diameter is radius times 2.</p>
+
+<p>All of our calculations need to be carefully checked.  Read:
+<a href="https://www.simscale.com/blog/2017/12/nasa-mars-climate-orbiter-metric/">https://www.simscale.com/blog/2017/12/nasa-mars-climate-orbiter-metric/</a>
+Unit conversion errors are a serious thing.  $125 million probe lost because of a conversion error between metric and English units.</p>
+
+<h2>Sizes</h2>
+
+<p>The sizes of the planets in our solar system:</p>
+
+<table>
+<thead>
+<tr>
+<th>Planet</th>
+<th align="left">Radius</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Mercury</td>
+<td align="left">1,516mi (2,440km)</td>
+<td align="left">about <sup>1</sup>&frasl;<sub>3</sub> the size of Earth</td>
+</tr>
+
+<tr>
+<td>Venus</td>
+<td align="left">3,760mi (6,052km)</td>
+<td align="left">only slightly smaller than Earth</td>
+</tr>
+
+<tr>
+<td>Earth</td>
+<td align="left">3,959mi (6,371km)</td>
+<td align="left">a nice place to live, about the size of Earth</td>
+</tr>
+
+<tr>
+<td>Mars</td>
+<td align="left">2,106mi (3,390km)</td>
+<td align="left">about half the size of Earth</td>
+</tr>
+
+<tr>
+<td>Jupiter</td>
+<td align="left">43,441mi (69,911km)</td>
+<td align="left">11x Earth’s size</td>
+</tr>
+
+<tr>
+<td>Saturn</td>
+<td align="left">36,184mi (58,232km)</td>
+<td align="left">9x larger than Earth</td>
+</tr>
+
+<tr>
+<td>Uranus</td>
+<td align="left">15,759mi (25,362km)</td>
+<td align="left">4x Earth’s size</td>
+</tr>
+
+<tr>
+<td>Neptune</td>
+<td align="left">15,299mi (24,622km)</td>
+<td align="left">only slightly smaller than Uranus</td>
+</tr>
+</tbody>
+</table>
+
+<p>The Sun is 865,370 miles (1,391,400km) in diameter.</p>
+
+<h2>Planet Distances from the Sun</h2>
+
+<p>xyzzy -</p>
+
+<table>
+<thead>
+<tr>
+<th>Planet</th>
+<th align="right">Distance from Sun (km)</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Mercury</td>
+<td align="right">57,900,000</td>
+</tr>
+
+<tr>
+<td>Venus</td>
+<td align="right">108,200,000</td>
+</tr>
+
+<tr>
+<td>Earth</td>
+<td align="right">149,600,000</td>
+</tr>
+
+<tr>
+<td>Mars</td>
+<td align="right">227,900,000</td>
+</tr>
+
+<tr>
+<td>Jupiter</td>
+<td align="right">778,600,000</td>
+</tr>
+
+<tr>
+<td>Saturn</td>
+<td align="right">1,433,500,000</td>
+</tr>
+
+<tr>
+<td>Uranus</td>
+<td align="right">2,872,500,000</td>
+</tr>
+
+<tr>
+<td>Neptune</td>
+<td align="right">4,495,100,000</td>
+</tr>
+</tbody>
+</table>
+
+<h2>Miles/Kilometers per Light Year</h2>
+
+<p>5,878,625,352,016,794 miles per light year.</p>
+
+<h2>Conversions</h2>
+
+<p>To convert kilometers to miles multiply the miles by 0.62137119 .</p>
+
+<p>To convert from miles to kilometers multiply by 1.60934 .</p>
+
+<p>A mile is 80 chains, a chain is 22 yards.   A yard is 3 feet so a mile is 5280 feet.
+An acre is 10 square chains.  All very convenient.  10 chains is 1 furlong.
+so an acre is 1 furlong by 1 furlong.</p>
+
+<p>Let us do some calculation and fix this misconception.</p>
+
+<p>Read about the TRAPPIST-1 star system.
+<a href="https://exoplanets.nasa.gov/trappist1/">https://exoplanets.nasa.gov/trappist1/</a></p>
+
+<p>There is a set of exoplantes that have been found around
+a star that is 35 light years from our local star (The Sun).
+Read the article: <a href="https://earthsky.org/astronomy-essentials/how-far-is-a-light-year/">https://earthsky.org/astronomy-essentials/how-far-is-a-light-year/</a>
+Find in the article where the author describes 35 light years as &ldquo;close&rdquo; to us.</p>
+
+<h2>Learning Goals</h2>
+
+<ol>
+<li>Read in a value, calculate on it, print out results.</li>
+<li>Testing of a program.</li>
+<li>Printing out of results.</li>
+<li>Debugging.</li>
+<li>Use of a function in Python.</li>
+<li>Editing text files.</li>
+<li>What are files.</li>
+<li>Organization of code.</li>
+<li>Calculation with big numbers.</li>
+<li>Differences between integer and float.  Data Types. String data types.</li>
+<li>A model of how big the solar system is.</li>
+</ol>
+
+<h2>Program</h2>
+
+<p>Write a program that will:</p>
+
+<ol>
+<li>Create a directory/folder for this code</li>
+
+<li><p>Bring up Visual Studio Code in a new directory.</p>
+
+<pre><code>$ mkdir hw2
+$ cd hw2
+</code></pre>
+
+<p>Or Windows/PowerShell</p>
+
+<pre><code>H:\&gt; H:
+H:\&gt; mkdir hw2
+H:\&gt; cd hw2
+</code></pre></li>
+
+<li><p>Open visual studio code, open the folder/directory hw2.  Edit the files.</p></li>
+
+<li><p>use a &ldquo;def&rdquo; in <code>tb_to_inch.py</code> for the conversions</p></li>
+
+<li><p>Have a test section at the bottom to test the function.</p>
+
+<ul>
+<li>Write automated test code that will check that your conversion is correct.</li>
+<li>Make it so that if you just run the conversion code it will run the test.</li>
+</ul></li>
+
+<li><p>Run the test code - get this section to work.</p></li>
+
+<li><p>Call the main program in the folder, <code>main.py</code>.</p></li>
+
+<li><p>The main program will</p>
+
+<ul>
+<li><code>imort tb_to_inch</code></li>
+<li>Print out a prompt for the value, <code>print ( &quot;Enter Miles&quot; )</code></li>
+<li>Print out a prompt for the value, <code>input(miles_str)</code></li>
+<li>Convert to a number, <code>miles = float(miles_str)</code></li>
+<li>Apply a conversion from that unit to tennis ball model. (Call the function)</li>
+<li>Output a value in miles, kilometers and feet plus inches (or fractions of an inch).</li>
+</ul></li>
+</ol>
+
+<div class="pagebreak"></div>
+
+<p>Example Code: from lecture&hellip;</p>
+
+<p>main program (main.py)</p>
+
+<pre><code>
+# Step 5 - with function and a test.
+
+import conv
+
+print ( &quot;Enter Miles&quot; )
+
+miles_str = input()
+miles = int(miles_str)
+
+km = conv.mi_to_km(miles)
+
+print ( &quot;km = {}&quot;.format(km) )
+
+</code></pre>
+
+<p>main program (conv.py)</p>
+
+<pre><code>
+# mi_to_km converts from miles as an integer or float to kilometers.  
+def mi_to_km ( mi ):
+    conv = 1.60934
+    km = mi * conv
+    return (km)
+
+# Automated Test
+if __name__ == &quot;__main__&quot;:
+    n_err = 0
+    x = mi_to_km ( 3 )
+    if x !=  4.82802:
+        n_err = n_err + 1
+        print ( &quot;Error: Test 1: conversion not working, expected {} got {}&quot;.
+                format (  4.82802, x ) )
+    x = mi_to_km ( 0 )
+    if x != 0:
+        n_err = n_err + 1
+        print ( &quot;Error: Test 2: conversion not working, expected {} got {}&quot;.
+                format ( 0, x ) )
+
+    if n_err == 0 :
+        print ( &quot;PASS&quot; )
+    else:
+        print ( &quot;FAILED&quot; )
+
+
+</code></pre>
+
+<p>Part 2. Use your program a few times.</p>
+
+<h2>Questions: to be answer.</h2>
+
+<p>Questions are answered by doing a write up as a .md or .markdown (text) file in lab.
+The write-up should be written in Visual Studio Code (VS Code).</p>
+
+<p>Use markdown <a href="https://www.markdownguide.org/cheat-sheet/">https://www.markdownguide.org/cheat-sheet/</a> for the formatting of your
+text file answers.</p>
+
+<p>This portion should be turned in as a part of your lab.</p>
+
+<ol>
+<li>What is the closest star to planet Earth?  Think! It shines on you every day.</li>
+<li>How many feet is it from the sun to earh (remember that the program prints out in inches).</li>
+<li>How far is it from Earth to moon?</li>
+<li>How many feet from sun to Saturn?</li>
+<li>How big is Saturn in tennis ball units?</li>
+<li>If the Sun in our model is the size of a tennis ball, then
+how far is to Proxima Centauri 4.3 light years from us?
+Calculate for our tennis ball model  the number of miles<br />
+that 4.3 light years represents.  Remember that the program
+returns inches, so you need to devide by 12, then by 5280
+to get miles.</li>
+</ol>
+
+<p>Write up your answers in a text file (not Microsoft Word, or .pdf).</p>
+
+<h1>Copyright</h1>
+
+<p>Copyright &copy; University of Wyoming, 2021-2022.</p>
+
+</div>
+
