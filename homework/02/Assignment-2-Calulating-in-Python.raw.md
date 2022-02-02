@@ -167,8 +167,9 @@ This portion should be turned in as a part of your lab.
 
 1. What is the closest star to planet Earth?  Think! It shines on you every day.
 2. How many feet is it from the sun to earh (remember that the program prints out in inches).
-3. How far is it from Earth to moon?
-4. How many feet from sun to Saturn?
+Use your program to answer questions 2, 3, 4, 5, 6.
+3. How far is it from Earth to moon in TB units?
+4. How many feet from sun to Saturn in TB units?
 5. How big is Saturn in tennis ball units?
 6. If the Sun in our model is the size of a tennis ball, then
 	how far is to Proxima Centauri 4.3 light years from us?
@@ -177,9 +178,10 @@ This portion should be turned in as a part of your lab.
 	returns inches, so you need to devide by 12, then by 5280
 	to get miles.
 
-Write up your answers in a text file , `homework2.txt` , using Visual Studio Code. (not Microsoft Word, or .pdf).
+Write up your answers in a text file , `homework2.md` , using Visual Studio Code. (not Microsoft Word, or .pdf).
+In visual studio go and create a new file `homework2.md` and enter your answers.  Save the file and turn it in.
 
-Turning your answers, and the code you developed and tested.
+Turn in your answers, and the code you developed and tested.
 
 
 
