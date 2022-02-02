@@ -85,10 +85,13 @@ The Sun is 865,370 miles in diameter.
 
 ## Conversion Factor
 
-_To convert from the size in miles to tennis ball units (tb), divide the
+_To convert from the size in inches to tennis ball units (tb), divide the
 miles by 
-19,938,124,800.0_
-.  This returns inches!  So if you get a
+19,938,124,800.0.  The function you want to build is form miles to
+tennis ball units.  So you take in miles, multiply by 5280 and then by 
+12 to get from miles to inches.  Then take the inches and devide by
+this value._
+This returns inches!  So if you get a
 small value (like the size of earth) you will want to multiply by 1000
 to get 1/1000th of an inch.  If you get a large value (like the distance
 to a nearby star you will want to convert to miles)
