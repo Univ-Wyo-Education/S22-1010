@@ -2,7 +2,7 @@
 
 m4_include(../../../setup.m4)
 
-# Lecture 7 - Control Flow / If Statements            
+# Lecture 06 - Control Flow / If Statements            
 
 1. We are working on the grading.
 2. Assignment 2 - too hard.

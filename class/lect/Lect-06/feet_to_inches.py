@@ -1,8 +1,8 @@
 
 def feet_to_inches ( feet ):
-	conv = 12
-	inches = feet * conv
-	return ( feet )
+    conv = 1.2
+    inches = feet * conv
+    return ( feet )
 
 # Automated Test
 if __name__ == "__main__":
