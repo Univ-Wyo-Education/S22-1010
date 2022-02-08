@@ -3,6 +3,8 @@ m4_include(.././../setup.m4)
 
 # Assignment 3 - count some words.
 
+## Feb 8
+
 ## Due Feb 14, 2022.  200pts.
 
 m4_comment([[[
