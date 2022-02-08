@@ -1,5 +1,4 @@
 
-
 <style>
 .pagebreak { page-break-before: always; }
 .half { height: 200px; }
@@ -156,5 +155,103 @@ Or with a while loop:
   8: if not found:                       # Never did find it
   9:     print ( "no names found" )
 ```
+
+Line 4 has `in` - let's take a look at the `in` operator.
+
+```
+  1: a = "Fox in Socks"
+  2: if "Socks" in a :
+  3:     print ( "Good! Found '{}' in '{}'".format("Socks","Fox in Socks") )
+  4: else:
+  5:     print ( "Bad... did not find '{}' in '{}'".format("Socks","Fox in Socks") )
+  6: 
+  7: if "Tweetle" in a:
+  8:     print ( "'{}' should not be foudn in '{}'".format("Tweetle","Fox in Socks") )
+  9: else:
+ 10:     print ( "This is good! '{}' is not in '{}'".format("Tweetle","Fox in Socks") )
+
+
+```
+
+Suppose you want to split a string up into the words that make it up.
+
+Let's start with a string.
+
+```
+a = "Fox in Socks by Dr. Suess"
+```
+
+We can use "split" to break it up on the blanks.  This will give us a list of blank
+separate words.
+
+```
+  1: a = "Fox in Socks by Dr. Suess"
+  2: w = a.split()
+  3: print ( "words ->{}<- length {}".format(w,len(w)) )
+
+
+```
+
+
+
+
+
+
+
+
+We can combine this in a loop and find out the number of words in a list
+of lists.
+
+```
+  1: list_of_list = [
+  2:     "Fox Socks",
+  3:     "Box Knox",
+  4:     "Knox in Box",
+  5:     "Fox in Socks",    
+  6: ]
+  7: cnt = 0
+  8: for s in list_of_list:
+  9:     t = s.split()
+ 10:     cnt = cnt + len(t)
+ 11: print ( "total {}".format(cnt) )
+
+
+```
+
+
+
+
+
+
+
+
+
+## Read in A File Name:
+
+Our tool for reading a file into a list takes a file name.  What happens if we 
+read the file name from the user.
+
+```
+  1: import readNameList
+  2: 
+  3: print ( "Enter a File Name")
+  4: fn = input()
+  5: 
+  6: a_list = readNameList.readFileIntoList(fn)
+  7: 
+  8: flen = len(a_list)
+  9: print ( "# of lines in file {}".format(flen) )
+
+
+``` 
+
+
+
+
+
+
+
+
+
 
 

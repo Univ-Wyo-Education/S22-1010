@@ -1,4 +1,3 @@
-
 m4_include(../../../setup.m4)
 
 # Lecture 8 - Counting Words, Using a file and a List
@@ -149,5 +148,113 @@ Or with a while loop:
   8: if not found:                       # Never did find it
   9:     print ( "no names found" )
 ```
+
+Line 4 has `in` - let's take a look at the `in` operator.
+
+```
+m4_include(in.py.nu)
+m4_comment([[[
+a = "Fox in Socks"
+if "Socks" in a :
+    print ( "Good! Found '{}' in '{}'".format("Socks","Fox in Socks") )
+else:
+    print ( "Bad... did not find '{}' in '{}'".format("Socks","Fox in Socks") )
+
+if "Tweetle" in a:
+    print ( "'{}' should not be foudn in '{}'".format("Tweetle","Fox in Socks") )
+else:
+    print ( "This is good! '{}' is not in '{}'".format("Tweetle","Fox in Socks") )
+]]])
+```
+
+Suppose you want to split a string up into the words that make it up.
+
+Let's start with a string.
+
+```
+a = "Fox in Socks by Dr. Suess"
+```
+
+We can use "split" to break it up on the blanks.  This will give us a list of blank
+separate words.
+
+```
+m4_include(split1.py.nu)
+m4_comment([[[
+a = "Fox in Socks by Dr. Suess"
+w = a.split()
+print ( "words ->{}<- length {}".format(w,len(w)) )
+]]])
+```
+
+
+
+
+
+
+
+
+We can combine this in a loop and find out the number of words in a list
+of lists.
+
+```
+m4_include(cnt_list.py.nu)
+m4_comment([[[
+list_of_list = [
+	"Fox Socks",
+	"Box Knox",
+	"Knox in Box",
+	"Fox in Socks",	
+]
+cnt = 0
+for s in list_of_list:
+	t = s.split()
+	cnt = cnt + len(t)
+print ( "total {}".format(cnt) )
+]]])
+```
+
+
+
+
+
+
+
+
+
+## Read in A File Name:
+
+Our tool for reading a file into a list takes a file name.  What happens if we 
+read the file name from the user.
+
+```
+m4_include(file_len.py.nu)
+m4_comment([[[
+import readNameList
+
+print ( "Enter a File Name")
+fn = input()
+
+a_list = readNameList.readFileIntoList(fn)
+
+flen = len(a_list)
+print ( "# of lines in file {}".format(flen) )
+]]])
+``` 
+
+
+
+
+
+
+
+
+m4_comment([[[
+
+# TODO # TODO # TODO # TODO # TODO # TODO # TODO # TODO # TODO # TODO # TODO # TODO # TODO # TODO # TODO # TODO #
+
+3. read in file name
+
+]]])
 
 
