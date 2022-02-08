@@ -18,6 +18,8 @@
 
 # Assignment 3 - count some words.
 
+## Feb 8
+
 ## Due Feb 14, 2022.  200pts.
 
 
@@ -37,11 +39,11 @@ Use the code in `readNameList.py` to read in the file `FoxInSox.txt`
 and count the number of words.  It should be 51 words.  Use this
 as a test case to verify that your `word-count.py` program is working.
 
-Now use the file, `Anna-Karenia.txt`.   Run your program and count the number of
-words in `Anna-Karenia.txt`.
+Now use the file, `Anna-Karenina.txt`.   Run your program and count the number of
+words in `Anna-Karenina.txt`.
 
 Turn in your `word-count.py` program and a file with the count of 
-the number of words in `Anna-Karenia.txt`.
+the number of words in `Anna-Karenina.txt`.
 
 
 
