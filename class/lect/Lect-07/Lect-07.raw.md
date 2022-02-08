@@ -23,7 +23,7 @@ A file is a name with a set of data.  Quite often this data is a set of lines of
 
 ```
 m4_include(2names.txt)
-m4_ omment([[[
+m4_comment([[[
 "Gunter, Dolly R",(072) 123-4760
 "Polk, Hattie S",(563) 404-0792
 ]]])

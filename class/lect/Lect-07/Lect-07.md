@@ -31,10 +31,7 @@ A file is a name with a set of data.  Quite often this data is a set of lines of
 "Gunter, Dolly R",(072) 123-4760
 "Polk, Hattie S",(563) 404-0792
 
-m4_ omment(
-"Gunter, Dolly R",(072) 123-4760
-"Polk, Hattie S",(563) 404-0792
-)
+
 ```
 
 If we had this inside the program as a list:
