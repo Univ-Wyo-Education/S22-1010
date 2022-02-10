@@ -18,7 +18,6 @@
 
 # Lecture 9 - Lists and Dictionaries 
 
-<div class="pagebreak"></div>
 
 ## List Example
 
@@ -52,6 +51,7 @@
 
 
 
+<div class="pagebreak"></div>
 
 
 ## Dictionary
@@ -97,6 +97,7 @@ Now changing our phone search to use a  dictionary:
 
 
 
+<div class="pagebreak"></div>
 
 
 ### Letter Paris

@@ -3,7 +3,6 @@ m4_include(../../../setup.m4)
 
 # Lecture 9 - Lists and Dictionaries 
 
-<div class="pagebreak"></div>
 
 ## List Example
 
@@ -40,6 +39,7 @@ if not found:
 
 
 
+<div class="pagebreak"></div>
 m4_comment([[[ ================================================================================================= ]]])
 
 ## Dictionary
@@ -87,6 +87,7 @@ else:
 
 
 
+<div class="pagebreak"></div>
 m4_comment([[[ ================================================================================================= ]]])
 
 ### Letter Paris
