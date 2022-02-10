@@ -39,6 +39,9 @@ if not found:
 ```
 
 
+
+m4_comment([[[ ================================================================================================= ]]])
+
 ## Dictionary
 
 A dictionary is an association between a "key" value and a set of data
@@ -79,31 +82,61 @@ else:
 
 
 
-### Requirements
-
-Prompt for a file name. 
-Then read in a file of text.  
-Split the file up into words.
-Remove any punctuation and convert each word to lower case.
-Count how many times each word occurs. 
-Print out a sorted list of the words in the file with the number of occurrences of each word.  Sort from the most frequent word to the least.
-
-### Requirements Broken Down
-
-1. Prompt for a file name. 
-2. Read in a file of text.  
-3. Split the file up into words.
-4. Remove any punctuation and convert each word to lower case.
-5. Count how many times each word occurs. 
-6. Print out a sorted list
-	- Print out a sorted list of the words in the file with the number of occurrences of each word. 
-	- Sort from the most frequent word to the least.
 
 
-### Let's count some words
+
+
+
+m4_comment([[[ ================================================================================================= ]]])
+
+### Letter Paris
+
+Paris of letters are the "phonetic" parts in English.   Single letters do not make most sounds in English.
+Letter Paris do.
+
+Let's build a program that counts the occurrences of pairs.
+
+
+
 
 ```
-m4_include(word-freq.py.nu)
+m4_include(letter-pair.py.nu)
+m4_comment([[[
+
+import readNameList
+
+def main():
+
+    print ( "Enter File Name\n=> ", end="" )
+    fn = input()
+    # read in file to a list of lines
+    data = readNameList.readFileIntoList(fn)
+
+    letter_pair = {}
+
+    for line in data:
+
+        # Split line up into a set of words
+        words = line.split()
+
+        for w in words:
+            for i in range(len(w)-1):
+                pair = w[i:i+2]
+                pair = pair.lower()
+                if pair in letter_pair:
+                    letter_pair[pair] = letter_pair[pair] + 1
+                else:
+                    letter_pair[pair] = 1
+
+
+    # print ( "Count of Paris: {}".format(letter_pair) )
+    print ( "Count of Paris:" )
+    for p in letter_pair:
+        print ( "{}: {}".format( p, letter_pair[p] ) )
+
+main()
+
+]]])
 ```
 
 
