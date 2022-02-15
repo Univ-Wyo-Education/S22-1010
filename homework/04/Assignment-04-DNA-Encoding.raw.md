@@ -12,7 +12,7 @@ Amino Acid Coding Table
 ![Aminoacids_table.svg](./Aminoacids_table.svg)
 
 Information that you need for this lab is in the lecture notes.
-[https://github.com/Univ-Wyo-Education/F21-1010/blob/main/class/lect/Lect-11/Lect-11.html.pdf](https://github.com/Univ-Wyo-Education/F21-1010/blob/main/class/lect/Lect-11/Lect-11.html.pdf)
+[https://github.com/Univ-Wyo-Education/S22-1010/blob/main/class/lect/Lect-11/Lect-11.html.pdf](https://github.com/Univ-Wyo-Education/S22-1010/blob/main/class/lect/Lect-11/Lect-11.html.pdf)
 
 ## Part 1
 
@@ -28,7 +28,7 @@ This is very close to the example in class.
 
 Use the `example-conv_t_to_u.py` as a starting point.
 
-Link on github.com: [https://github.com/Univ-Wyo-Education/F21-1010/blob/main/lab/lab-05/example-conv_t_to_u.py](https://github.com/Univ-Wyo-Education/F21-1010/blob/main/lab/lab-05/example-conv_t_to_u.py)
+Link on github.com: [https://github.com/Univ-Wyo-Education/S22-1010/blob/main/homework/04/example-conv_t_to_u.py](https://github.com/Univ-Wyo-Education/S22-1010/blob/main/homework/04/example-conv_t_to_u.py)
 
 Input Example: aaTggTaaa
 
@@ -62,7 +62,7 @@ Use the `example-rna_lookkup.py` as a starting point.    It has the dictionary i
 and some of the other code.  You will need to implement some test cases.  Look at
 the previous code and copy, then modify the tests to be appropriate for this.
 
-Link on github.com: [https://github.com/Univ-Wyo-Education/F21-1010/blob/main/lab/lab-05/example-rna_lookkup.py](https://github.com/Univ-Wyo-Education/F21-1010/blob/main/lab/lab-05/example-rna_lookkup.py)
+Link on github.com: [https://github.com/Univ-Wyo-Education/S22-1010/blob/main/homework/04/example-rna_lookkup.py](https://github.com/Univ-Wyo-Education/S22-1010/blob/main/homework/04/example-rna_lookkup.py)
 
 
 
@@ -70,7 +70,7 @@ Link on github.com: [https://github.com/Univ-Wyo-Education/F21-1010/blob/main/la
 
 ## Part 3
 
-Download amino.py from [https://github.com/Univ-Wyo-Education/F21-1010/blob/main/lab/lab-05/amino.py](https://github.com/Univ-Wyo-Education/F21-1010/blob/main/lab/lab-05/amino.py).
+Download amino.py from [https://github.com/Univ-Wyo-Education/S22-1010/blob/main/homework/04/amino.py](https://github.com/Univ-Wyo-Education/S22-1010/blob/main/homework/04/amino.py).
 
 Run the file amino.py that imports the functions from Part 1 and Part 2 and
 calls them in order to produce the amino acid sequence.
