@@ -1,6 +1,6 @@
 
 PP=`pwd`
-FN=Lect-11
+FN=Lect-10
 DIR=../../../
 IMG=
 PY= \

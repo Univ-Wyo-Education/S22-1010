@@ -1,44 +1,41 @@
-  1: #!/Users/philip/opt/anaconda3/bin/python
-  2: 
-  3: import conv_t_to_u
-  4: import rna_lookup
-  5: 
-  6: dna_input = [
-  7: "taaccctaaccctaaccctaaccctaaccctaaccctaaccctaaccctaaccctaaccctaaccctaaccctaacccta",
-  8: "accctaaccctaaccctaaccctaacccaaccctaaccctaaccctaaccctaaccctaaccctaacccctaaccctaac",
-  9: "cctaaccctaaccctaacctaaccctaaccctaaccctaaccctaaccctaaccctaaccctaaccctaacccctaaccc",
- 10: "taaccctaaaccctaaaccctaaccctaaccctaaccctaaccctaaccccaaccccaaccccaaccccaaccccaaccc",
- 11: "caaccctaacccctaaccctaaccctaaccctaccctaaccctaaccctaaccctaaccctaaccctaacccctaacccc",
- 12: "taaccctaaccctaaccctaaccctaaccctaaccctaacccctaaccctaaccctaaccctaacccaugCGGTACCCTC",
- 13: "AGCCGGCCCGCCCGCCCGGGTCTGACCTGAGGAGAACTGTGCTCCGCCTTCAGAGTACCACCGAAATCTGTGCAGAGGAc",
- 14: "aacgcagctccgccctcgcggtGCTCtccgggtctgtgctgaggagaacgCAACTCCGCCGTTGCAAAGGCGcgccgcgc",
- 15: "cggcgcaggcgcagagaggcgcgccgcgccggcgcaggcgcagagaggcgUGAcgcgccggcgcaggcgcagagaggcgc",
- 16: "gccgcgccggcgcaggcgcagagaggcgcgccgcgccggcgcaggcgcagagaggcgcgccgcgccggcgcaggcgcaga",
- 17: ]
+  1: import conv_t_to_u
+  2: import rna_lookup
+  3: 
+  4: dna_input = [
+  5: "taaccctaaccctaaccctaaccctaaccctaaccctaaccctaaccctaaccctaaccctaaccctaaccctaacccta",
+  6: "accctaaccctaaccctaaccctaacccaaccctaaccctaaccctaaccctaaccctaaccctaacccctaaccctaac",
+  7: "cctaaccctaaccctaacctaaccctaaccctaaccctaaccctaaccctaaccctaaccctaaccctaacccctaaccc",
+  8: "taaccctaaaccctaaaccctaaccctaaccctaaccctaaccctaaccccaaccccaaccccaaccccaaccccaaccc",
+  9: "caaccctaacccctaaccctaaccctaaccctaccctaaccctaaccctaaccctaaccctaaccctaacccctaacccc",
+ 10: "taaccctaaccctaaccctaaccctaaccctaaccctaacccctaaccctaaccctaaccctaacccaugCGGTACCCTC",
+ 11: "AGCCGGCCCGCCCGCCCGGGTCTGACCTGAGGAGAACTGTGCTCCGCCTTCAGAGTACCACCGAAATCTGTGCAGAGGAc",
+ 12: "aacgcagctccgccctcgcggtGCTCtccgggtctgtgctgaggagaacgCAACTCCGCCGTTGCAAAGGCGcgccgcgc",
+ 13: "cggcgcaggcgcagagaggcgcgccgcgccggcgcaggcgcagagaggcgUGAcgcgccggcgcaggcgcagagaggcgc",
+ 14: "gccgcgccggcgcaggcgcagagaggcgcgccgcgccggcgcaggcgcagagaggcgcgccgcgccggcgcaggcgcaga",
+ 15: ]
+ 16: 
+ 17: amino_string = ""
  18: 
- 19: amino_string = ""
+ 19: rna = conv_t_to_u.conv_t_to_u ( "".join(dna_input) )
  20: 
- 21: rna = conv_t_to_u.conv_t_to_u ( "".join(dna_input) )
- 22: 
- 23: st = "before"
- 24: i = 0
- 25: while i < len(rna)-2:
- 26:     three = rna[i:i+3]
- 27:     # print ( "st {} three >{}< at i={}".format(st, three,i)) 
- 28:     amino = rna_lookup.rna_to_amino_acid(three)
- 29:     if amino == '!' :
- 30:         print ( "Invalid 3 letter sequence {} at {}".format(three, i ) )
- 31:         break
- 32:     if st == "before" and amino == "M" :
- 33:         st = "encode"
- 34:         i = i + 3
- 35:     elif st == "encode" and amino == ".":
- 36:         st = "before"
- 37:         print ("Protein : ", amino_string)
- 38:         i = i + 3
- 39:     elif st == "encode" :
- 40:         amino_string = amino_string + amino
- 41:         i = i + 3
- 42:     else:
- 43:         i = i + 1
- 44: 
+ 21: st = "before"
+ 22: i = 0
+ 23: while i < len(rna)-2:
+ 24:     three = rna[i:i+3]
+ 25:     # print ( "st {} three >{}< at i={}".format(st, three,i)) 
+ 26:     amino = rna_lookup.rna_to_amino_acid(three)
+ 27:     if amino == '!' :
+ 28:         print ( "Invalid 3 letter sequence {} at {}".format(three, i ) )
+ 29:         break
+ 30:     if st == "before" and amino == "M" :
+ 31:         st = "encode"
+ 32:         i = i + 3
+ 33:     elif st == "encode" and amino == ".":
+ 34:         st = "before"
+ 35:         print ("Protein : ", amino_string)
+ 36:         i = i + 3
+ 37:     elif st == "encode" :
+ 38:         amino_string = amino_string + amino
+ 39:         i = i + 3
+ 40:     else:
+ 41:         i = i + 1

@@ -1,5 +1,3 @@
-#!/Users/philip/opt/anaconda3/bin/python
-
 # RNA codon table
 rna_codon = {
     "aaa" : "K", "aac" : "N", "aag" : "K", "aau" : "N", "aca" : "T", "acc" : "T", "acg" : "T",
@@ -45,4 +43,3 @@ if __name__ == "__main__":
         print ( "PASS" )
     else:
         print ( "FAILED" )
-

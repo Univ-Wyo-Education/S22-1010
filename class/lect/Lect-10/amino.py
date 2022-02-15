@@ -1,5 +1,3 @@
-#!/Users/philip/opt/anaconda3/bin/python
-
 import conv_t_to_u
 import rna_lookup
 
@@ -41,4 +39,3 @@ while i < len(rna)-2:
         i = i + 3
     else:
         i = i + 1
-

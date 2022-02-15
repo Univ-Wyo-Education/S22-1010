@@ -1,5 +1,3 @@
-#!/Users/philip/opt/anaconda3/bin/python
-
 dna_input = [
 "taaccctaaccctaaccctaaccctaaccctaaccctaaccctaaccctaaccctaaccctaaccctaaccctaacccta",
 "accctaaccctaaccctaaccctaacccaaccctaaccctaaccctaaccctaaccctaaccctaacccctaaccctaac",

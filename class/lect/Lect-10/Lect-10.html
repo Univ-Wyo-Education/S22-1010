@@ -795,32 +795,24 @@ It has a good explanation of how to do this - but not exactly our requirements.
 called join.   Join gives us the ability to join with a separator
 between each string.</p>
 
-<pre><code>#!/Users/philip/opt/anaconda3/bin/python
-
-a = [ &quot;aa&quot;, &quot;bb&quot;, &quot;cc&quot; ]
+<pre><code>a = [ &quot;aa&quot;, &quot;bb&quot;, &quot;cc&quot; ]
 
 print ( &quot;, &quot;.join(a) )
-
 
 </code></pre>
 
 <p>We can also join with a 0 length separator (this is what we will
 want in our code).</p>
 
-<pre><code>#!/Users/philip/opt/anaconda3/bin/python
-
-a = [ &quot;aa&quot;, &quot;bb&quot;, &quot;cc&quot; ]
+<pre><code>a = [ &quot;aa&quot;, &quot;bb&quot;, &quot;cc&quot; ]
 
 print ( &quot;&quot;.join(a) )
-
 
 </code></pre>
 
 <p>So we start out with the data in the program:</p>
 
-<pre><code>#!/Users/philip/opt/anaconda3/bin/python
-
-dna_input = [
+<pre><code>dna_input = [
 &quot;taaccctaaccctaaccctaaccctaaccctaaccctaaccctaaccctaaccctaaccctaaccctaaccctaacccta&quot;,
 &quot;accctaaccctaaccctaaccctaacccaaccctaaccctaaccctaaccctaaccctaaccctaacccctaaccctaac&quot;,
 &quot;cctaaccctaaccctaacctaaccctaaccctaaccctaaccctaaccctaaccctaaccctaaccctaacccctaaccc&quot;,
@@ -834,7 +826,6 @@ dna_input = [
 ]
 
 print ( dna_input )
-
 
 </code></pre>
 
@@ -855,12 +846,9 @@ those three characters with:</p>
 
 <p>So a little program that will do this is:</p>
 
-<pre><code>#!/Users/philip/opt/anaconda3/bin/python
-
-bb = &quot;abc123def&quot; 
+<pre><code>bb = &quot;abc123def&quot; 
 x3 = bb[3:6]
 print ( &quot;x3 = {}&quot;.format(x3) )
-
 
 </code></pre>
 
@@ -938,9 +926,7 @@ then replace the <code>t</code>s with <code>u</code>s.</p>
 
 <p>So we can lookup our 3 letter codon with a dictionary.</p>
 
-<pre><code>#!/Users/philip/opt/anaconda3/bin/python
-
-# RNA codon table
+<pre><code># RNA codon table
 rna_codon = {
     &quot;aaa&quot; : &quot;K&quot;, &quot;aac&quot; : &quot;N&quot;, &quot;aag&quot; : &quot;K&quot;, &quot;aau&quot; : &quot;N&quot;, &quot;aca&quot; : &quot;T&quot;, &quot;acc&quot; : &quot;T&quot;, &quot;acg&quot; : &quot;T&quot;,
     &quot;acu&quot; : &quot;T&quot;, &quot;aga&quot; : &quot;R&quot;, &quot;agc&quot; : &quot;S&quot;, &quot;agg&quot; : &quot;R&quot;, &quot;agu&quot; : &quot;S&quot;, &quot;aua&quot; : &quot;I&quot;, &quot;auc&quot; : &quot;I&quot;,
@@ -953,7 +939,6 @@ rna_codon = {
     &quot;uga&quot; : &quot;.&quot;, &quot;ugc&quot; : &quot;C&quot;, &quot;ugg&quot; : &quot;W&quot;, &quot;ugu&quot; : &quot;C&quot;, &quot;uua&quot; : &quot;L&quot;, &quot;uuc&quot; : &quot;F&quot;, &quot;uug&quot; : &quot;L&quot;,
     &quot;uuu&quot; : &quot;F&quot;
 }
-
 
 </code></pre>
 
@@ -979,50 +964,47 @@ else:
 
 <p>Program State</p>
 
-<pre><code>  1: #!/Users/philip/opt/anaconda3/bin/python
-  2: 
-  3: import conv_t_to_u
-  4: import rna_lookup
-  5: 
-  6: dna_input = [
-  7: &quot;taaccctaaccctaaccctaaccctaaccctaaccctaaccctaaccctaaccctaaccctaaccctaaccctaacccta&quot;,
-  8: &quot;accctaaccctaaccctaaccctaacccaaccctaaccctaaccctaaccctaaccctaaccctaacccctaaccctaac&quot;,
-  9: &quot;cctaaccctaaccctaacctaaccctaaccctaaccctaaccctaaccctaaccctaaccctaaccctaacccctaaccc&quot;,
- 10: &quot;taaccctaaaccctaaaccctaaccctaaccctaaccctaaccctaaccccaaccccaaccccaaccccaaccccaaccc&quot;,
- 11: &quot;caaccctaacccctaaccctaaccctaaccctaccctaaccctaaccctaaccctaaccctaaccctaacccctaacccc&quot;,
- 12: &quot;taaccctaaccctaaccctaaccctaaccctaaccctaacccctaaccctaaccctaaccctaacccaugCGGTACCCTC&quot;,
- 13: &quot;AGCCGGCCCGCCCGCCCGGGTCTGACCTGAGGAGAACTGTGCTCCGCCTTCAGAGTACCACCGAAATCTGTGCAGAGGAc&quot;,
- 14: &quot;aacgcagctccgccctcgcggtGCTCtccgggtctgtgctgaggagaacgCAACTCCGCCGTTGCAAAGGCGcgccgcgc&quot;,
- 15: &quot;cggcgcaggcgcagagaggcgcgccgcgccggcgcaggcgcagagaggcgUGAcgcgccggcgcaggcgcagagaggcgc&quot;,
- 16: &quot;gccgcgccggcgcaggcgcagagaggcgcgccgcgccggcgcaggcgcagagaggcgcgccgcgccggcgcaggcgcaga&quot;,
- 17: ]
+<pre><code>  1: import conv_t_to_u
+  2: import rna_lookup
+  3: 
+  4: dna_input = [
+  5: &quot;taaccctaaccctaaccctaaccctaaccctaaccctaaccctaaccctaaccctaaccctaaccctaaccctaacccta&quot;,
+  6: &quot;accctaaccctaaccctaaccctaacccaaccctaaccctaaccctaaccctaaccctaaccctaacccctaaccctaac&quot;,
+  7: &quot;cctaaccctaaccctaacctaaccctaaccctaaccctaaccctaaccctaaccctaaccctaaccctaacccctaaccc&quot;,
+  8: &quot;taaccctaaaccctaaaccctaaccctaaccctaaccctaaccctaaccccaaccccaaccccaaccccaaccccaaccc&quot;,
+  9: &quot;caaccctaacccctaaccctaaccctaaccctaccctaaccctaaccctaaccctaaccctaaccctaacccctaacccc&quot;,
+ 10: &quot;taaccctaaccctaaccctaaccctaaccctaaccctaacccctaaccctaaccctaaccctaacccaugCGGTACCCTC&quot;,
+ 11: &quot;AGCCGGCCCGCCCGCCCGGGTCTGACCTGAGGAGAACTGTGCTCCGCCTTCAGAGTACCACCGAAATCTGTGCAGAGGAc&quot;,
+ 12: &quot;aacgcagctccgccctcgcggtGCTCtccgggtctgtgctgaggagaacgCAACTCCGCCGTTGCAAAGGCGcgccgcgc&quot;,
+ 13: &quot;cggcgcaggcgcagagaggcgcgccgcgccggcgcaggcgcagagaggcgUGAcgcgccggcgcaggcgcagagaggcgc&quot;,
+ 14: &quot;gccgcgccggcgcaggcgcagagaggcgcgccgcgccggcgcaggcgcagagaggcgcgccgcgccggcgcaggcgcaga&quot;,
+ 15: ]
+ 16: 
+ 17: amino_string = &quot;&quot;
  18: 
- 19: amino_string = &quot;&quot;
+ 19: rna = conv_t_to_u.conv_t_to_u ( &quot;&quot;.join(dna_input) )
  20: 
- 21: rna = conv_t_to_u.conv_t_to_u ( &quot;&quot;.join(dna_input) )
- 22: 
- 23: st = &quot;before&quot;
- 24: i = 0
- 25: while i &lt; len(rna)-2:
- 26:     three = rna[i:i+3]
- 27:     # print ( &quot;st {} three &gt;{}&lt; at i={}&quot;.format(st, three,i)) 
- 28:     amino = rna_lookup.rna_to_amino_acid(three)
- 29:     if amino == '!' :
- 30:         print ( &quot;Invalid 3 letter sequence {} at {}&quot;.format(three, i ) )
- 31:         break
- 32:     if st == &quot;before&quot; and amino == &quot;M&quot; :
- 33:         st = &quot;encode&quot;
- 34:         i = i + 3
- 35:     elif st == &quot;encode&quot; and amino == &quot;.&quot;:
- 36:         st = &quot;before&quot;
- 37:         print (&quot;Protein : &quot;, amino_string)
- 38:         i = i + 3
- 39:     elif st == &quot;encode&quot; :
- 40:         amino_string = amino_string + amino
- 41:         i = i + 3
- 42:     else:
- 43:         i = i + 1
- 44: 
+ 21: st = &quot;before&quot;
+ 22: i = 0
+ 23: while i &lt; len(rna)-2:
+ 24:     three = rna[i:i+3]
+ 25:     # print ( &quot;st {} three &gt;{}&lt; at i={}&quot;.format(st, three,i)) 
+ 26:     amino = rna_lookup.rna_to_amino_acid(three)
+ 27:     if amino == '!' :
+ 28:         print ( &quot;Invalid 3 letter sequence {} at {}&quot;.format(three, i ) )
+ 29:         break
+ 30:     if st == &quot;before&quot; and amino == &quot;M&quot; :
+ 31:         st = &quot;encode&quot;
+ 32:         i = i + 3
+ 33:     elif st == &quot;encode&quot; and amino == &quot;.&quot;:
+ 34:         st = &quot;before&quot;
+ 35:         print (&quot;Protein : &quot;, amino_string)
+ 36:         i = i + 3
+ 37:     elif st == &quot;encode&quot; :
+ 38:         amino_string = amino_string + amino
+ 39:         i = i + 3
+ 40:     else:
+ 41:         i = i + 1
 
 </code></pre>
 

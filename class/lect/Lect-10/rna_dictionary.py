@@ -1,5 +1,3 @@
-#!/Users/philip/opt/anaconda3/bin/python
-
 # RNA codon table
 rna_codon = {
     "aaa" : "K", "aac" : "N", "aag" : "K", "aau" : "N", "aca" : "T", "acc" : "T", "acg" : "T",
@@ -13,4 +11,3 @@ rna_codon = {
     "uga" : ".", "ugc" : "C", "ugg" : "W", "ugu" : "C", "uua" : "L", "uuc" : "F", "uug" : "L",
     "uuu" : "F"
 }
-
