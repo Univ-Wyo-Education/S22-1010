@@ -51,7 +51,7 @@ From Class, and example of the age/ticket price:
 
 Built as a function that you can test:
 
-File: age2.py
+File: [age2.py](https://github.com/Univ-Wyo-Education/S22-1010/blob/main/homework/04/age2.py)
 
 ```
   1: def calc_ticket_price(age):
@@ -98,7 +98,7 @@ File: age2.py
 
 and as a main program that calls the function:
 
-File: age_main.py
+File: [age_main.py](https://github.com/Univ-Wyo-Education/S22-1010/blob/main/homework/04/age_main.py)
 
 ```
   1: import age2

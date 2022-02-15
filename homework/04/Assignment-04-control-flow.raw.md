@@ -37,7 +37,7 @@ print ( "Price = {}".format(ticket_price) )
 
 Built as a function that you can test:
 
-File: age2.py
+File: [age2.py](https://github.com/Univ-Wyo-Education/S22-1010/blob/main/homework/04/age2.py)
 
 ```
 m4_include(age2.py.nu)
@@ -84,7 +84,7 @@ if __name__ == "__main__":
 
 and as a main program that calls the function:
 
-File: age_main.py
+File: [age_main.py](https://github.com/Univ-Wyo-Education/S22-1010/blob/main/homework/04/age_main.py)
 
 ```
 m4_include(age_main.py.nu)
