@@ -123,13 +123,15 @@ Start VS Code.  Open the directory that you created.
 Create a new file called `shipping_cost.py`
 
 Create the lookup with if/else as a function.  You will want to copy the code
-from age2.py and modify it.
+from `age2.py` and modify it.
 
 Run it.  Test it.
 
 Copy the main program, `age_main.py`,  to a new file name, lets say `shipping_main.py`.
 
-Modify it to call your new program.   Run it.
+Modify it to call your new program.   Run it.  Check to see if 999 is returned.
+If it is then print "Too Heavy".  If the value is not 999 then print out the
+shipping cost.  Alternatively test some cases (run your program a few times).
 
 
 ## Modify The Code for the rest of the table.
@@ -138,11 +140,12 @@ Modify it to call your new program.   Run it.
 |-----|------|
 | 0 to 2 | 4 |
 | 3 to 4 | 6 |
-| 4 to 7 | 10 |
+| 5 to 7 | 10 |
 | 8 to 10 | 14 |
 | 11 to 15 | 18 |
 | 16 to 25 | 22 |
 | 26 to 35 | 28 |
+| 36 and over | 999 |
 
 ## Testing your code
 
