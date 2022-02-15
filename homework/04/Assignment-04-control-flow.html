@@ -723,87 +723,173 @@ ol {
 }
 </style>
 
-<h1>Lab 05 - String Operations on DNA / RNA</h1>
+<h1>If Else and control flow.</h1>
 
-<p>100pts each part (2 parts), 200 pts total.</p>
+<h2>Due Feb 21, 2022.  200pts.</h2>
 
-<p>Amino Acid Coding Table</p>
+<h2>Goals</h2>
 
-<p><img src="./Aminoacids_table.svg" alt="Aminoacids_table.svg" /></p>
+<p>Create a program that when input the weight of a package
+prints out the cost for shipping the package.</p>
 
-<p>Information that you need for this lab is in the lecture notes.
-<a href="https://github.com/Univ-Wyo-Education/S22-1010/blob/main/class/lect/Lect-11/Lect-11.html.pdf">https://github.com/Univ-Wyo-Education/S22-1010/blob/main/class/lect/Lect-11/Lect-11.html.pdf</a></p>
+<p>From Class, and example of the age/ticket price:</p>
 
-<h2>Part 1</h2>
+<pre><code>  1: print ( &quot;Enter Age&quot; )
+  2: age_str = input()
+  3: age = int(age_str)
+  4: 
+  5: ticket_price = 0
+  6: if age &gt;= 0 and age &lt;= 4:
+  7:     ticket_price = 0
+  8: elif age &gt;= 5 and age &lt;= 12:
+  9:     ticket_price = 38
+ 10: elif age &gt;= 13 and age &lt;= 17:
+ 11:     ticket_price = 48
+ 12: elif age &gt;= 18:
+ 13:     ticket_price = 62
+ 14: else:
+ 15:     print ( &quot;Impossile Age&quot; )
+ 16: 
+ 17: print ( &quot;Price = {}&quot;.format(ticket_price) ) 
 
-<p>Create a new file conv_t_to_u.py.</p>
 
-<p>Write a python function that will:</p>
-
-<ol>
-<li>Convert the input parameter to all lower case</li>
-<li>Change all the t&rsquo;s to u&rsquo;s</li>
-<li>Return the converted string.</li>
-</ol>
-
-<p>This is very close to the example in class.</p>
-
-<p>Use the <code>example-conv_t_to_u.py</code> as a starting point.</p>
-
-<p>Link on github.com: <a href="https://github.com/Univ-Wyo-Education/S22-1010/blob/main/homework/04/example-conv_t_to_u.py">https://github.com/Univ-Wyo-Education/S22-1010/blob/main/homework/04/example-conv_t_to_u.py</a></p>
-
-<p>Input Example: aaTggTaaa</p>
-
-<p>Output Example:  aaugguaaa</p>
-
-<p>Implement a test that verifies that this works. See example-conv_t_to_u.py for testing code as well.</p>
-
-<h2>Part 2</h2>
-
-<p>Create a new file rna_lookup.py.</p>
-
-<p>Implement a function that uses a dictionary to lookup the amino acid
-that corresponds to a set of 3 RNA letters. The lookup takes in
-a 3 letter codon string and returns a single letter amino acid.
-If the three letter is not found then return &lsquo;!&rsquo;.</p>
-
-<p>Example Input: &ldquo;ccu&rdquo;</p>
-
-<p>Example Output: &ldquo;P&rdquo;</p>
-
-<p>For starts codons, &ldquo;aug&rdquo;,  it returns &rsquo;M&rsquo; for stop, &ldquo;uaa&rdquo;, &ldquo;uag&rdquo;, &ldquo;uga&rdquo; it returns &lsquo;.&rsquo;</p>
-
-<p>Call the function <code>rna_to_amino_acid</code>.  Passing the 3 letter amino sequence.</p>
-
-<p>Return the single letter coding for the amino acid as a string.</p>
-
-<p>Use the <code>example-rna_lookkup.py</code> as a starting point.    It has the dictionary in it
-and some of the other code.  You will need to implement some test cases.  Look at
-the previous code and copy, then modify the tests to be appropriate for this.</p>
-
-<p>Link on github.com: <a href="https://github.com/Univ-Wyo-Education/S22-1010/blob/main/homework/04/example-rna_lookkup.py">https://github.com/Univ-Wyo-Education/S22-1010/blob/main/homework/04/example-rna_lookkup.py</a></p>
-
-<h2>Part 3</h2>
-
-<p>Download amino.py from <a href="https://github.com/Univ-Wyo-Education/S22-1010/blob/main/homework/04/amino.py">https://github.com/Univ-Wyo-Education/S22-1010/blob/main/homework/04/amino.py</a>.</p>
-
-<p>Run the file amino.py that imports the functions from Part 1 and Part 2 and
-calls them in order to produce the amino acid sequence.</p>
-
-<p>Expected Output:</p>
-
-<pre><code>RYPQPARPPGSDLRRTVLRLQSTTEICAEDNAAPPSRCSPGLC
 </code></pre>
 
-<p>Make sure you have all the files in the same folder.</p>
+<p>Built as a function that you can test:</p>
 
-<h1>Turn in</h1>
+<p>File: age2.py</p>
 
-<p>Your 2 python files conv_t_to_u.py and rna_lookup.py.</p>
+<pre><code>  1: def calc_ticket_price(age):
+  2:     ticket_price = 0
+  3:     if age &gt;= 0 and age &lt;= 4:
+  4:         ticket_price = 0
+  5:     elif age &gt;= 5 and age &lt;= 12:
+  6:         ticket_price = 38
+  7:     elif age &gt;= 13 and age &lt;= 17:
+  8:         ticket_price = 48
+  9:     elif age &gt;= 18:
+ 10:         ticket_price = 62
+ 11:     else:
+ 12:         print ( &quot;Impossile Age&quot; )
+ 13:     return(ticket_price)
+ 14: 
+ 15: 
+ 16: # Automated Test
+ 17: if __name__ == &quot;__main__&quot;:
+ 18:     n_err = 0
+ 19: 
+ 20:     got = calc_ticket_price(13)
+ 21:     expect = 48
+ 22:     if got != expect:
+ 23:         n_err = n_err + 1
+ 24:         print ( &quot;Error: Test 1: expected {} got {}&quot;.
+ 25:                 format (  expect, got ) )
+ 26: 
+ 27:     got = calc_ticket_price(18)
+ 28:     expect = 62
+ 29:     if got != expect:
+ 30:         n_err = n_err + 1
+ 31:         print ( &quot;Error: Test 1: expected {} got {}&quot;.
+ 32:                 format (  expect, got ) )
+ 33: 
+ 34:     if n_err == 0 :
+ 35:         print ( &quot;PASS&quot; )
+ 36:     else:
+ 37:         print ( &quot;FAILED&quot; )
+ 38: 
 
-<h1>Copyright</h1>
 
-<p>Copyright &copy; University of Wyoming, 2021.</p>
+</code></pre>
+
+<p>and as a main program that calls the function:</p>
+
+<p>File: age_main.py</p>
+
+<pre><code>  1: import age2
+  2: 
+  3: print ( &quot;Enter Age&quot; )
+  4: age_str = input()
+  5: age = int(age_str)
+  6: 
+  7: ticket_price = age2.calc_ticket_price(age)
+  8: 
+  9: print ( &quot;Price = {}&quot;.format(ticket_price) ) 
+
+
+</code></pre>
+
+<h3>Using Visual Studio Code (VSCode)</h3>
+
+<p>Create a new directory, lets say <code>hw4</code>.</p>
+
+<p>Start VS Code.  Open the directory that you created.</p>
+
+<p>Create a new file called <code>shipping_cost.py</code></p>
+
+<p>Create the lookup with if/else as a function.  You will want to copy the code
+from age2.py and modify it.</p>
+
+<p>Run it.  Test it.</p>
+
+<p>Copy the main program, <code>age_main.py</code>,  to a new file name, lets say <code>shipping_main.py</code>.</p>
+
+<p>Modify it to call your new program.   Run it.</p>
+
+<h2>Modify The Code for the rest of the table.</h2>
+
+<table>
+<thead>
+<tr>
+<th>Weight</th>
+<th>Cost</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>0 to 2</td>
+<td>4</td>
+</tr>
+
+<tr>
+<td>3 to 4</td>
+<td>6</td>
+</tr>
+
+<tr>
+<td>4 to 7</td>
+<td>10</td>
+</tr>
+
+<tr>
+<td>8 to 10</td>
+<td>14</td>
+</tr>
+
+<tr>
+<td>11 to 15</td>
+<td>18</td>
+</tr>
+
+<tr>
+<td>16 to 25</td>
+<td>22</td>
+</tr>
+
+<tr>
+<td>26 to 35</td>
+<td>28</td>
+</tr>
+</tbody>
+</table>
+
+<h2>Testing your code</h2>
+
+<p>Run your code with different ages as input and see if your code is printing the output according to the values in the table above.</p>
+
+<h2>Turn in</h2>
+
+<p>Your python two python files.</p>
 
 </div>
 

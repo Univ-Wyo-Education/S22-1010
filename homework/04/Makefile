@@ -1,6 +1,6 @@
 
 PP=`pwd`
-FN=Assignment-04-DNA-Encoding
+FN=Assignment-04-control-flow
 DIR=./../../
 IMG=
 PY=  
