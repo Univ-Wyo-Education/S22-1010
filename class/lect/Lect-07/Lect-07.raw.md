@@ -1,6 +1,6 @@
 m4_include(../../../setup.m4)
 
-# Lecture 8 - Counting Words, Using a file and a List
+# Lecture 7 - Counting Words, Using a file and a List
 
 ## Feb 8, 2022
 
