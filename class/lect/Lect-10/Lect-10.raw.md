@@ -38,7 +38,7 @@ U instead of T.  So we need a function to start cleaning up the data.
 
 Or if you prefer a table: [https://en.wikipedia.org/wiki/DNA_and_RNA_codon_tables](https://en.wikipedia.org/wiki/DNA_and_RNA_codon_tables)
 
-Le's do a google search and you might find:
+Let's do a Google search and you might find:
 
 [https://github.com/T101J/Translating_RNA_to_Protein](https://github.com/T101J/Translating_RNA_to_Protein)
 
@@ -170,13 +170,13 @@ Second is to use a dictionary lookup.
 To create a dictionary in Python
 
 ```
-d = { "name": 1, "name2", 2 }
+d = { "name": 1, "name2": 2 }
 ```
 
 or to lookup other strings
 
 ```
-d = { "in1": "out1", "in2", "out2" }
+d = { "in1": "out1", "in2": "out2" }
 ```
 
 So we can lookup our 3 letter codon with a dictionary.
