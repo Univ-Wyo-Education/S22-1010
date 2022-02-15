@@ -136,7 +136,7 @@ shipping cost.  Alternatively test some cases (run your program a few times).
 
 ## Testing your code
 
-Run your code with different ages as input and see if your code is printing the output according to the values in the table above.
+Run your code with different weights as input and see if your code is printing the output according to the values in the table above.
 
 ## Turn in 
 
