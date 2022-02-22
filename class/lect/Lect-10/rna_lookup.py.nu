@@ -13,33 +13,28 @@
  13: }
  14: 
  15: def rna_to_amino_acid(s):
- 16:     if s in rna_codon:
- 17:         amino = rna_codon[s]
- 18:     else:
- 19:         amino = '!'
+ 16:     # Homework - DO This Part
+ 17:     return 'M' # Dummy code for demo in lecture 11
+ 18: 
+ 19: 
  20: 
- 21:     return amino    
- 22: 
- 23: 
+ 21: # Automated Test
+ 22: if __name__ == "__main__":
+ 23:     n_err = 0
  24: 
- 25: 
- 26: # Automated Test
- 27: if __name__ == "__main__":
- 28:     n_err = 0
- 29: 
- 30:     s = rna_to_amino_acid("aug")
- 31:     ex =  "M"
- 32:     if s != ex :
- 33:         n_err = n_err + 1
- 34:         print ( "Error: Test 1: conversion not working, expected {} got {}".format ( ex, s ) )
- 35: 
- 36:     s = rna_to_amino_acid("agc")
- 37:     ex =  "S"
- 38:     if s != ex :
- 39:         n_err = n_err + 1
- 40:         print ( "Error: Test 1: conversion not working, expected {} got {}".format ( ex, s ) )
- 41: 
- 42:     if n_err == 0 :
- 43:         print ( "PASS" )
- 44:     else:
- 45:         print ( "FAILED" )
+ 25:     s = rna_to_amino_acid("aug")
+ 26:     ex =  "M"
+ 27:     if s != ex :
+ 28:         n_err = n_err + 1
+ 29:         print ( "Error: Test 1: conversion not working, expected {} got {}".format ( ex, s ) )
+ 30: 
+ 31:     s = rna_to_amino_acid("agc")
+ 32:     ex =  "S"
+ 33:     if s != ex :
+ 34:         n_err = n_err + 1
+ 35:         print ( "Error: Test 1: conversion not working, expected {} got {}".format ( ex, s ) )
+ 36: 
+ 37:     if n_err == 0 :
+ 38:         print ( "PASS" )
+ 39:     else:
+ 40:         print ( "FAILED" )

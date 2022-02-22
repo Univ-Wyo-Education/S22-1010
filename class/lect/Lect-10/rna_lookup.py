@@ -13,13 +13,8 @@ rna_codon = {
 }
 
 def rna_to_amino_acid(s):
-    if s in rna_codon:
-        amino = rna_codon[s]
-    else:
-        amino = '!'
-
-    return amino    
-
+    # Homework - DO This Part
+    return 'M' # Dummy code for demo in lecture 11
 
 
 

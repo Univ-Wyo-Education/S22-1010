@@ -1,0 +1,1037 @@
+<style>
+@font-face {
+	font-family: octicons-link;
+	src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+.markdown-body {
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	line-height: 1.5;
+	color: #24292e;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	font-size: 16px;
+	line-height: 1.5;
+	word-wrap: break-word;
+}
+
+.markdown-body .pl-c {
+	color: #6a737d;
+}
+
+.markdown-body .pl-c1,
+.markdown-body .pl-s .pl-v {
+	color: #005cc5;
+}
+
+.markdown-body .pl-e,
+.markdown-body .pl-en {
+	color: #6f42c1;
+}
+
+.markdown-body .pl-smi,
+.markdown-body .pl-s .pl-s1 {
+	color: #24292e;
+}
+
+.markdown-body .pl-ent {
+	color: #22863a;
+}
+
+.markdown-body .pl-k {
+	color: #d73a49;
+}
+
+.markdown-body .pl-s,
+.markdown-body .pl-pds,
+.markdown-body .pl-s .pl-pse .pl-s1,
+.markdown-body .pl-sr,
+.markdown-body .pl-sr .pl-cce,
+.markdown-body .pl-sr .pl-sre,
+.markdown-body .pl-sr .pl-sra {
+	color: #032f62;
+}
+
+.markdown-body .pl-v,
+.markdown-body .pl-smw {
+	color: #e36209;
+}
+
+.markdown-body .pl-bu {
+	color: #b31d28;
+}
+
+.markdown-body .pl-ii {
+	color: #fafbfc;
+	background-color: #b31d28;
+}
+
+.markdown-body .pl-c2 {
+	color: #fafbfc;
+	background-color: #d73a49;
+}
+
+.markdown-body .pl-c2::before {
+	content: "^M";
+}
+
+.markdown-body .pl-sr .pl-cce {
+	font-weight: bold;
+	color: #22863a;
+}
+
+.markdown-body .pl-ml {
+	color: #735c0f;
+}
+
+.markdown-body .pl-mh,
+.markdown-body .pl-mh .pl-en,
+.markdown-body .pl-ms {
+	font-weight: bold;
+	color: #005cc5;
+}
+
+.markdown-body .pl-mi {
+	font-style: italic;
+	color: #24292e;
+}
+
+.markdown-body .pl-mb {
+	font-weight: bold;
+	color: #24292e;
+}
+
+.markdown-body .pl-md {
+	color: #b31d28;
+	background-color: #ffeef0;
+}
+
+.markdown-body .pl-mi1 {
+	color: #22863a;
+	background-color: #f0fff4;
+}
+
+.markdown-body .pl-mc {
+	color: #e36209;
+	background-color: #ffebda;
+}
+
+.markdown-body .pl-mi2 {
+	color: #f6f8fa;
+	background-color: #005cc5;
+}
+
+.markdown-body .pl-mdr {
+	font-weight: bold;
+	color: #6f42c1;
+}
+
+.markdown-body .pl-ba {
+	color: #586069;
+}
+
+.markdown-body .pl-sg {
+	color: #959da5;
+}
+
+.markdown-body .pl-corl {
+	text-decoration: underline;
+	color: #032f62;
+}
+
+.markdown-body .octicon {
+	display: inline-block;
+	vertical-align: text-top;
+	fill: currentColor;
+}
+
+.markdown-body a {
+	background-color: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+	outline-width: 0;
+}
+
+.markdown-body strong {
+	font-weight: inherit;
+}
+
+.markdown-body strong {
+	font-weight: bolder;
+}
+
+.markdown-body h1 {
+	font-size: 2em;
+	margin: 0.67em 0;
+}
+
+.markdown-body img {
+	border-style: none;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre {
+	font-family: monospace, monospace;
+	font-size: 1em;
+}
+
+.markdown-body hr {
+	box-sizing: content-box;
+	height: 0;
+	overflow: visible;
+}
+
+.markdown-body input {
+	font: inherit;
+	margin: 0;
+}
+
+.markdown-body input {
+	overflow: visible;
+}
+
+.markdown-body [type="checkbox"] {
+	box-sizing: border-box;
+	padding: 0;
+}
+
+.markdown-body * {
+	box-sizing: border-box;
+}
+
+.markdown-body input {
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+}
+
+.markdown-body a {
+	color: #0366d6;
+	text-decoration: none;
+}
+
+.markdown-body a:hover {
+	text-decoration: underline;
+}
+
+.markdown-body strong {
+	font-weight: 600;
+}
+
+.markdown-body hr {
+	height: 0;
+	margin: 15px 0;
+	overflow: hidden;
+	background: transparent;
+	border: 0;
+	border-bottom: 1px solid #dfe2e5;
+}
+
+.markdown-body hr::before {
+	display: table;
+	content: "";
+}
+
+.markdown-body hr::after {
+	display: table;
+	clear: both;
+	content: "";
+}
+
+.markdown-body table {
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+
+.markdown-body td,
+.markdown-body th {
+	padding: 0;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.markdown-body h1 {
+	font-size: 32px;
+	font-weight: 600;
+}
+
+.markdown-body h2 {
+	font-size: 24px;
+	font-weight: 600;
+}
+
+.markdown-body h3 {
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.markdown-body h4 {
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.markdown-body h5 {
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.markdown-body h6 {
+	font-size: 12px;
+	font-weight: 600;
+}
+
+.markdown-body p {
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+
+.markdown-body blockquote {
+	margin: 0;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+	padding-left: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+	x-list-style-type: lower-roman;
+	  list-style-type: decimal;
+}
+
+.markdown-body ul ul ol,
+.markdown-body ul ol ol,
+.markdown-body ol ul ol,
+.markdown-body ol ol ol {
+	list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+	margin-left: 0;
+}
+
+.markdown-body code {
+	font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+	font-size: 12px;
+}
+
+.markdown-body pre {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+	font-size: 12px;
+}
+
+.markdown-body .octicon {
+	vertical-align: text-bottom;
+}
+
+.markdown-body .pl-0 {
+	padding-left: 0 !important;
+}
+
+.markdown-body .pl-1 {
+	padding-left: 4px !important;
+}
+
+.markdown-body .pl-2 {
+	padding-left: 8px !important;
+}
+
+.markdown-body .pl-3 {
+	padding-left: 16px !important;
+}
+
+.markdown-body .pl-4 {
+	padding-left: 24px !important;
+}
+
+.markdown-body .pl-5 {
+	padding-left: 32px !important;
+}
+
+.markdown-body .pl-6 {
+	padding-left: 40px !important;
+}
+
+.markdown-body::before {
+	display: table;
+	content: "";
+}
+
+.markdown-body::after {
+	display: table;
+	clear: both;
+	content: "";
+}
+
+.markdown-body>*:first-child {
+	margin-top: 0 !important;
+}
+
+.markdown-body>*:last-child {
+	margin-bottom: 0 !important;
+}
+
+.markdown-body a:not([href]) {
+	color: inherit;
+	text-decoration: none;
+}
+
+.markdown-body .anchor {
+	float: left;
+	padding-right: 4px;
+	margin-left: -20px;
+	line-height: 1;
+}
+
+.markdown-body .anchor:focus {
+	outline: none;
+}
+
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre {
+	margin-top: 0;
+	margin-bottom: 16px;
+}
+
+.markdown-body hr {
+	height: 0.25em;
+	padding: 0;
+	margin: 24px 0;
+	background-color: #e1e4e8;
+	border: 0;
+}
+
+.markdown-body blockquote {
+	padding: 0 1em;
+	color: #6a737d;
+	border-left: 0.25em solid #dfe2e5;
+}
+
+.markdown-body blockquote>:first-child {
+	margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+	margin-bottom: 0;
+}
+
+.markdown-body kbd {
+	display: inline-block;
+	padding: 3px 5px;
+	font-size: 11px;
+	line-height: 10px;
+	color: #444d56;
+	vertical-align: middle;
+	background-color: #fafbfc;
+	border: solid 1px #c6cbd1;
+	border-bottom-color: #959da5;
+	border-radius: 3px;
+	box-shadow: inset 0 -1px 0 #959da5;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+	margin-top: 24px;
+	margin-bottom: 16px;
+	font-weight: 600;
+	line-height: 1.25;
+}
+
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
+	color: #1b1f23;
+	vertical-align: middle;
+	visibility: hidden;
+}
+
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
+	text-decoration: none;
+}
+
+.markdown-body h1:hover .anchor .octicon-link,
+.markdown-body h2:hover .anchor .octicon-link,
+.markdown-body h3:hover .anchor .octicon-link,
+.markdown-body h4:hover .anchor .octicon-link,
+.markdown-body h5:hover .anchor .octicon-link,
+.markdown-body h6:hover .anchor .octicon-link {
+	visibility: visible;
+}
+
+.markdown-body h1 {
+	padding-bottom: 0.3em;
+	font-size: 2em;
+	border-bottom: 1px solid #eaecef;
+}
+
+.markdown-body h2 {
+	padding-bottom: 0.3em;
+	font-size: 1.5em;
+	border-bottom: 1px solid #eaecef;
+}
+
+.markdown-body h3 {
+	font-size: 1.25em;
+}
+
+.markdown-body h4 {
+	font-size: 1em;
+}
+
+.markdown-body h5 {
+	font-size: 0.875em;
+}
+
+.markdown-body h6 {
+	font-size: 0.85em;
+	color: #6a737d;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+	padding-left: 2em;
+}
+
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.markdown-body li {
+	word-wrap: break-all;
+}
+
+.markdown-body li>p {
+	margin-top: 16px;
+}
+
+.markdown-body li+li {
+	margin-top: 0.25em;
+}
+
+.markdown-body dl {
+	padding: 0;
+}
+
+.markdown-body dl dt {
+	padding: 0;
+	margin-top: 16px;
+	font-size: 1em;
+	font-style: italic;
+	font-weight: 600;
+}
+
+.markdown-body dl dd {
+	padding: 0 16px;
+	margin-bottom: 16px;
+}
+
+.markdown-body table {
+	display: block;
+	width: 100%;
+	overflow: auto;
+}
+
+.markdown-body table th {
+	font-weight: 600;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+	padding: 6px 13px;
+	border: 1px solid #dfe2e5;
+}
+
+.markdown-body table tr {
+	background-color: #fff;
+	border-top: 1px solid #c6cbd1;
+}
+
+.markdown-body table tr:nth-child(2n) {
+	background-color: #f6f8fa;
+}
+
+.markdown-body img {
+	max-width: 100%;
+	box-sizing: content-box;
+	background-color: #fff;
+}
+
+.markdown-body img[align=right] {
+	padding-left: 20px;
+}
+
+.markdown-body img[align=left] {
+	padding-right: 20px;
+}
+
+.markdown-body code {
+	padding: 0.2em 0.4em;
+	margin: 0;
+	font-size: 85%;
+	background-color: rgba(27,31,35,0.05);
+	border-radius: 3px;
+}
+
+.markdown-body pre {
+	word-wrap: normal;
+}
+
+.markdown-body pre>code {
+	padding: 0;
+	margin: 0;
+	font-size: 100%;
+	word-break: normal;
+	white-space: pre;
+	background: transparent;
+	border: 0;
+}
+
+.markdown-body .highlight {
+	margin-bottom: 16px;
+}
+
+.markdown-body .highlight pre {
+	margin-bottom: 0;
+	word-break: normal;
+}
+
+.markdown-body .highlight pre,
+.markdown-body pre {
+	padding: 16px;
+	overflow: auto;
+	font-size: 85%;
+	line-height: 1.45;
+	background-color: #f6f8fa;
+	border-radius: 3px;
+}
+
+.markdown-body pre code {
+	display: inline;
+	max-width: auto;
+	padding: 0;
+	margin: 0;
+	overflow: visible;
+	line-height: inherit;
+	word-wrap: normal;
+	background-color: transparent;
+	border: 0;
+}
+
+.markdown-body .full-commit .btn-outline:not(:disabled):hover {
+	color: #005cc5;
+	border-color: #005cc5;
+}
+
+.markdown-body kbd {
+	display: inline-block;
+	padding: 3px 5px;
+	font: 11px "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+	line-height: 10px;
+	color: #444d56;
+	vertical-align: middle;
+	background-color: #fafbfc;
+	border: solid 1px #d1d5da;
+	border-bottom-color: #c6cbd1;
+	border-radius: 3px;
+	box-shadow: inset 0 -1px 0 #c6cbd1;
+}
+
+.markdown-body :checked+.radio-label {
+	position: relative;
+	z-index: 1;
+	border-color: #0366d6;
+}
+
+.markdown-body .task-list-item {
+	list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+	margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+	margin: 0 0.2em 0.25em -1.6em;
+	vertical-align: middle;
+}
+
+.markdown-body hr {
+	border-bottom-color: #eee;
+}
+
+</style>
+<style>
+ol {
+    display: block;
+    list-style-type: decimal;
+}
+.pagebreak { page-break-before: always; }
+.half { height: 200px; }
+</style>
+
+<div class="markdown-body">
+
+<style>
+.pagebreak { page-break-before: always; }
+.half { height: 200px; }
+</style>
+<style>
+.pagebreak { page-break-before: always; }
+.half { height: 200px; }
+.markdown-body {
+    font-size: 12px;
+}
+.markdown-body td {
+    font-size: 12px;
+}
+</style>
+
+<h1>Midterm</h1>
+
+<p>Total 600 pts.  10 questions.</p>
+
+<p>Question 1: 60 pts. Implement a function with a set of test code that converts from
+feet to inches.   Call the file <code>feet_to_in.py</code>.
+There are 12 inches to the foot.</p>
+
+<p>Question 2: 60 pts. Use a loop to search a list and find if a value is in the list.
+Implement a function, <code>find_in_list</code> that takes 2 parameters.</p>
+
+<pre><code>def find_in_list ( theList, lookFor ):
+</code></pre>
+
+<p>and returns True if the value in <code>lookFor</code> is in the list in <code>theList</code>.</p>
+
+<p>Implement a simple test for the function, <code>find_in_list</code>.  Put the code in the file <code>find_in_list.py</code>.</p>
+
+<p>An example of calling the function (can be used in your test) is:</p>
+
+<pre><code>	ll = [ &quot;a&quot;, &quot;b&quot;, &quot;c&quot; ]
+	found = find_in_list ( ll, &quot;b&quot; )
+</code></pre>
+
+<p>Should return true,</p>
+
+<p>and</p>
+
+<pre><code>	ll = [ &quot;a&quot;, &quot;b&quot;, &quot;c&quot; ]
+	found = find_in_list ( ll, &quot;x&quot; )
+</code></pre>
+
+<p>should return false.</p>
+
+<p>Question 3:  60 pts. Implement a function to convert an input list of strings to a single string.
+(This is covered in Lecture 10 - there is an example)  Have a set of test code for it.</p>
+
+<div class="pagebreak"></div>
+
+<p>Question 4:  60 pts.  Use Python (either write a very short program, or use it interactively)
+to calculate:</p>
+
+<pre><code>y = k + 4 * x  + 2 * x * x
+</code></pre>
+
+<p>where k = 92827828272222</p>
+
+<p>and x = 48938493289499000009939393939393947829202020920020202072722243433</p>
+
+<p>Turn in the resulting &lsquo;y&rsquo; value in a text file, called <code>question4.md</code>.
+Print out <code>y</code>.</p>
+
+<p>Question 5: 60 pts.  You want to find strings where the first 3 characters are the reverse of the
+last 3 characters in the following list of strings:</p>
+
+<pre><code>ll = [
+	&quot;abc earth cba&quot;,
+	&quot;abc mars abc&quot;,
+	&quot;abcba&quot;
+]
+</code></pre>
+
+<p>You have a function that will reverse strings:</p>
+
+<pre><code>  1: 
+  2: # revers will reverse a string, putting the last character first etc.
+  3: def reverse(s):
+  4:     i = len(s)-1
+  5:     o = &quot;&quot;
+  6:     while ( i &gt;= 0 ):
+  7:         o = o + s[i]
+  8:         i = i - 1
+  9:     return ( o )
+ 10: 
+ 11: 
+ 12: # Automated Test
+ 13: if __name__ == &quot;__main__&quot;:
+ 14:     n_err = 0
+ 15:     x = reverse ( &quot;The quick brown fox jumps over the lazy dog.&quot; )
+ 16:     expect = &quot;.god yzal eht revo spmuj xof nworb kciuq ehT&quot;
+ 17:     if x != expect:
+ 18:         n_err = n_err + 1
+ 19:         print ( &quot;Error: Test 1: conversion not working, expected {} got {}&quot;.format (  expect, x ) )
+ 20:     x = reverse ( &quot;&quot; )
+ 21:     if x != &quot;&quot;:
+ 22:         n_err = n_err + 1
+ 23:         print ( &quot;Error: Test 2: conversion not working, expected -&gt;{}&lt;- got -&gt;{}&lt;-&quot;.format ( &quot;&quot;, x ) )
+ 24: 
+ 25:     if n_err == 0 :
+ 26:         print ( &quot;PASS&quot; )
+ 27:     else:
+ 28:         print ( &quot;FAILED&quot; )
+ 29: 
+
+</code></pre>
+
+<p>Write a program that will take the input list above and find the strings
+that have the first 3 character matching the reverse of the last 3 characters.</p>
+
+<div class="pagebreak"></div>
+
+<p>Question 6: 60 pts. You have a table</p>
+
+<table>
+<thead>
+<tr>
+<th>age bracket</th>
+<th>expected value</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>0 to 14</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>15 to 16</td>
+<td>2000</td>
+</tr>
+
+<tr>
+<td>17 to 18</td>
+<td>6000</td>
+</tr>
+
+<tr>
+<td>19 to 23</td>
+<td>24000</td>
+</tr>
+
+<tr>
+<td>24 to 40</td>
+<td>38200</td>
+</tr>
+
+<tr>
+<td>41 to 67</td>
+<td>51000</td>
+</tr>
+
+<tr>
+<td>67 and older</td>
+<td>18200</td>
+</tr>
+</tbody>
+</table>
+
+<p>Implement this as a function with  if/elif/else and return the value from the 2nd column.
+Implement a test that checks this.</p>
+
+<p>Question  7: 60 pts.  Given the following code:</p>
+
+<pre><code>  1: ll = [ &quot;a&quot;, &quot;b&quot;, &quot;c&quot;, &quot;d&quot; ]
+  2: for i in range(len(ll) ):
+  3:     print ( &quot;i={} ll[{}]= -&gt;{}&lt;-&quot;.format ( i, i, ll[i] ) )
+  4: print ( &quot;that's all folks....&quot; )
+
+</code></pre>
+
+<p>Show the output from the 4 line program.
+(Take the code and run it and save the output to a .md file)</p>
+
+<p>Question  8: 60 pts.  Using the following code</p>
+
+<pre><code>  1: s = &quot;abc&quot;
+  2: i = len(s)-1
+  3: o = &quot;&quot;
+  4: while ( i &gt;= 0 ):
+  5:     o = o + s[i]
+  6:     i = i - 1
+  7: print ( &quot;o = {}&quot;.format(o) )
+
+</code></pre>
+
+<div class="pagebreak"></div>
+
+<p>Hand trace what is happening in this code.   Complete the following table.</p>
+
+<table>
+<thead>
+<tr>
+<th>Line No / Time</th>
+<th>s</th>
+<th>i</th>
+<th>o</th>
+<th>notes</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>1l / t1</td>
+<td>abc</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>l2 / t2</td>
+<td>abc</td>
+<td>2</td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>l3 / t3</td>
+<td>abc</td>
+<td>2</td>
+<td>&rdquo;&rdquo;</td>
+<td></td>
+</tr>
+
+<tr>
+<td>l4 / t4</td>
+<td>abc</td>
+<td>2</td>
+<td>&rdquo;&rdquo;</td>
+<td>while is true, enter loop</td>
+</tr>
+
+<tr>
+<td>l5 / t5</td>
+<td>abc</td>
+<td>2</td>
+<td>&ldquo;c</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p>You should have aroud 14 steps - the blanks in the table are
+values that do not exist.  You add additional steps to the bottom
+of the table.  You can do this by hand or run the code and add print
+statements.  You can put the table in excel or numbers.  You can
+build a little table in a text file or in a markdown file.</p>
+
+<p>Question  9: 60 pts.  You have the following code.  It is not working correctly.
+Fix it. (file is q9.py)  There are 3 yards to 1 foot.   Determine if the function
+feet_to_yards is returning the correct value or if the test case is incorrect.</p>
+
+<pre><code>  1: 
+  2: # Convert from feet to yards
+  3: def feet_to_yards ( feet ):
+  4:     conv = 3
+  5:     yards = feet * conv
+  6:     return (feet)
+  7: 
+  8: # Automated Test
+  9: if __name__ == &quot;__main__&quot;:
+ 10:     n_err = 0
+ 11:     x = feet_to_yards ( 3 )
+ 12:     if x !=  1:
+ 13:         n_err = n_err + 1
+ 14:         print ( &quot;Error: Test 1: conversion not working, expected {} got {}&quot;.format (  1, x ) )
+ 15:     x = feet_to_yards ( 0 )
+ 16:     if x != 0:
+ 17:         n_err = n_err + 1
+ 18:         print ( &quot;Error: Test 2: conversion not working, expected {} got {}&quot;.format ( 0, x ) )
+ 19: 
+ 20:     if n_err == 0 :
+ 21:         print ( &quot;PASS&quot; )
+ 22:     else:
+ 23:         print ( &quot;FAILED&quot; )
+ 24: 
+
+</code></pre>
+
+<div class="pagebreak"></div>
+
+<p>Question  10: 60 pts.  You have the following code.  It is not working correctly.
+Fix it. (file is q10.py)</p>
+
+<p><em>Hint: you may want to fix the code before you run it - or remember that a
+control-C will terminate a program in the middle of running it</em></p>
+
+<p>The code is supposed to take a list of values and double each of the values in
+in a loop.</p>
+
+<pre><code>  1: 
+  2: def double_values_in_list ( ll ):
+  3:     i = 0
+  4:     while ( i &lt; len(ll) ):
+  5:         ll[i] = ll[i] * 2
+  6:         print ( &quot;ll[{}] = {}&quot;.format( i, ll[i] ) )
+  7: 
+  8:     return ll
+  9: 
+ 10: 
+ 11: 
+ 12: # Automated Test
+ 13: if __name__ == &quot;__main__&quot;:
+ 14:     n_err = 0
+ 15:     ll = [ 1, 2, 3 ]
+ 16:     x = double_values_in_list ( ll )
+ 17:     if x[0] != 2:
+ 18:         n_err = n_err + 1
+ 19:         print ( &quot;Error: Test 1: conversion not working, expected {} got {}&quot;.format (  2, x[0] ) )
+ 20: 
+ 21:     if n_err == 0 :
+ 22:         print ( &quot;PASS&quot; )
+ 23:     else:
+ 24:         print ( &quot;FAILED&quot; )
+ 25: 
+
+</code></pre>
+
+</div>
+
