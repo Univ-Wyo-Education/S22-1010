@@ -115,7 +115,3 @@ Your 2 python files conv_t_to_u.py and rna_lookup.py.
 
 
 
-
-# Copyright
-
-Copyright (C) University of Wyoming, 2021.
