@@ -1,0 +1,5 @@
+v1 = Vehicle/Automobile: truck built in 2020 by Tonka milage 0 Max Speed 2
+v2 = Vehicle/Automobile: moon rover built in 1969 by NASA milage 0 Max Speed 2
+v3 = Vehicle/Airplane: Cherokee built in 1969 by Piper milage 0 Max Speed 185 wingspan 32
+v4 = Vehicle/Airplane: PC 12 NC built in 1969 by Pliatus milage 0 Max Speed 581 wingspan 41
+v2 = Vehicle/Automobile: moon rover built in 1969 by NASA milage 2 Max Speed 2
