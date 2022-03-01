@@ -1,11 +1,12 @@
 
 PP=`pwd`
 FN=Lect-13
+FN1=Assignment-06-search
 DIR=../../../
 IMG=
 PY=  
 
-all: all0 ${FN}.html 
+all: all0 ${FN}.html ${FN1}.html
 
 all0:
 	../mk_all_nu.sh
