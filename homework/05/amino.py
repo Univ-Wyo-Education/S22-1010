@@ -16,7 +16,7 @@ dna_input = [
 
 amino_string = ""
 
-rna = conv_t_to_u.conv_t_to_u ( "".join(dna_input) )
+rna = conv_t_to_u.conv_t_to_u ( "".join(dna_input).lower() )
 
 st = "before"
 i = 0

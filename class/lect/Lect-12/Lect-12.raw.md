@@ -41,3 +41,9 @@ Things to Read:
 5. [https://www.forbes.com/sites/lanceeliot/2019/12/08/artificial-stupidity-could-be-the-crux-to-ai-and-achieving-true-self-driving-cars/?sh=260a95e225b6](https://www.forbes.com/sites/lanceeliot/2019/12/08/artificial-stupidity-could-be-the-crux-to-ai-and-achieving-true-self-driving-cars/?sh=260a95e225b6)
 6. [https://www.thinkautomation.com/automation-ethics/do-we-need-to-worry-about-artificial-stupidity/](https://www.thinkautomation.com/automation-ethics/do-we-need-to-worry-about-artificial-stupidity/)
 
+Things to watch:
+
+1. [Whites Only : https://www.youtube.com/watch?v=WHynGQ9Vg30](https://www.youtube.com/watch?v=WHynGQ9Vg30)
+1. [Are we Automating Racism : https://youtu.be/Ok5sKLXqynQ](https://youtu.be/Ok5sKLXqynQ)
+1. [You are a Thing and I Love You : https://www.youtube.com/watch?v=2ZiPEOFnK1o](https://www.youtube.com/watch?v=2ZiPEOFnK1o)
+
