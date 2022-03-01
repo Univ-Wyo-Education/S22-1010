@@ -1,4 +1,19 @@
-m4_include(./../../setup.m4)
+
+<style>
+.pagebreak { page-break-before: always; }
+.half { height: 200px; }
+</style>
+<style>
+.pagebreak { page-break-before: always; }
+.half { height: 200px; }
+.markdown-body {
+	font-size: 12px;
+}
+.markdown-body td {
+	font-size: 12px;
+}
+</style>
+
 
 # Assignment 06 - Search Data
 
