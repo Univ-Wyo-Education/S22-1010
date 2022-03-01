@@ -752,29 +752,29 @@ ol {
 
 <p>vehicle1.py:</p>
 
-<pre><code>  1: 
-  2: class Vehicle:
-  3: 
-  4:     &quot;&quot;&quot; this is a constructor &quot;&quot;&quot;
-  5:     def __init__ ( self, manufacturer, vtype, year ):
-  6:         self.year = year    
-  7:         self.vtype = vtype    
-  8:         self.manufacturer = manufacturer    
-  9:         self.odometer = 0
+<pre><code>  1: class Vehicle:
+  2: 
+  3:     &quot;&quot;&quot; this is a constructor &quot;&quot;&quot;
+  4:     def __init__ ( self, manufacturer, vtype, year ):
+  5:         self.year = year    
+  6:         self.vtype = vtype    
+  7:         self.manufacturer = manufacturer    
+  8:         self.odometer = 0
+  9: 
  10: 
- 11: 
- 12:     &quot;&quot;&quot; this is a Method &quot;&quot;&quot;
- 13:     def SetMilage ( self, n ):
- 14:         if n &lt; 0 :
- 15:             print ( &quot;Error: can't take milage off&quot; )
- 16:         else:
- 17:             self.odomoter = self.odomoter + n
- 18: 
- 19: v1 = Vehicle( 'Tonka', 'truck', 2020 )
- 20: v2 = Vehicle( 'NASA', 'moon rover', 1969 )
- 21: 
- 22: print ( f&quot;v1 = {v1}&quot; )
- 23: print ( f&quot;v2 = {v2}&quot; )
+ 11:     &quot;&quot;&quot; this is a Method &quot;&quot;&quot;
+ 12:     def SetMilage ( self, n ):
+ 13:         if n &lt; 0 :
+ 14:             print ( &quot;Error: can't take milage off&quot; )
+ 15:         else:
+ 16:             self.odomoter = self.odomoter + n
+ 17: 
+ 18: v1 = Vehicle( 'Tonka', 'truck', 2020 )
+ 19: v2 = Vehicle( 'NASA', 'moon rover', 1969 )
+ 20: 
+ 21: print ( f&quot;v1 = {v1}&quot; )
+ 22: print ( f&quot;v2 = {v2}&quot; )
+
 
 </code></pre>
 
@@ -788,33 +788,33 @@ v2 = &lt;__main__.Vehicle object at 0x7f46c06b9190&gt;
 <p>When we run it we don&rsquo;t get a useful output for the objects this can be fixed with
 a string conversion.  That is the function <code>__str__</code>.</p>
 
-<pre><code>  1: 
-  2: class Vehicle:
-  3: 
-  4:     &quot;&quot;&quot; this is a constructor &quot;&quot;&quot;
-  5:     def __init__ ( self, manufacturer, vtype, year ):
-  6:         self.year = year    
-  7:         self.vtype = vtype    
-  8:         self.manufacturer = manufacturer    
-  9:         self.odometer = 0
+<pre><code>  1: class Vehicle:
+  2: 
+  3:     &quot;&quot;&quot; this is a constructor &quot;&quot;&quot;
+  4:     def __init__ ( self, manufacturer, vtype, year ):
+  5:         self.year = year    
+  6:         self.vtype = vtype    
+  7:         self.manufacturer = manufacturer    
+  8:         self.odometer = 0
+  9: 
  10: 
- 11: 
- 12:     &quot;&quot;&quot; this is a Method &quot;&quot;&quot;
- 13:     def SetMilage ( self, n ):
- 14:         if n &lt; 0 :
- 15:             print ( &quot;Error: can't take milage off&quot; )
- 16:         else:
- 17:             self.odomoter = self.odomoter + n
- 18: 
- 19:     &quot;&quot;&quot; Print out the class &quot;&quot;&quot;
- 20:     def __str__ ( self ) :
- 21:         return ( f&quot;Vehicle: {self.vtype} built in {self.year} by {self.manufacturer}&quot; )
- 22: 
- 23: v1 = Vehicle( 'Tonka', 'truck', 2020 )
- 24: v2 = Vehicle( 'NASA', 'moon rover', 1969 )
- 25: 
- 26: print ( f&quot;v1 = {v1}&quot; )
- 27: print ( f&quot;v2 = {v2}&quot; )
+ 11:     &quot;&quot;&quot; this is a Method &quot;&quot;&quot;
+ 12:     def SetMilage ( self, n ):
+ 13:         if n &lt; 0 :
+ 14:             print ( &quot;Error: can't take milage off&quot; )
+ 15:         else:
+ 16:             self.odomoter = self.odomoter + n
+ 17: 
+ 18:     &quot;&quot;&quot; Print out the class &quot;&quot;&quot;
+ 19:     def __str__ ( self ) :
+ 20:         return ( f&quot;Vehicle: {self.vtype} built in {self.year} by {self.manufacturer}&quot; )
+ 21: 
+ 22: v1 = Vehicle( 'Tonka', 'truck', 2020 )
+ 23: v2 = Vehicle( 'NASA', 'moon rover', 1969 )
+ 24: 
+ 25: print ( f&quot;v1 = {v1}&quot; )
+ 26: print ( f&quot;v2 = {v2}&quot; )
+
 
 </code></pre>
 
@@ -829,40 +829,40 @@ v2 = Vehicle: moon rover built in 1969 by NASA
 
 <p>Now let&rsquo;s increment the odometer by 2 miles.</p>
 
-<pre><code>  1: 
-  2: class Vehicle:
-  3: 
-  4:     &quot;&quot;&quot; this is a constructor &quot;&quot;&quot;
-  5:     def __init__ ( self, manufacturer, vtype, year ):
-  6:         self.year = year    
-  7:         self.vtype = vtype    
-  8:         self.manufacturer = manufacturer    
-  9:         self.odometer = 0
+<pre><code>  1: class Vehicle:
+  2: 
+  3:     &quot;&quot;&quot; this is a constructor &quot;&quot;&quot;
+  4:     def __init__ ( self, manufacturer, vtype, year ):
+  5:         self.year = year    
+  6:         self.vtype = vtype    
+  7:         self.manufacturer = manufacturer    
+  8:         self.odometer = 0
+  9: 
  10: 
- 11: 
- 12:     &quot;&quot;&quot; this is a Method &quot;&quot;&quot;
- 13:     def SetMilage ( self, n ):
- 14:         if n &lt; 0 :
- 15:             print ( &quot;Error: can't take milage off&quot; )
- 16:         else:
- 17:             self.odometer = self.odometer + n
- 18: 
- 19:     def GetMilage ( self ):
- 20:         return self.odometer 
- 21: 
- 22:     &quot;&quot;&quot; Print out the class &quot;&quot;&quot;
- 23:     def __str__ ( self ) :
- 24:         return ( f&quot;Vehicle: {self.vtype} built in {self.year} by {self.manufacturer} milage {self.odometer}&quot; )
- 25: 
- 26: v1 = Vehicle( 'Tonka', 'truck', 2020 )
- 27: v2 = Vehicle( 'NASA', 'moon rover', 1969 )
- 28: 
- 29: print ( f&quot;v1 = {v1}&quot; )
- 30: print ( f&quot;v2 = {v2}&quot; )
- 31: 
- 32: v2.SetMilage(2)
- 33: 
- 34: print ( f&quot;v2 = {v2}&quot; )
+ 11:     &quot;&quot;&quot; this is a Method &quot;&quot;&quot;
+ 12:     def SetMilage ( self, n ):
+ 13:         if n &lt; 0 :
+ 14:             print ( &quot;Error: can't take milage off&quot; )
+ 15:         else:
+ 16:             self.odometer = self.odometer + n
+ 17: 
+ 18:     def GetMilage ( self ):
+ 19:         return self.odometer 
+ 20: 
+ 21:     &quot;&quot;&quot; Print out the class &quot;&quot;&quot;
+ 22:     def __str__ ( self ) :
+ 23:         return ( f&quot;Vehicle: {self.vtype} built in {self.year} by {self.manufacturer} milage {self.odometer}&quot; )
+ 24: 
+ 25: v1 = Vehicle( 'Tonka', 'truck', 2020 )
+ 26: v2 = Vehicle( 'NASA', 'moon rover', 1969 )
+ 27: 
+ 28: print ( f&quot;v1 = {v1}&quot; )
+ 29: print ( f&quot;v2 = {v2}&quot; )
+ 30: 
+ 31: v2.SetMilage(2)
+ 32: 
+ 33: print ( f&quot;v2 = {v2}&quot; )
+
 
 </code></pre>
 
@@ -881,77 +881,69 @@ v2 = Vehicle: moon rover built in 1969 by NASA milage 2
 <p>The Term is &ldquo;inheritance&rdquo; - that one object can inherit the data and methods from
 another object.</p>
 
-<pre><code>  1: 
-  2: class Vehicle:
-  3: 
-  4:     &quot;&quot;&quot; this is a constructor &quot;&quot;&quot;
-  5:     def __init__ ( self, manufacturer, vtype, year ):
-  6:         self.year = year    
-  7:         self.vtype = vtype    
-  8:         self.manufacturer = manufacturer    
-  9:         self.odometer = 0
+<pre><code>  1: class Vehicle:
+  2: 
+  3:     &quot;&quot;&quot; this is a constructor &quot;&quot;&quot;
+  4:     def __init__ ( self, manufacturer, vtype, year ):
+  5:         self.year = year    
+  6:         self.vtype = vtype    
+  7:         self.manufacturer = manufacturer    
+  8:         self.odometer = 0
+  9: 
  10: 
- 11: 
- 12:     &quot;&quot;&quot; this is a Method &quot;&quot;&quot;
- 13:     def SetMilage ( self, n ):
- 14:         if n &lt; 0 :
- 15:             print ( &quot;Error: can't take milage off&quot; )
- 16:         else:
- 17:             self.odometer = self.odometer + n
- 18: 
- 19:     def GetMilage ( self ):
- 20:         return self.odometer 
- 21: 
- 22:     &quot;&quot;&quot; Print out the class &quot;&quot;&quot;
- 23:     def __str__ ( self ) :
- 24:         return ( f&quot;Vehicle: {self.vtype} built in {self.year} by {self.manufacturer} milage {self.odometer}&quot; )
- 25: 
- 26: class Airplane(Vehicle):
- 27: 
- 28:     &quot;&quot;&quot; this is a constructor &quot;&quot;&quot;
- 29:     def __init__ ( self, manufacturer, vtype, year, wingspan, maxSpeed ):
- 30:         super().__init__( manufacturer, vtype, year )
- 31:         self.wingspan = wingspan    
- 32:         self.maxSpeed = maxSpeed
- 33: 
- 34:     &quot;&quot;&quot; Print out the class &quot;&quot;&quot;
- 35:     def __str__ ( self ) :
- 36:         return ( f&quot;Vehicle/Airplane: {self.vtype} built in {self.year} by {self.manufacturer} milage {self.odometer} Max Speed {self.maxSpeed} wingspan {self.wingspan}&quot; )
- 37: 
- 38: class Auto(Vehicle):
- 39: 
- 40:     &quot;&quot;&quot; this is a constructor &quot;&quot;&quot;
- 41:     def __init__ ( self, manufacturer, vtype, year, maxSpeed ):
- 42:         super().__init__( manufacturer, vtype, year )
- 43:         self.maxSpeed = maxSpeed
- 44: 
- 45:     &quot;&quot;&quot; Print out the class &quot;&quot;&quot;
- 46:     def __str__ ( self ) :
- 47:         return ( f&quot;Vehicle/Automobile: {self.vtype} built in {self.year} by {self.manufacturer} milage {self.odometer} Max Speed {self.maxSpeed}&quot; )
+ 11:     &quot;&quot;&quot; this is a Method &quot;&quot;&quot;
+ 12:     def SetMilage ( self, n ):
+ 13:         if n &lt; 0 :
+ 14:             print ( &quot;Error: can't take milage off&quot; )
+ 15:         else:
+ 16:             self.odometer = self.odometer + n
+ 17: 
+ 18:     def GetMilage ( self ):
+ 19:         return self.odometer 
+ 20: 
+ 21:     &quot;&quot;&quot; Print out the class &quot;&quot;&quot;
+ 22:     def __str__ ( self ) :
+ 23:         return ( f&quot;Vehicle: {self.vtype} built in {self.year} by {self.manufacturer} milage {self.odometer}&quot; )
+ 24: 
+ 25: class Airplane(Vehicle):
+ 26: 
+ 27:     &quot;&quot;&quot; this is a constructor &quot;&quot;&quot;
+ 28:     def __init__ ( self, manufacturer, vtype, year, wingspan, maxSpeed ):
+ 29:         super().__init__( manufacturer, vtype, year )
+ 30:         self.wingspan = wingspan    
+ 31:         self.maxSpeed = maxSpeed
+ 32: 
+ 33:     &quot;&quot;&quot; Print out the class &quot;&quot;&quot;
+ 34:     def __str__ ( self ) :
+ 35:         return ( f&quot;Vehicle/Airplane: {self.vtype} built in {self.year} by {self.manufacturer} milage {self.odometer} Max Speed {self.maxSpeed} wingspan {self.wingspan}&quot; )
+ 36: 
+ 37: class Auto(Vehicle):
+ 38: 
+ 39:     &quot;&quot;&quot; this is a constructor &quot;&quot;&quot;
+ 40:     def __init__ ( self, manufacturer, vtype, year, maxSpeed ):
+ 41:         super().__init__( manufacturer, vtype, year )
+ 42:         self.maxSpeed = maxSpeed
+ 43: 
+ 44:     &quot;&quot;&quot; Print out the class &quot;&quot;&quot;
+ 45:     def __str__ ( self ) :
+ 46:         return ( f&quot;Vehicle/Automobile: {self.vtype} built in {self.year} by {self.manufacturer} milage {self.odometer} Max Speed {self.maxSpeed}&quot; )
+ 47: 
  48: 
- 49: 
- 50: 
- 51: 
- 52: 
+ 49: v1 = Auto( 'Tonka', 'truck', 2020, 2 )
+ 50: v2 = Auto( 'NASA', 'moon rover', 1969, 2 )
+ 51: v3 = Airplane( 'Piper', 'Cherokee', 1969, 32, 185 )
+ 52: v4 = Airplane( 'Pliatus', 'PC 12 NC', 1969, 41, 581 )
  53: 
- 54: 
- 55: 
- 56: 
- 57: 
- 58: v1 = Auto( 'Tonka', 'truck', 2020, 2 )
- 59: v2 = Auto( 'NASA', 'moon rover', 1969, 2 )
- 60: v3 = Airplane( 'Piper', 'Cherokee', 1969, 32, 185 )
- 61: v4 = Airplane( 'Pliatus', 'PC 12 NC', 1969, 41, 581 )
- 62: 
- 63: print ( f&quot;v1 = {v1}&quot; )
- 64: print ( f&quot;v2 = {v2}&quot; )
- 65: print ( f&quot;v3 = {v3}&quot; )
- 66: print ( f&quot;v4 = {v4}&quot; )
- 67: 
- 68: v2.SetMilage(2)
- 69: # v4.SetMilage(35200)
- 70: 
- 71: print ( f&quot;v2 = {v2}&quot; )
+ 54: print ( f&quot;v1 = {v1}&quot; )
+ 55: print ( f&quot;v2 = {v2}&quot; )
+ 56: print ( f&quot;v3 = {v3}&quot; )
+ 57: print ( f&quot;v4 = {v4}&quot; )
+ 58: 
+ 59: v2.SetMilage(2)
+ 60: # v4.SetMilage(35200)
+ 61: 
+ 62: print ( f&quot;v2 = {v2}&quot; )
+
 
 </code></pre>
 

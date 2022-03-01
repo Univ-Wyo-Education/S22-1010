@@ -1,4 +1,3 @@
-
 def readFile(fn):
 
     f = open(fn,"r",encoding="utf8")
@@ -40,4 +39,3 @@ if __name__ == "__main__":
         print ( "PASS" )
     else:
         print ( "FAILED" )
-

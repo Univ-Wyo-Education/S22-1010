@@ -2,7 +2,6 @@ m4_include(../../../setup.m4)
 
 # Lecture 13 - finding a pattern in a range
 
-
 ```
 m4_include(amino2.py.nu)
 ```
@@ -72,6 +71,29 @@ vehicle1.py:
 
 ```
 m4_include(vehicle1.py.nu)
+m4_comment([[[
+class Vehicle:
+
+    """ this is a constructor """
+    def __init__ ( self, manufacturer, vtype, year ):
+        self.year = year    
+        self.vtype = vtype    
+        self.manufacturer = manufacturer    
+        self.odometer = 0
+
+    """ this is a Method """
+    def SetMilage ( self, n ):
+        if n < 0 :
+            print ( "Error: can't take milage off" )
+        else:
+            self.odomoter = self.odomoter + n
+
+v1 = Vehicle( 'Tonka', 'truck', 2020 )
+v2 = Vehicle( 'NASA', 'moon rover', 1969 )
+
+print ( f"v1 = {v1}" )
+print ( f"v2 = {v2}" )
+]]])
 ```
 
 Ouptut:
@@ -87,6 +109,34 @@ a string conversion.  That is the function `__str__`.
 
 ```
 m4_include(vehicle2.py.nu)
+m4_comment([[[
+class Vehicle:
+
+    """ this is a constructor """
+    def __init__ ( self, manufacturer, vtype, year ):
+        self.year = year    
+        self.vtype = vtype    
+        self.manufacturer = manufacturer    
+        self.odometer = 0
+
+
+    """ this is a Method """
+    def SetMilage ( self, n ):
+        if n < 0 :
+            print ( "Error: can't take milage off" )
+        else:
+            self.odomoter = self.odomoter + n
+
+    """ Print out the class """
+    def __str__ ( self ) :
+        return ( f"Vehicle: {self.vtype} built in {self.year} by {self.manufacturer}" )
+
+v1 = Vehicle( 'Tonka', 'truck', 2020 )
+v2 = Vehicle( 'NASA', 'moon rover', 1969 )
+
+print ( f"v1 = {v1}" )
+print ( f"v2 = {v2}" )
+]]])
 ```
 
 Ouptut:
@@ -103,6 +153,41 @@ Now let's increment the odometer by 2 miles.
 
 ```
 m4_include(vehicle3.py.nu)
+m4_comment([[[
+class Vehicle:
+
+    """ this is a constructor """
+    def __init__ ( self, manufacturer, vtype, year ):
+        self.year = year    
+        self.vtype = vtype    
+        self.manufacturer = manufacturer    
+        self.odometer = 0
+
+
+    """ this is a Method """
+    def SetMilage ( self, n ):
+        if n < 0 :
+            print ( "Error: can't take milage off" )
+        else:
+            self.odometer = self.odometer + n
+
+    def GetMilage ( self ):
+        return self.odometer 
+
+    """ Print out the class """
+    def __str__ ( self ) :
+        return ( f"Vehicle: {self.vtype} built in {self.year} by {self.manufacturer} milage {self.odometer}" )
+
+v1 = Vehicle( 'Tonka', 'truck', 2020 )
+v2 = Vehicle( 'NASA', 'moon rover', 1969 )
+
+print ( f"v1 = {v1}" )
+print ( f"v2 = {v2}" )
+
+v2.SetMilage(2)
+
+print ( f"v2 = {v2}" )
+]]])
 ```
 
 And the output is:
@@ -124,6 +209,69 @@ another object.
 
 ```
 m4_include(vehicle4.py.nu)
+m4_comment([[[
+class Vehicle:
+
+    """ this is a constructor """
+    def __init__ ( self, manufacturer, vtype, year ):
+        self.year = year    
+        self.vtype = vtype    
+        self.manufacturer = manufacturer    
+        self.odometer = 0
+
+
+    """ this is a Method """
+    def SetMilage ( self, n ):
+        if n < 0 :
+            print ( "Error: can't take milage off" )
+        else:
+            self.odometer = self.odometer + n
+
+    def GetMilage ( self ):
+        return self.odometer 
+
+    """ Print out the class """
+    def __str__ ( self ) :
+        return ( f"Vehicle: {self.vtype} built in {self.year} by {self.manufacturer} milage {self.odometer}" )
+
+class Airplane(Vehicle):
+
+    """ this is a constructor """
+    def __init__ ( self, manufacturer, vtype, year, wingspan, maxSpeed ):
+        super().__init__( manufacturer, vtype, year )
+        self.wingspan = wingspan    
+        self.maxSpeed = maxSpeed
+
+    """ Print out the class """
+    def __str__ ( self ) :
+        return ( f"Vehicle/Airplane: {self.vtype} built in {self.year} by {self.manufacturer} milage {self.odometer} Max Speed {self.maxSpeed} wingspan {self.wingspan}" )
+
+class Auto(Vehicle):
+
+    """ this is a constructor """
+    def __init__ ( self, manufacturer, vtype, year, maxSpeed ):
+        super().__init__( manufacturer, vtype, year )
+        self.maxSpeed = maxSpeed
+
+    """ Print out the class """
+    def __str__ ( self ) :
+        return ( f"Vehicle/Automobile: {self.vtype} built in {self.year} by {self.manufacturer} milage {self.odometer} Max Speed {self.maxSpeed}" )
+
+v1 = Auto( 'Tonka', 'truck', 2020, 2 )
+v2 = Auto( 'NASA', 'moon rover', 1969, 2 )
+v3 = Airplane( 'Piper', 'Cherokee', 1969, 32, 185 )
+v4 = Airplane( 'Pliatus', 'PC 12 NC', 1969, 41, 581 )
+
+print ( f"v1 = {v1}" )
+print ( f"v2 = {v2}" )
+print ( f"v3 = {v3}" )
+print ( f"v4 = {v4}" )
+
+v2.SetMilage(2)
+# v4.SetMilage(35200)
+
+print ( f"v2 = {v2}" )
+]]])
 ```
 
 And the output is:

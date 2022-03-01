@@ -1,4 +1,3 @@
-
 class Vehicle:
 
     """ this is a constructor """
@@ -45,14 +44,6 @@ class Auto(Vehicle):
     """ Print out the class """
     def __str__ ( self ) :
         return ( f"Vehicle/Automobile: {self.vtype} built in {self.year} by {self.manufacturer} milage {self.odometer} Max Speed {self.maxSpeed}" )
-
-
-
-
-
-
-
-
 
 
 v1 = Auto( 'Tonka', 'truck', 2020, 2 )
