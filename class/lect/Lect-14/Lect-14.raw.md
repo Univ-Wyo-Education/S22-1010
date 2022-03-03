@@ -5,6 +5,7 @@ m4_include(../../../setup.m4)
 
 Why Recursion?
 
+m4_comment([[[
 ![800px-Fractal_Broccoli.jpg](800px-Fractal_Broccoli.jpg)
 
 ![800px-Frost_patterns_2.jpg](800px-Frost_patterns_2.jpg)
@@ -20,6 +21,17 @@ Why Recursion?
 
 ![weed.png](weed.png)
 
+
+<div class="pagebreak"></div>
+]]])
+
+<img src="800px-Fractal_Broccoli.jpg" height="240">
+<img src="800px-Frost_patterns_2.jpg" height="240">
+<img src="Cauliflower_Fractal_AVM.jpg" height="240"> <br>
+<img src="FRACTAL-3d-FLOWER.jpg" height="240"> 
+<img src="fern.png" height="240">
+<img src="tree.png" height="240"> <br>
+<img src="weed.png" height="240">
 
 <div class="pagebreak"></div>
 
@@ -190,3 +202,6 @@ So a program to run the Koch curve:
 ```
 m4_include(koch.py.nu)
 ```
+
+
+
