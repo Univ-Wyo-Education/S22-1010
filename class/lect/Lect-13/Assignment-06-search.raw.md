@@ -34,8 +34,11 @@ Modify search-dna.py to find the beginning and end of the
 encoding sections.   Then search inside this area of the
 DNA for the pattern.
 
-There is a function to read in the DNA file into a list.
+There is a function to read in the DNA file into a list.  The function is
+readFile in the python code readGeneticData.py.
 
-Turn in your modified amino.py
+Turn in your modified python code.
+
+
 
 
