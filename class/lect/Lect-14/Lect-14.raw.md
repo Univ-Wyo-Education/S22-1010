@@ -138,5 +138,5 @@ m4_include(tree.py.nu)
 So a program to run the Koch curve:
 
 ```
-m4_include(kotch.py.nu)
+m4_include(koch.py.nu)
 ```
