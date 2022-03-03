@@ -66,7 +66,7 @@ What is a recursive function definition:
 
 ![01re.png](01re.png)
 
-For a positive initeger:
+For a positive integer:
 
 ```
     n! = n * (n-1) * ... * 2 * 1
@@ -103,6 +103,56 @@ Compare to an iterative version:
 ```
 m4_include(i1.fact.py.nu)
 ```
+
+
+# Another  Example 
+
+With a function like:
+
+![harmonic-sum.png](harmonic-sum.png)
+
+We can build a recursive soltion:
+
+```
+m4_include(harmonic.recursive.py.nu)
+m4_comment([[[
+def harmonic_sum(n):
+  if n < 2:
+    return 1
+  else:
+    return 1 / n + (harmonic_sum(n - 1))
+    
+nL = [ 4, 7, 11, 18 ]
+for n in nL:
+    print("harmonic sum for {} = {}".format(n,harmonic_sum(n)))
+]]])
+```
+
+```
+m4_include(harmonic.iterative.py.nu)
+m4_comment([[[
+def harmonic_sum(n):
+    hs = 0.0
+    for i in range(n):
+        hs = hs + 1/(i+1)
+    return hs
+ 
+nL = [ 4, 7, 11, 18 ]
+for n in nL:
+    print("harmonic sum for {} is {}".format(n, harmonic_sum(n)))
+]]])
+```
+
+
+
+
+
+
+
+
+
+
+
 
 
 A better example is a fractal tree:

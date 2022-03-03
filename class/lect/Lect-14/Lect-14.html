@@ -784,7 +784,7 @@ ol {
 
 <p><img src="01re.png" alt="01re.png" /></p>
 
-<p>For a positive initeger:</p>
+<p>For a positive integer:</p>
 
 <pre><code>    n! = n * (n-1) * ... * 2 * 1
 </code></pre>
@@ -856,6 +856,41 @@ ol {
  21:         print ( &quot;PASS&quot; )
  22:     else :
  23:         print ( &quot;FAIL&quot; )
+
+</code></pre>
+
+<h1>Another  Example</h1>
+
+<p>With a function like:</p>
+
+<p><img src="harmonic-sum.png" alt="harmonic-sum.png" /></p>
+
+<p>We can build a recursive soltion:</p>
+
+<pre><code>  1: def harmonic_sum(n):
+  2:   if n &lt; 2:
+  3:     return 1
+  4:   else:
+  5:     return 1 / n + (harmonic_sum(n - 1))
+  6:     
+  7: nL = [ 4, 7, 11, 18 ]
+  8: for n in nL:
+  9:     print(&quot;harmonic sum for {} = {}&quot;.format(n,harmonic_sum(n)))
+
+
+</code></pre>
+
+<pre><code>  1: def harmonic_sum(n):
+  2:     hs = 0.0
+  3:     for i in range(n):
+  4:         hs = hs + 1/(i+1)
+  5:     return hs
+  6:  
+  7: nL = [ 4, 7, 11, 18 ]
+  8: for n in nL:
+  9:     print(&quot;harmonic sum for {} is {}&quot;.format(n, harmonic_sum(n)))
+ 10: 
+
 
 </code></pre>
 
