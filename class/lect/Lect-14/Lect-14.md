@@ -23,10 +23,10 @@ Why Recursion?
 
 
 <img src="800px-Fractal_Broccoli.jpg" height="240">
-<img src="800px-Frost_patterns_2.jpg" height="240">
-<img src="Cauliflower_Fractal_AVM.jpg" height="240"> <br>
+<img src="800px-Frost_patterns_2.jpg" height="240"> <br>
+<img src="Cauliflower_Fractal_AVM.jpg" height="240"> 
+<img src="fern.png" height="240"> <br>
 <img src="FRACTAL-3d-FLOWER.jpg" height="240"> 
-<img src="fern.png" height="240">
 <img src="tree.png" height="240"> <br>
 <img src="weed.png" height="240">
 
@@ -213,9 +213,10 @@ A better example is a fractal tree:
 
 ## Fibonacci Numbers
 
-![Ammoniteplit.jpg](Ammoniteplit.jpg)
 
-![1920px-FibonacciSpiral.svg.png](1920px-FibonacciSpiral.svg.png)
+
+<img src="Ammoniteplit.jpg" width="480">
+<img src="1920px-FibonacciSpiral.svg.png" width="480">
 
 ```
     fib(n) = { 0 : n = 0
@@ -223,12 +224,9 @@ A better example is a fractal tree:
              { fib(n-1) + fib(n-2)
 ```
 
-
 <div class="pagebreak"></div>
 
 ## Weed
-
-
 
 ```
   1: import turtle 
