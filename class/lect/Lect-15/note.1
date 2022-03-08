@@ -1,0 +1,58 @@
+https://www.tensorflow.org/tutorials/quickstart/beginner
+
+(base) philip@temp06 Lect-17 % python
+Python 3.8.3 (default, Jul  2 2020, 11:26:31)
+[Clang 10.0.0 ] :: Anaconda, Inc. on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import tensorflow as tf
+print("TensorFlow version:", tf.__version__)
+
+>>> print("TensorFlow version:", tf.__version__)
+TensorFlow version: 2.6.0
+>>>
+>>> mnist = tf.keras.datasets.mnist
+>>>
+>>> (x_train, y_train), (x_test, y_test) = mnist.load_data()
+>>> x_train, x_test = x_train / 255.0, x_test / 255.0
+>>>
+>>> model = tf.keras.models.Sequential([
+...   tf.keras.layers.Flatten(input_shape=(28, 28)),
+...   tf.keras.layers.Dense(128, activation='relu'),
+...   tf.keras.layers.Dropout(0.2),
+...   tf.keras.layers.Dense(10)
+... ])
+2021-10-17 14:53:34.471951: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+>>> predictions = model(x_train[:1]).numpy()
+>>> predictions
+array([[ 0.22039467, -0.98222756, -0.04661478, -0.2402595 ,  1.0552142 ,
+         0.18231598,  0.34720933,  0.14161968,  0.12694196,  0.86136746]],
+      dtype=float32)
+>>> tf.nn.softmax(predictions).numpy()
+array([[0.09231446, 0.02773177, 0.07068203, 0.0582385 , 0.21272926,
+        0.08886532, 0.10479598, 0.08532144, 0.08407827, 0.17524299]],
+      dtype=float32)
+>>> loss_fn = tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True)
+>>> loss_fn(y_train[:1], predictions).numpy()
+2.4206333
+>>> model.compile(optimizer='adam',
+...               loss=loss_fn,
+...               metrics=['accuracy'])
+>>> model.fit(x_train, y_train, epochs=5)
+2021-10-17 14:55:11.934253: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:185] None of the MLIR Optimization Passes are enabled (registered 2)
+Epoch 1/5
+1875/1875 [==============================] - 2s 723us/step - loss: 0.3011 - accuracy: 0.9132
+Epoch 2/5
+1875/1875 [==============================] - 1s 717us/step - loss: 0.1444 - accuracy: 0.9579
+Epoch 3/5
+1875/1875 [==============================] - 1s 702us/step - loss: 0.1053 - accuracy: 0.9678
+Epoch 4/5
+1875/1875 [==============================] - 1s 697us/step - loss: 0.0890 - accuracy: 0.9727
+Epoch 5/5
+1875/1875 [==============================] - 1s 701us/step - loss: 0.0755 - accuracy: 0.9765
+<keras.callbacks.History object at 0x7fa1592f1730>
+>>> model.evaluate(x_test,  y_test, verbose=2)
+313/313 - 0s - loss: 0.0700 - accuracy: 0.9779
+[0.07004497945308685, 0.9779000282287598]
+>>> quit()
+

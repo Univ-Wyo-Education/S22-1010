@@ -1,0 +1,4 @@
+      weight  birthyear  children          hobby
+bob      182       2002       2.0   Scuba Diving
+joan     145       2000       NaN  Rock Climbing
+mike     191       1999       1.0        Sailing

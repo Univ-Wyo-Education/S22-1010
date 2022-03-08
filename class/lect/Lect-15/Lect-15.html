@@ -1,0 +1,1050 @@
+<style>
+@font-face {
+	font-family: octicons-link;
+	src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+.markdown-body {
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	line-height: 1.5;
+	color: #24292e;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	font-size: 16px;
+	line-height: 1.5;
+	word-wrap: break-word;
+}
+
+.markdown-body .pl-c {
+	color: #6a737d;
+}
+
+.markdown-body .pl-c1,
+.markdown-body .pl-s .pl-v {
+	color: #005cc5;
+}
+
+.markdown-body .pl-e,
+.markdown-body .pl-en {
+	color: #6f42c1;
+}
+
+.markdown-body .pl-smi,
+.markdown-body .pl-s .pl-s1 {
+	color: #24292e;
+}
+
+.markdown-body .pl-ent {
+	color: #22863a;
+}
+
+.markdown-body .pl-k {
+	color: #d73a49;
+}
+
+.markdown-body .pl-s,
+.markdown-body .pl-pds,
+.markdown-body .pl-s .pl-pse .pl-s1,
+.markdown-body .pl-sr,
+.markdown-body .pl-sr .pl-cce,
+.markdown-body .pl-sr .pl-sre,
+.markdown-body .pl-sr .pl-sra {
+	color: #032f62;
+}
+
+.markdown-body .pl-v,
+.markdown-body .pl-smw {
+	color: #e36209;
+}
+
+.markdown-body .pl-bu {
+	color: #b31d28;
+}
+
+.markdown-body .pl-ii {
+	color: #fafbfc;
+	background-color: #b31d28;
+}
+
+.markdown-body .pl-c2 {
+	color: #fafbfc;
+	background-color: #d73a49;
+}
+
+.markdown-body .pl-c2::before {
+	content: "^M";
+}
+
+.markdown-body .pl-sr .pl-cce {
+	font-weight: bold;
+	color: #22863a;
+}
+
+.markdown-body .pl-ml {
+	color: #735c0f;
+}
+
+.markdown-body .pl-mh,
+.markdown-body .pl-mh .pl-en,
+.markdown-body .pl-ms {
+	font-weight: bold;
+	color: #005cc5;
+}
+
+.markdown-body .pl-mi {
+	font-style: italic;
+	color: #24292e;
+}
+
+.markdown-body .pl-mb {
+	font-weight: bold;
+	color: #24292e;
+}
+
+.markdown-body .pl-md {
+	color: #b31d28;
+	background-color: #ffeef0;
+}
+
+.markdown-body .pl-mi1 {
+	color: #22863a;
+	background-color: #f0fff4;
+}
+
+.markdown-body .pl-mc {
+	color: #e36209;
+	background-color: #ffebda;
+}
+
+.markdown-body .pl-mi2 {
+	color: #f6f8fa;
+	background-color: #005cc5;
+}
+
+.markdown-body .pl-mdr {
+	font-weight: bold;
+	color: #6f42c1;
+}
+
+.markdown-body .pl-ba {
+	color: #586069;
+}
+
+.markdown-body .pl-sg {
+	color: #959da5;
+}
+
+.markdown-body .pl-corl {
+	text-decoration: underline;
+	color: #032f62;
+}
+
+.markdown-body .octicon {
+	display: inline-block;
+	vertical-align: text-top;
+	fill: currentColor;
+}
+
+.markdown-body a {
+	background-color: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+	outline-width: 0;
+}
+
+.markdown-body strong {
+	font-weight: inherit;
+}
+
+.markdown-body strong {
+	font-weight: bolder;
+}
+
+.markdown-body h1 {
+	font-size: 2em;
+	margin: 0.67em 0;
+}
+
+.markdown-body img {
+	border-style: none;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre {
+	font-family: monospace, monospace;
+	font-size: 1em;
+}
+
+.markdown-body hr {
+	box-sizing: content-box;
+	height: 0;
+	overflow: visible;
+}
+
+.markdown-body input {
+	font: inherit;
+	margin: 0;
+}
+
+.markdown-body input {
+	overflow: visible;
+}
+
+.markdown-body [type="checkbox"] {
+	box-sizing: border-box;
+	padding: 0;
+}
+
+.markdown-body * {
+	box-sizing: border-box;
+}
+
+.markdown-body input {
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+}
+
+.markdown-body a {
+	color: #0366d6;
+	text-decoration: none;
+}
+
+.markdown-body a:hover {
+	text-decoration: underline;
+}
+
+.markdown-body strong {
+	font-weight: 600;
+}
+
+.markdown-body hr {
+	height: 0;
+	margin: 15px 0;
+	overflow: hidden;
+	background: transparent;
+	border: 0;
+	border-bottom: 1px solid #dfe2e5;
+}
+
+.markdown-body hr::before {
+	display: table;
+	content: "";
+}
+
+.markdown-body hr::after {
+	display: table;
+	clear: both;
+	content: "";
+}
+
+.markdown-body table {
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+
+.markdown-body td,
+.markdown-body th {
+	padding: 0;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.markdown-body h1 {
+	font-size: 32px;
+	font-weight: 600;
+}
+
+.markdown-body h2 {
+	font-size: 24px;
+	font-weight: 600;
+}
+
+.markdown-body h3 {
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.markdown-body h4 {
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.markdown-body h5 {
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.markdown-body h6 {
+	font-size: 12px;
+	font-weight: 600;
+}
+
+.markdown-body p {
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+
+.markdown-body blockquote {
+	margin: 0;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+	padding-left: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+	x-list-style-type: lower-roman;
+	  list-style-type: decimal;
+}
+
+.markdown-body ul ul ol,
+.markdown-body ul ol ol,
+.markdown-body ol ul ol,
+.markdown-body ol ol ol {
+	list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+	margin-left: 0;
+}
+
+.markdown-body code {
+	font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+	font-size: 12px;
+}
+
+.markdown-body pre {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+	font-size: 12px;
+}
+
+.markdown-body .octicon {
+	vertical-align: text-bottom;
+}
+
+.markdown-body .pl-0 {
+	padding-left: 0 !important;
+}
+
+.markdown-body .pl-1 {
+	padding-left: 4px !important;
+}
+
+.markdown-body .pl-2 {
+	padding-left: 8px !important;
+}
+
+.markdown-body .pl-3 {
+	padding-left: 16px !important;
+}
+
+.markdown-body .pl-4 {
+	padding-left: 24px !important;
+}
+
+.markdown-body .pl-5 {
+	padding-left: 32px !important;
+}
+
+.markdown-body .pl-6 {
+	padding-left: 40px !important;
+}
+
+.markdown-body::before {
+	display: table;
+	content: "";
+}
+
+.markdown-body::after {
+	display: table;
+	clear: both;
+	content: "";
+}
+
+.markdown-body>*:first-child {
+	margin-top: 0 !important;
+}
+
+.markdown-body>*:last-child {
+	margin-bottom: 0 !important;
+}
+
+.markdown-body a:not([href]) {
+	color: inherit;
+	text-decoration: none;
+}
+
+.markdown-body .anchor {
+	float: left;
+	padding-right: 4px;
+	margin-left: -20px;
+	line-height: 1;
+}
+
+.markdown-body .anchor:focus {
+	outline: none;
+}
+
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre {
+	margin-top: 0;
+	margin-bottom: 16px;
+}
+
+.markdown-body hr {
+	height: 0.25em;
+	padding: 0;
+	margin: 24px 0;
+	background-color: #e1e4e8;
+	border: 0;
+}
+
+.markdown-body blockquote {
+	padding: 0 1em;
+	color: #6a737d;
+	border-left: 0.25em solid #dfe2e5;
+}
+
+.markdown-body blockquote>:first-child {
+	margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+	margin-bottom: 0;
+}
+
+.markdown-body kbd {
+	display: inline-block;
+	padding: 3px 5px;
+	font-size: 11px;
+	line-height: 10px;
+	color: #444d56;
+	vertical-align: middle;
+	background-color: #fafbfc;
+	border: solid 1px #c6cbd1;
+	border-bottom-color: #959da5;
+	border-radius: 3px;
+	box-shadow: inset 0 -1px 0 #959da5;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+	margin-top: 24px;
+	margin-bottom: 16px;
+	font-weight: 600;
+	line-height: 1.25;
+}
+
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
+	color: #1b1f23;
+	vertical-align: middle;
+	visibility: hidden;
+}
+
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
+	text-decoration: none;
+}
+
+.markdown-body h1:hover .anchor .octicon-link,
+.markdown-body h2:hover .anchor .octicon-link,
+.markdown-body h3:hover .anchor .octicon-link,
+.markdown-body h4:hover .anchor .octicon-link,
+.markdown-body h5:hover .anchor .octicon-link,
+.markdown-body h6:hover .anchor .octicon-link {
+	visibility: visible;
+}
+
+.markdown-body h1 {
+	padding-bottom: 0.3em;
+	font-size: 2em;
+	border-bottom: 1px solid #eaecef;
+}
+
+.markdown-body h2 {
+	padding-bottom: 0.3em;
+	font-size: 1.5em;
+	border-bottom: 1px solid #eaecef;
+}
+
+.markdown-body h3 {
+	font-size: 1.25em;
+}
+
+.markdown-body h4 {
+	font-size: 1em;
+}
+
+.markdown-body h5 {
+	font-size: 0.875em;
+}
+
+.markdown-body h6 {
+	font-size: 0.85em;
+	color: #6a737d;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+	padding-left: 2em;
+}
+
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.markdown-body li {
+	word-wrap: break-all;
+}
+
+.markdown-body li>p {
+	margin-top: 16px;
+}
+
+.markdown-body li+li {
+	margin-top: 0.25em;
+}
+
+.markdown-body dl {
+	padding: 0;
+}
+
+.markdown-body dl dt {
+	padding: 0;
+	margin-top: 16px;
+	font-size: 1em;
+	font-style: italic;
+	font-weight: 600;
+}
+
+.markdown-body dl dd {
+	padding: 0 16px;
+	margin-bottom: 16px;
+}
+
+.markdown-body table {
+	display: block;
+	width: 100%;
+	overflow: auto;
+}
+
+.markdown-body table th {
+	font-weight: 600;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+	padding: 6px 13px;
+	border: 1px solid #dfe2e5;
+}
+
+.markdown-body table tr {
+	background-color: #fff;
+	border-top: 1px solid #c6cbd1;
+}
+
+.markdown-body table tr:nth-child(2n) {
+	background-color: #f6f8fa;
+}
+
+.markdown-body img {
+	max-width: 100%;
+	box-sizing: content-box;
+	background-color: #fff;
+}
+
+.markdown-body img[align=right] {
+	padding-left: 20px;
+}
+
+.markdown-body img[align=left] {
+	padding-right: 20px;
+}
+
+.markdown-body code {
+	padding: 0.2em 0.4em;
+	margin: 0;
+	font-size: 85%;
+	background-color: rgba(27,31,35,0.05);
+	border-radius: 3px;
+}
+
+.markdown-body pre {
+	word-wrap: normal;
+}
+
+.markdown-body pre>code {
+	padding: 0;
+	margin: 0;
+	font-size: 100%;
+	word-break: normal;
+	white-space: pre;
+	background: transparent;
+	border: 0;
+}
+
+.markdown-body .highlight {
+	margin-bottom: 16px;
+}
+
+.markdown-body .highlight pre {
+	margin-bottom: 0;
+	word-break: normal;
+}
+
+.markdown-body .highlight pre,
+.markdown-body pre {
+	padding: 16px;
+	overflow: auto;
+	font-size: 85%;
+	line-height: 1.45;
+	background-color: #f6f8fa;
+	border-radius: 3px;
+}
+
+.markdown-body pre code {
+	display: inline;
+	max-width: auto;
+	padding: 0;
+	margin: 0;
+	overflow: visible;
+	line-height: inherit;
+	word-wrap: normal;
+	background-color: transparent;
+	border: 0;
+}
+
+.markdown-body .full-commit .btn-outline:not(:disabled):hover {
+	color: #005cc5;
+	border-color: #005cc5;
+}
+
+.markdown-body kbd {
+	display: inline-block;
+	padding: 3px 5px;
+	font: 11px "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+	line-height: 10px;
+	color: #444d56;
+	vertical-align: middle;
+	background-color: #fafbfc;
+	border: solid 1px #d1d5da;
+	border-bottom-color: #c6cbd1;
+	border-radius: 3px;
+	box-shadow: inset 0 -1px 0 #c6cbd1;
+}
+
+.markdown-body :checked+.radio-label {
+	position: relative;
+	z-index: 1;
+	border-color: #0366d6;
+}
+
+.markdown-body .task-list-item {
+	list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+	margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+	margin: 0 0.2em 0.25em -1.6em;
+	vertical-align: middle;
+}
+
+.markdown-body hr {
+	border-bottom-color: #eee;
+}
+
+</style>
+<style>
+ol {
+    display: block;
+    list-style-type: decimal;
+}
+.pagebreak { page-break-before: always; }
+.half { height: 200px; }
+</style>
+
+<div class="markdown-body">
+
+<style>
+.pagebreak { page-break-before: always; }
+.half { height: 200px; }
+</style>
+<style>
+.pagebreak { page-break-before: always; }
+.half { height: 200px; }
+.markdown-body {
+    font-size: 12px;
+}
+.markdown-body td {
+    font-size: 12px;
+}
+</style>
+
+<h1>Lecture 15 - Numpy, Pandas, MatPlotLib</h1>
+
+<h2>What is NumPy, why NumPy</h2>
+
+<p>NumPy  is for &ldquo;Numerical Python&rdquo;.
+It is a Python module which provides fast mathematical
+computation on n-dimensional data.  These are arrays, matrices, 3-D data etc.
+Images are 2d data.   Other machine learning data may be n-dimensional.
+For this reason NumPy is an essential part of the Machine Learning ecosystem.
+In conjunction with Pandas and MatPlotLib these tools will allow us to
+effectively use TensorFlow.   This makes for a complete the Python Machine Learning Ecosystem.</p>
+
+<p>We can build high speed mathematical functions and scientific computation
+using the underlying storage in NumPy.</p>
+
+<p>To import NumPy:</p>
+
+<pre><code>import numpy as np
+</code></pre>
+
+<p>There is a &ldquo;install&rdquo; check script later in this lecture for all 3 modules.</p>
+
+<p>Why not just use Python lists?</p>
+
+<p>A list can be indexed and it looks to be a way to store multi-dimensional
+data.  The problem is that a list is built out of individual nodes.
+Individual nodes can have different data types.  This makes lists
+flexible but slow.  With lots of data an efficient way to store
+homogeneous data is needed.   Lots of work has been put into
+NumPy to make it efficient.</p>
+
+<h2>How to use NumPy</h2>
+
+<style>
+table tbody tr td {
+    vertical-align : top;
+}
+</style>
+
+<table>
+<thead>
+<tr>
+<th align="left">NumPy Command</th>
+<th align="left">Example</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">np.array</td>
+<td align="left"><pre><code>&gt;&gt;&gt; z = np.array([5,4,3])<br>&gt;&gt;&gt; print(z)</code></pre></td>
+</tr>
+
+<tr>
+<td align="left">np.ones</td>
+<td align="left"><pre><code>&gt;&gt;&gt; z = np.ones((2,3))<br>&gt;&gt;&gt; print(z)</code></pre></td>
+</tr>
+
+<tr>
+<td align="left">np.full</td>
+<td align="left"><pre><code>&gt;&gt;&gt; z = np.full((2,3),8)<br>&gt;&gt;&gt; print(z)</code></pre></td>
+</tr>
+
+<tr>
+<td align="left">np.reshape</td>
+<td align="left"><pre><code>&gt;&gt; z=np.arange(3).reshape((3,1))<br>&gt;&gt;&gt; print(z)</code></pre></td>
+</tr>
+</tbody>
+</table>
+
+<h2>A example of NumPy</h2>
+
+<p>On a boat with no gas working gages.</p>
+
+<pre><code>  1: # 5g + 17m = 30.5
+  2: # 8g + 22m = 41
+  3: 
+  4: # Can be solved in NumPy using
+  5: import numpy as np
+  6: 
+  7: coeffs  = np.array([[5, 17], [8, 22]])
+  8: depvars = np.array([30.5, 41])
+  9: solution = np.linalg.solve(coeffs, depvars)
+ 10: 
+ 11: # solution
+ 12: print ( solution )
+ 13: # array([1, 1.5])
+ 14: # means g=1, m=1.5 or 1 gallon per hour for generator,
+ 15: # 1.5 gallon per hour for main moter
+
+</code></pre>
+
+<h1>Using Vectors with Machine learning</h1>
+
+<p>Vectors are one-dimensional arrays. They get used all over the place with machine learning.
+Depending on what we are doing we will see both row and column vectors.  If we have the
+wrong shape we can use np.reshape to fix it.</p>
+
+<p>A vector is often defined as a magnitude and a direction. In 2d space this means a vector of <code>[3,30]</code> can be a force of 3 and a direction of 30-degrees.
+This can be useful where we can add up vectors to get a final vector.</p>
+
+<p>In ML they are used to represent observations and predictions.</p>
+
+<p>Let&rsquo;s take a youtube set of videos on van&rsquo;s and van-building and then
+analyze the comments on the videos.  We want to classify them as a set
+of probabilities.  Is it clickbait, is it useful, is it a travel video.
+The Output for a given video might be a vector of <code>[0.28,0.02,0.41]</code> where
+this is a probability of 28% for being clickbait, 2% for a probability of being
+a useful build video and 41% being a travel video.</p>
+
+<p>As a feature vector we may have a set of values that relate to the same videos
+like duration, number of views, number of comments, length of comments.</p>
+
+<p>Most of the time for machine learning is spent on collecting and preparing
+the data.  This is the &lsquo;data&rsquo; pipeline.  Consideration also needs to take
+place on how to test the model and how to maintain it with new data.</p>
+
+<h2>Differences between NumPy arrays and Python Lists.</h2>
+
+<p>A sub-section of an array, called a slice, is just a pointer into the original data in NumPy.  In Python it is a copy.
+To create a copy with NumPy use the np.copy function.</p>
+
+<p>NumPy:</p>
+
+<pre><code>  1: import numpy as np
+  2: 
+  3: a = np.array([1,2,3,4,5])
+  4: print (&quot;original a={}&quot;.format( a ))
+  5: 
+  6: a[1:3] = 200
+  7: print (&quot;modified a={}&quot;.format( a ))
+  8: 
+  9: b = np.copy(a[1:3])
+ 10: print ( &quot;b={}&quot;.format(b ))
+ 11: b[0] = 400
+ 12: 
+ 13: print (&quot;again  a={} and b={}&quot;.format( a, b ))
+
+</code></pre>
+
+<p>Python:</p>
+
+<pre><code>  1: a = [1,2,3,4,5]
+  2: x = a[1:3]
+  3: print ( &quot;x={}&quot;.format(x))
+  4: x[0] = 400
+  5: print ( &quot;a={} x={}&quot;.format(a,x) )
+  6: 
+  7: a[1:3] = 200
+
+</code></pre>
+
+<h2>A quick check that you have all 3 modules installed.</h2>
+
+<p>First check that you have them installed.</p>
+
+<pre><code>  1: import numpy as np
+  2: import pandas as pd
+  3: import matplotlib.pyplot as plt
+  4: 
+  5: print ( &quot;You should not see any errors when this is run&quot; )
+
+</code></pre>
+
+<h2>Pandas</h2>
+
+<p>Pandas is a widely used system for storage and access of data.  It is an in-memory database
+that allows us to combine and select data that we can then use in NumPy as vectors.  The
+performance is very good for reasonable size data.   For big data sets you usually end up
+using a &ldquo;database&rdquo; like &ldquo;Postgresql&rdquo;.  Many of the concepts in Pandas are the same as
+a database and that is a good way to get the concepts for database down.</p>
+
+<p>Data is organized into 2d tables that are very much like a spreadsheet.   They have
+columns that are named and allow for you to access stuff by name.  This 2d set of
+data is called a &lsquo;dataframe&rsquo;.</p>
+
+<p>With Pandas we can do useful analysis like creating pivot tables, summarizing data
+from multiple columns into new columns.  It also intracts with MatPlotLib to allow
+us to easily polot data.</p>
+
+<p>To Import into Python:</p>
+
+<pre><code>&gt;&gt;&gt; import pandas as pd
+</code></pre>
+
+<h2>Common Pandas Data Types</h2>
+
+<p><code>pd.Series</code> takes a list and a set of names and converts this into a column that
+cat be part of a data frame.</p>
+
+<p><code>pd.DataFrame</code> takes a dictionary of <code>pd.Series</code> (columns) and creates a object
+that can be selected from and manipulated with a set of columns of named data.</p>
+
+<p><code>pd.Panel</code> creates a dictionary of dataframes.  This would be like the set of
+sets that you have in Microsoft Excel.</p>
+
+<p>Every dataframe has named columns of data and indexes for each item.</p>
+
+<p>An example:</p>
+
+<pre><code>  1: import pandas as pd
+  2: 
+  3: people_dict = {
+  4:         &quot;weight&quot;: pd.Series([145, 182, 191],index=[&quot;joan&quot;, &quot;bob&quot;, &quot;mike&quot;]),  
+  5:         &quot;birthyear&quot;: pd.Series([2002, 2000, 1999], index=[&quot;bob&quot;, &quot;joan&quot;, &quot;mike&quot;], name=&quot;year&quot;),
+  6:         &quot;children&quot;: pd.Series([1, 2], index=[&quot;mike&quot;, &quot;bob&quot;]),
+  7:         &quot;hobby&quot;: pd.Series([&quot;Rock Climbing&quot;, &quot;Scuba Diving&quot;, &quot;Sailing&quot;], index=[&quot;joan&quot;, &quot;bob&quot;, &quot;mike&quot;]),
+  8:         }
+  9: 
+ 10: people = pd.DataFrame(people_dict)
+ 11: 
+ 12: print ( people )
+ 13: 
+
+</code></pre>
+
+<p>Output</p>
+
+<pre><code>      weight  birthyear  children          hobby
+bob      182       2002       2.0   Scuba Diving
+joan     145       2000       NaN  Rock Climbing
+mike     191       1999       1.0        Sailing
+
+</code></pre>
+
+<p>There is easy inexorability between Pandas and other tools like Comma Separated Value files (CSV), Excel, HTML and SQL Databases.</p>
+
+<p>For example we have some car data.</p>
+
+<p>Converted into a format that is easy for Pandas to consume.</p>
+
+<p>And some code to read it and make a plot.</p>
+
+<pre><code>  1: import matplotlib.pyplot as plt
+  2: import pandas as pd
+  3: # import seaborn as sns
+  4: 
+  5: # df = pd.read_excel (r'car/CUSR0000SETA02.xls')
+  6: df = pd.read_excel (r'car/car-price-data.xls')
+  7: df['observation_date'] = pd.to_datetime(df['observation_date'])
+  8: print (df)
+  9: print (df.info())
+ 10: 
+ 11: df.set_index('observation_date')['CUSR0000SETA02'].plot();
+ 12: 
+ 13: plt.waitforbuttonpress()
+
+</code></pre>
+
+<p><img src="car-price-graph-1.png" alt="car-price-graph-1.png" /></p>
+
+<p>Some things from the program:</p>
+
+<table>
+<thead>
+<tr>
+<th align="left">Pandas Calls</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">head()</td>
+<td>returns the top 5 rows in the dataframe object</td>
+</tr>
+
+<tr>
+<td align="left">info()</td>
+<td>prints the summary of the dataframe</td>
+</tr>
+
+<tr>
+<td align="left">describe()</td>
+<td>gives a nice overview of the main aggregated values over each column</td>
+</tr>
+
+<tr>
+<td align="left">tail()</td>
+<td>returns the bottom 5 rows in the dataframe</td>
+</tr>
+</tbody>
+</table>
+
+<h2>MatPlotLib</h2>
+
+<p>MatPlotLib is a 2d plotting library that is nicely integrated with Pandas.
+You can also use it on it&rsquo;s own.</p>
+
+<p>It can output to the screen, to hard-copy (images).</p>
+
+<p>It is also directly integrated into Jupyter Notebook and has a way to be
+used on a website to produce plots.</p>
+
+<p>If you are familiar with MATLAB then <code>matplotlib.pyplot</code> will be to your
+liking.  It works just like the plotting system in MATLAB.</p>
+
+<p>Plotting a Line Graph:</p>
+
+<pre><code>  1: import matplotlib.pyplot as plt
+  2: 
+  3: plt.plot([1,3,2,4,5,8])
+  4: plt.ylabel('A SImple Line Graph')
+  5: plt.waitforbuttonpress()
+  6: plt.show()
+
+</code></pre>
+
+<p>Or a bar graph:</p>
+
+<pre><code>  1: import matplotlib.pyplot as plt
+  2: 
+  3: x = [   21,20,23,4,7,
+  4:         6,78,8,3,10,
+  5:         41,22,53,33,
+  6:         31,37,39,12,
+  7:         45,30,100]
+  8: plt.hist(x, 5, facecolor='green')
+  9: plt.waitforbuttonpress()
+ 10: plt.show()
+
+</code></pre>
+
+</div>
+

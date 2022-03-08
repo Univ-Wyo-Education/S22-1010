@@ -1,0 +1,61 @@
+(base) philip@temp06 Lect-17 % python
+Python 3.8.3 (default, Jul  2 2020, 11:26:31)
+[Clang 10.0.0 ] :: Anaconda, Inc. on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import numpy as np
+>>> np.array([1,2,3])
+array([1, 2, 3])
+>>> x=np.array([1,2,3])
+>>> y = x + 5
+>>> y
+array([6, 7, 8])
+>>> np.ones((3,3))
+array([[1., 1., 1.],
+       [1., 1., 1.],
+       [1., 1., 1.]])
+>>> z=np.ones((3,3))
+>>> z
+array([[1., 1., 1.],
+       [1., 1., 1.],
+       [1., 1., 1.]])
+>>> zz = z + 10
+>>> zz
+array([[11., 11., 11.],
+       [11., 11., 11.],
+       [11., 11., 11.]])
+>>> aa=np.ones((3,3))
+>>> ab = aa * zz
+>>> ab
+array([[11., 11., 11.],
+       [11., 11., 11.],
+       [11., 11., 11.]])
+>>> np.arange(3)
+array([0, 1, 2])
+>>> np.arange(3).reshape((3,1))
+array([[0],
+       [1],
+       [2]])
+>>> v2=np.arange(3).reshape((3,1))
+>>> ab = zz * v2
+>>> ab
+array([[ 0.,  0.,  0.],
+       [11., 11., 11.],
+       [22., 22., 22.]])
+>>> ab =
+  File "<stdin>", line 1
+    ab =
+        ^
+SyntaxError: invalid syntax
+>>> ab = np.matmul(zz,v2)
+>>> ab
+array([[33.],
+       [33.],
+       [33.]])
+>>> zz
+array([[11., 11., 11.],
+       [11., 11., 11.],
+       [11., 11., 11.]])
+>>> ab
+array([[33.],
+       [33.],
+       [33.]])
