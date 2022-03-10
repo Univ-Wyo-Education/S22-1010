@@ -1,0 +1,16 @@
+A^-1 times A equals the Identity Matrix
+Matrix A: 
+[[2. 3.]
+ [2. 2.]] 
+
+Inverse of Matrix A: 
+[[-1.   1.5]
+ [ 1.  -1. ]] 
+
+RHS: I: 
+[[1. 0.]
+ [0. 1.]] 
+
+LHS: A^(-1) A: 
+[[1. 0.]
+ [0. 1.]]
