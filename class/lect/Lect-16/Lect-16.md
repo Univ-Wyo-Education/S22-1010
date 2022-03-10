@@ -15,7 +15,7 @@
 </style>
 
 
-# Lecture 18 - tensor flow - math 
+# Lecture 16 - tensor flow - math 
 
 What is A "tensor" and how will it "flow"?
 
@@ -25,16 +25,16 @@ A scalar is a 1-ish number.  This is the simplest kind of tensor:
 
 
 ```
-import tensorflow as tf
-
-x = tf.constant(-2.0, name="x", dtype=tf.float32)
-a = tf.constant(5.0, name="a", dtype=tf.float32)
-b = tf.constant(13.0, name="b", dtype=tf.float32)
-
-y = tf.Variable(tf.add(tf.multiply(a, x), b))
-
-print ( "result is:" )
-tf.print ( y )
+  1: import tensorflow as tf
+  2: 
+  3: x = tf.constant(-2.0, name="x", dtype=tf.float32)
+  4: a = tf.constant(5.0, name="a", dtype=tf.float32)
+  5: b = tf.constant(13.0, name="b", dtype=tf.float32)
+  6: 
+  7: y = tf.Variable(tf.add(tf.multiply(a, x), b))
+  8: 
+  9: print ( "result is:" )
+ 10: tf.print ( y )
 
 ```
 
@@ -46,6 +46,7 @@ The tensor is the 3d vector of each of these.
 
 You are not limited to 3d data.
 
+<div class="pagebreak"></div>
 
 So...
 
@@ -71,22 +72,24 @@ Add of 2 matrix tensors
 add1.py:
 
 ```
-import tensorflow as tf
+  1: import tensorflow as tf
+  2: 
+  3: # let's create a ones 3x3 rank 2 tensor
+  4: rank_2_tensor_A = tf.ones([3, 3], name='MatrixA')
+  5: print("3x3 Rank 2 Tensor A: \n{}\n".format(rank_2_tensor_A))
+  6: 
+  7: # let's manually create a 3x3 rank two tensor and specify the data type as float
+  8: rank_2_tensor_B = tf.constant([[1, 2, 3], [4, 5, 6], [7, 8, 9]], name='MatrixB', dtype=tf.float32)
+  9: print("3x3 Rank 2 Tensor B: \n{}\n".format(rank_2_tensor_B))
+ 10: 
+ 11: # addition of the two tensors
+ 12: rank_2_tensor_C = tf.add(rank_2_tensor_A, rank_2_tensor_B, name='MatrixC')
+ 13: print("Rank 2 Tensor C with shape={} and elements: \n{}".format(rank_2_tensor_C.shape, rank_2_tensor_C))
 
-# let's create a ones 3x3 rank 2 tensor
-rank_2_tensor_A = tf.ones([3, 3], name='MatrixA')
-print("3x3 Rank 2 Tensor A: \n{}\n".format(rank_2_tensor_A))
-
-# let's manually create a 3x3 rank two tensor and specify the data type as float
-rank_2_tensor_B = tf.constant([[1, 2, 3], [4, 5, 6], [7, 8, 9]], name='MatrixB', dtype=tf.float32)
-print("3x3 Rank 2 Tensor B: \n{}\n".format(rank_2_tensor_B))
-
-# addition of the two tensors
-rank_2_tensor_C = tf.add(rank_2_tensor_A, rank_2_tensor_B, name='MatrixC')
-print("Rank 2 Tensor C with shape={} and elements: \n{}".format(rank_2_tensor_C.shape, rank_2_tensor_C))
 
 ```
 
+<div class="pagebreak"></div>
 
 Some matrix multiplication: ![mul0.png](mul0.png)
 
@@ -97,7 +100,8 @@ Definition of multiply
 
 Let's multiply using TF:
 
-matmul1.py:
+File matmul1.py:
+
 ```
   1: import tensorflow as tf
   2: 
@@ -140,6 +144,56 @@ elements:
 
 ```
 
+Compare to a matrix multiply directly in code.
+
+File matmul3.py:
+
+```
+  1: # Example of multipying 2 matricies in Python
+  2: 
+  3: # 3x3 matrix
+  4: X = [[12,7,3],
+  5:      [4 ,5,6],
+  6:      [7 ,8,9]]
+  7: # 3x4 matrix
+  8: Y = [[5,8,1,2],
+  9:      [6,7,3,0]]
+ 10: # result is 3x4
+ 11: result = [[0,0,0,0],
+ 12:           [0,0,0,0],
+ 13:           [0,0,0,0]]
+ 14: 
+ 15: # iterate through rows of X
+ 16: for i in range(len(X)):
+ 17:    # iterate through columns of Y
+ 18:    for j in range(len(Y[0])):
+ 19:        # iterate through rows of Y
+ 20:        for k in range(len(Y)):
+ 21:            result[i][j] += X[i][k] * Y[k][j]
+ 22: 
+ 23: a = "["
+ 24: com = ","
+ 25: for i in range(len(result)):
+ 26:    if i+1 == len(result):
+ 27:        com = "]"
+ 28:    print("{}{}{}".format(a,result[i],com))
+ 29:    a = " "
+
+
+```
+
+output:
+
+```
+[[102, 145, 33, 24],
+ [50, 67, 19, 8],
+ [83, 112, 31, 14]]
+
+```
+
+
+
+
 Inner Dimentions must be the same.
 
 A by hand example:
@@ -153,12 +207,14 @@ First a 1x example:
 ![mat3.png](mat3.png)
 
 
-## Matrices are useful
 
+
+
+## Matrices are useful
 
 Calculate Inverse of a Matrix:
 
-inv.py:
+File: inv.py:
 
 ```
   1: import tensorflow as tf
@@ -188,6 +244,7 @@ inv.py:
  25:     Matrix A: \n{} \n\nInverse of Matrix A: \n{} \n\nRHS: I: \n{}
  26:     \nLHS: (A^(-1) A): \n{}""".format(iim_matrix_A, inverse_matrix_A, iim_RHS, iim_LHS))
 
+
 ```
 
 And the output:
@@ -211,5 +268,6 @@ LHS: A^(-1) A:
  [0. 1.]]
 
 ```
+
 
 

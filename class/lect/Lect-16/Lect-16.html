@@ -723,7 +723,7 @@ ol {
 }
 </style>
 
-<h1>Lecture 18 - tensor flow - math</h1>
+<h1>Lecture 16 - tensor flow - math</h1>
 
 <p>What is A &ldquo;tensor&rdquo; and how will it &ldquo;flow&rdquo;?</p>
 
@@ -731,16 +731,16 @@ ol {
 
 <p>A scalar is a 1-ish number.  This is the simplest kind of tensor:</p>
 
-<pre><code>import tensorflow as tf
-
-x = tf.constant(-2.0, name=&quot;x&quot;, dtype=tf.float32)
-a = tf.constant(5.0, name=&quot;a&quot;, dtype=tf.float32)
-b = tf.constant(13.0, name=&quot;b&quot;, dtype=tf.float32)
-
-y = tf.Variable(tf.add(tf.multiply(a, x), b))
-
-print ( &quot;result is:&quot; )
-tf.print ( y )
+<pre><code>  1: import tensorflow as tf
+  2: 
+  3: x = tf.constant(-2.0, name=&quot;x&quot;, dtype=tf.float32)
+  4: a = tf.constant(5.0, name=&quot;a&quot;, dtype=tf.float32)
+  5: b = tf.constant(13.0, name=&quot;b&quot;, dtype=tf.float32)
+  6: 
+  7: y = tf.Variable(tf.add(tf.multiply(a, x), b))
+  8: 
+  9: print ( &quot;result is:&quot; )
+ 10: tf.print ( y )
 
 </code></pre>
 
@@ -751,6 +751,8 @@ tf.print ( y )
 <p>The tensor is the 3d vector of each of these.</p>
 
 <p>You are not limited to 3d data.</p>
+
+<div class="pagebreak"></div>
 
 <p>So&hellip;</p>
 
@@ -774,21 +776,24 @@ tf.print ( y )
 
 <p>add1.py:</p>
 
-<pre><code>import tensorflow as tf
+<pre><code>  1: import tensorflow as tf
+  2: 
+  3: # let's create a ones 3x3 rank 2 tensor
+  4: rank_2_tensor_A = tf.ones([3, 3], name='MatrixA')
+  5: print(&quot;3x3 Rank 2 Tensor A: \n{}\n&quot;.format(rank_2_tensor_A))
+  6: 
+  7: # let's manually create a 3x3 rank two tensor and specify the data type as float
+  8: rank_2_tensor_B = tf.constant([[1, 2, 3], [4, 5, 6], [7, 8, 9]], name='MatrixB', dtype=tf.float32)
+  9: print(&quot;3x3 Rank 2 Tensor B: \n{}\n&quot;.format(rank_2_tensor_B))
+ 10: 
+ 11: # addition of the two tensors
+ 12: rank_2_tensor_C = tf.add(rank_2_tensor_A, rank_2_tensor_B, name='MatrixC')
+ 13: print(&quot;Rank 2 Tensor C with shape={} and elements: \n{}&quot;.format(rank_2_tensor_C.shape, rank_2_tensor_C))
 
-# let's create a ones 3x3 rank 2 tensor
-rank_2_tensor_A = tf.ones([3, 3], name='MatrixA')
-print(&quot;3x3 Rank 2 Tensor A: \n{}\n&quot;.format(rank_2_tensor_A))
-
-# let's manually create a 3x3 rank two tensor and specify the data type as float
-rank_2_tensor_B = tf.constant([[1, 2, 3], [4, 5, 6], [7, 8, 9]], name='MatrixB', dtype=tf.float32)
-print(&quot;3x3 Rank 2 Tensor B: \n{}\n&quot;.format(rank_2_tensor_B))
-
-# addition of the two tensors
-rank_2_tensor_C = tf.add(rank_2_tensor_A, rank_2_tensor_B, name='MatrixC')
-print(&quot;Rank 2 Tensor C with shape={} and elements: \n{}&quot;.format(rank_2_tensor_C.shape, rank_2_tensor_C))
 
 </code></pre>
+
+<div class="pagebreak"></div>
 
 <p>Some matrix multiplication: <img src="mul0.png" alt="mul0.png" /></p>
 
@@ -798,7 +803,7 @@ print(&quot;Rank 2 Tensor C with shape={} and elements: \n{}&quot;.format(rank_2
 
 <p>Let&rsquo;s multiply using TF:</p>
 
-<p>matmul1.py:</p>
+<p>File matmul1.py:</p>
 
 <pre><code>  1: import tensorflow as tf
   2: 
@@ -840,6 +845,51 @@ elements:
 
 </code></pre>
 
+<p>Compare to a matrix multiply directly in code.</p>
+
+<p>File matmul3.py:</p>
+
+<pre><code>  1: # Example of multipying 2 matricies in Python
+  2: 
+  3: # 3x3 matrix
+  4: X = [[12,7,3],
+  5:      [4 ,5,6],
+  6:      [7 ,8,9]]
+  7: # 3x4 matrix
+  8: Y = [[5,8,1,2],
+  9:      [6,7,3,0]]
+ 10: # result is 3x4
+ 11: result = [[0,0,0,0],
+ 12:           [0,0,0,0],
+ 13:           [0,0,0,0]]
+ 14: 
+ 15: # iterate through rows of X
+ 16: for i in range(len(X)):
+ 17:    # iterate through columns of Y
+ 18:    for j in range(len(Y[0])):
+ 19:        # iterate through rows of Y
+ 20:        for k in range(len(Y)):
+ 21:            result[i][j] += X[i][k] * Y[k][j]
+ 22: 
+ 23: a = &quot;[&quot;
+ 24: com = &quot;,&quot;
+ 25: for i in range(len(result)):
+ 26:    if i+1 == len(result):
+ 27:        com = &quot;]&quot;
+ 28:    print(&quot;{}{}{}&quot;.format(a,result[i],com))
+ 29:    a = &quot; &quot;
+
+
+</code></pre>
+
+<p>output:</p>
+
+<pre><code>[[102, 145, 33, 24],
+ [50, 67, 19, 8],
+ [83, 112, 31, 14]]
+
+</code></pre>
+
 <p>Inner Dimentions must be the same.</p>
 
 <p>A by hand example:</p>
@@ -856,7 +906,7 @@ elements:
 
 <p>Calculate Inverse of a Matrix:</p>
 
-<p>inv.py:</p>
+<p>File: inv.py:</p>
 
 <pre><code>  1: import tensorflow as tf
   2: 
@@ -884,6 +934,7 @@ elements:
  24:     print(&quot;&quot;&quot;A^-1 doesnt exist
  25:     Matrix A: \n{} \n\nInverse of Matrix A: \n{} \n\nRHS: I: \n{}
  26:     \nLHS: (A^(-1) A): \n{}&quot;&quot;&quot;.format(iim_matrix_A, inverse_matrix_A, iim_RHS, iim_LHS))
+
 
 </code></pre>
 
