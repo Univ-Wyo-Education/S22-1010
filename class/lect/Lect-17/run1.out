@@ -1,0 +1,91 @@
+(base) philip@victoria Lect-17 % python tf_clasification.py
+2.6.0
+Number of Training Images, x by y in size
+(60000, 28, 28)
+length of lables 60000
+train_lables = [9 0 0 ... 3 0 5]
+Number of Test Images, x by y in size
+(10000, 28, 28)
+length of traingin lables 10000
+(base) philip@victoria Lect-17 % vi tf_clasification.py
+(base) philip@victoria Lect-17 % python tf_clasification.py
+2.6.0
+Number of Training Images, x by y in size
+(60000, 28, 28)
+length of lables 60000
+train_lables = [9 0 0 ... 3 0 5]
+Number of Test Images, x by y in size
+(10000, 28, 28)
+length of traingin lables 10000
+(base) philip@victoria Lect-17 % vi tf_clasification.py
+(base) philip@victoria Lect-17 % python tf_clasification.py
+2.6.0
+Number of Training Images, x by y in size
+(60000, 28, 28)
+length of lables 60000
+train_lables = [9 0 0 ... 3 0 5]
+Number of Test Images, x by y in size
+(10000, 28, 28)
+length of traingin lables 10000
+(base) philip@victoria Lect-17 % ls
+Lect-17.html  Lect-17.md  Lect-17.raw.md  Makefile  open.1  tf6.py  tf6.py.nu  tf7.py  tf7.py.nu  tf8.py  tf8.py.nu  tf_clasification.py  tf_hw.py  todo.1  video-lect.1
+(base) philip@victoria Lect-17 % vi tf_clasification.py
+(base) philip@victoria Lect-17 % python tf_clasification.py
+2.6.0
+Number of Training Images, x by y in size
+(60000, 28, 28)
+length of lables 60000
+train_lables = [9 0 0 ... 3 0 5]
+Number of Test Images, x by y in size
+(10000, 28, 28)
+length of traingin lables 10000
+2022-03-20 07:19:47.400964: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2022-03-20 07:19:48.136911: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:185] None of the MLIR Optimization Passes are enabled (registered 2)
+Epoch 1/10
+1875/1875 [==============================] - 2s 761us/step - loss: 0.5040 - accuracy: 0.8217
+Epoch 2/10
+1875/1875 [==============================] - 1s 746us/step - loss: 0.3775 - accuracy: 0.8643
+Epoch 3/10
+1875/1875 [==============================] - 1s 736us/step - loss: 0.3401 - accuracy: 0.8766
+Epoch 4/10
+1875/1875 [==============================] - 1s 745us/step - loss: 0.3162 - accuracy: 0.8840
+Epoch 5/10
+1875/1875 [==============================] - 1s 741us/step - loss: 0.2966 - accuracy: 0.8911
+Epoch 6/10
+1875/1875 [==============================] - 1s 709us/step - loss: 0.2801 - accuracy: 0.8969
+Epoch 7/10
+1875/1875 [==============================] - 1s 713us/step - loss: 0.2701 - accuracy: 0.8995
+Epoch 8/10
+1875/1875 [==============================] - 1s 686us/step - loss: 0.2586 - accuracy: 0.9037
+Epoch 9/10
+1875/1875 [==============================] - 1s 702us/step - loss: 0.2472 - accuracy: 0.9085
+Epoch 10/10
+1875/1875 [==============================] - 1s 711us/step - loss: 0.2396 - accuracy: 0.9105
+313/313 - 0s - loss: 0.3274 - accuracy: 0.8838
+
+Test accuracy: 0.8838000297546387
+Predictions [0] = [1.47737296e-07 1.51618706e-09 7.59144037e-09 5.60454504e-12
+ 1.07426544e-07 7.16144964e-03 5.10300936e-07 1.52155627e-02
+ 4.91463226e-08 9.77622271e-01]
+Best Predition 9
+Test Lables 9
+(28, 28)
+(1, 28, 28)
+Now predict the correct label for a single image
+Raw Data (predictions) = [[8.5572960e-05 3.3501887e-08 1.0611546e-04 9.8375477e-09 8.8174429e-06
+  7.3397736e-04 1.4115527e-04 3.0230822e-05 9.9889249e-01 1.6165590e-06]]
+
+Pos | Class Names  | Likelyhood %
+--- + -----------  + ------------
+  0 | T-shirt/top  |   0.0086%
+  1 | Trouser      |   0.0000%
+  2 | Pullover     |   0.0106%
+  3 | Dress        |   0.0000%
+  4 | Coat         |   0.0009%
+  5 | Sandal       |   0.0734%
+  6 | Shirt        |   0.0141%
+  7 | Sneaker      |   0.0030%
+  8 | Bag          |  99.8892%
+  9 | Ankle boot   |   0.0002%
+Max Arguments = 8
