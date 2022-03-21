@@ -5,8 +5,9 @@ import tensorflow as tf
 import numpy as np
 import matplotlib.pyplot as plt
 
-# Check that we have TF loaded and working 
+# Check that we have TF loaded and working
 print(tf.__version__)
+
 
 # Fetch Data ---------------------------------------------------------------------
 fashion_mnist = tf.keras.datasets.fashion_mnist
@@ -23,7 +24,7 @@ print ( "length of lables {}".format( len(train_labels) ) )
 print ( "train_lables = {}".format ( train_labels ) )
 
 print ( "Number of Test Images, x by y in size" )
-print ( test_images.shape ) 
+print ( test_images.shape )
 
 print ( "length of traingin lables {}".format( len(test_labels) ) )
 
@@ -34,13 +35,13 @@ plt.grid(False)
 plt.show()
 
 # Data "cleanup" --------------------------------------------------------------------
-# Modifiy images from 0..255 to 0..1 
+# Modifiy images from 0..255 to 0..1
 train_images = train_images / 255.0
 
 test_images = test_images / 255.0
 
 
-# What images look like after modification. 
+# What images look like after modification.
 plt.figure(figsize=(10,10))
 for i in range(25):
     plt.subplot(5,5,i+1)
@@ -50,6 +51,8 @@ for i in range(25):
     plt.imshow(train_images[i], cmap=plt.cm.binary)
     plt.xlabel(class_names[train_labels[i]])
 plt.show()
+
+
 
 # The Model / Training ---------------------------------------------------------------
 # The Learning Model - 3 layers
@@ -68,21 +71,14 @@ model.compile(optimizer='adam',
 model.fit(train_images, train_labels, epochs=10)
 
 
-
-
-
 # Testing Accuracy of Model ----------------------------------------------------------
 
 test_loss, test_acc = model.evaluate(test_images,  test_labels, verbose=2)
 
 print('\nTest accuracy:', test_acc)
 
-
-
-
-
 # Predictions with Model -------------------------------------------------------------
-probability_model = tf.keras.Sequential([model, 
+probability_model = tf.keras.Sequential([model,
                                          tf.keras.layers.Softmax()])
 predictions = probability_model.predict(test_images)
 
@@ -91,6 +87,9 @@ print ( "Predictions [0] = {}".format ( predictions[0] ) )
 print ( "Best Predition {}".format( np.argmax(predictions[0]) ) )
 
 print ( "Test Lables {}".format( test_labels[0] ) )
+
+
+
 
 # Some functions (def) to plot graphs of accuracy.
 def plot_image(i, predictions_array, true_label, img):
@@ -125,6 +124,7 @@ def plot_value_array(i, predictions_array, true_label):
   thisplot[true_label].set_color('blue')
 
 
+
 i = 0
 plt.figure(figsize=(6,3))
 plt.subplot(1,2,1)
@@ -140,6 +140,9 @@ plot_image(i, predictions[i], test_labels, test_images)
 plt.subplot(1,2,2)
 plot_value_array(i, predictions[i],  test_labels)
 plt.show()
+
+
+
 
 # Plot the first X test images, their predicted labels, and the true labels.
 # Color correct predictions in blue and incorrect predictions in red.
@@ -185,4 +188,4 @@ plot_value_array(1, predictions_single[0], test_labels)
 _ = plt.xticks(range(10), class_names, rotation=45)
 plt.show()
 
-print ( "Max Arguments = {}".format( np.argmax(predictions_single[0]) ) ) 
+print ( "Max Arguments = {}".format( np.argmax(predictions_single[0]) ) )
