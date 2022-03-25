@@ -22,7 +22,8 @@ So the data looks like:
 
 
 The code:
-[https://github.com/Univ-Wyo-Education/F21-1010/blob/main/lab/lab-11/linear1.py](https://github.com/Univ-Wyo-Education/F21-1010/blob/main/lab/lab-11/linear1.py)
+[https://github.com/Univ-Wyo-Education/S122-1010/blob/main/homework/09/linear1.py](https://github.com/Univ-Wyo-Education/S122-1010/blob/main/homework/09/linear1.py)
+
 
 ```
 m4_include(linear1.py.nu)
@@ -43,6 +44,10 @@ y = 4x - 6
 
 Update the data and re-train the model to use the new set of
 data.  Then do a prediction with it.
+
+
+Turn in your code with the updated model and an example of
+your output.
 
 
 
