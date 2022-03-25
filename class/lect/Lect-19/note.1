@@ -1,0 +1,101 @@
+
+1. Overfitting - in the regular world.
+
+	1. Cars and saftey
+
+	2. "No child left behind": 
+		"There is now a parent-led backlash against “over-testing,”
+		and politicians in both major parties are paying attention.
+		These parents point to the time spent administering the
+		tests themselves as well as to the diversionary effects of
+		high-stakes testing on curriculum and instruction—which
+		include narrowed curriculum, teaching to the test, and time
+		spent preparing for the high-stakes assessments."
+
+2. Seeking a Minimum
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1. Predict function
+1. Clasify Image
+1. "Why ML - Spelling Example"
+
+https://jhui.github.io/2017/03/14/TensorFlow-Estimator/
+
+
+What is machine learing
+	1. Supervized
+		Labeled Data < Features, Label >
+			e.g. An Email, is or is not Spam
+		New Un-Labeld data < Features, ???? >
+		Model
+			Map of < Features -> Lable >
+
+	Key terms : Features, Labels, Model
+
+	2. Example
+
+		House - SqFt - v.s. Price
+			$120 - good
+			$136 - maybee
+			$142 - too much
+			$110 - something is wrong
+
+		House Number of Bedrooms  v.s. Price
+			1 br = 36k
+			2 br = 52k
+			3 br = 86k
+			4 br = 102k
+
+		Loss - L2 loss - , L**2 - square of abs of loss
+			Minimize loss over entire data set.
+
+		Model - ****************** Train - demo
+
+		Linear regression
+
+	Key Terms: Linear Regression
+		 
+
+	3. How a model "learns"
+
+		Gradient Decent - this has a "tunable" paramter
+
+		kkkkkk
+
+
+
+
+We don't see things as they are, we see things as we are.
+
+
+### Do A Predition using the "model" ###
+
+# Given the input data (60, 25, 2), the line y = 0.5x + 2 should yield (32, 14.5, 3). Does the model agree?
+
+print(model.predict([60, 25, 2]))
+# True values to compare predictions against: 
+# [[32.0]
+#  [14.5]
+#  [ 3.0]]
+
+x = float(input("Enter a number> "))
+pv = model.predict([x])
+
+print ( "Input {x} Output {y}".format ( x=x, y=pv ) )
+
+
