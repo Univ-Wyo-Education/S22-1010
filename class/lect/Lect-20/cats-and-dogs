@@ -1,0 +1,22 @@
+total 127480
+-rw-r--r-- 1 philip       345 Nov 14  2019 Makefile
+-rw-r--r-- 1 philip       398 Nov 14  2019 out.1
+-rw-r--r-- 1 philip     86487 Nov 14  2019 bad-fit.png
+-rw-r--r-- 1 philip      8089 Nov 14  2019 ver1.py
+-rw-r--r-- 1 philip     95993 Nov 14  2019 good-fit.png
+-rw------- 1 philip    541526 Nov 14  2019 Dr.-John-Ioannidis-Exposes-the-Bad-Science-of-Colleagues-The-Atlantic.pdf
+-rw-r--r-- 1 philip      2550 Nov 14  2019 Lect-22.md
+-rw-r--r-- 1 philip     16278 Nov 14  2019 Lect-22.html
+-rw------- 1 philip    213238 Nov 14  2019 Lect-22.html.pdf
+-rw-r--r-- 1 philip       141 Nov 14  2019 note.1
+-rw-r--r-- 1 philip    519325 Dec  2  2019 dog1.jpg
+-rw-r--r-- 1 philip    236532 Dec  2  2019 cat1.jpg
+-rw-r--r-- 1 philip     10081 Dec  2  2019 clas1.py
+-rw-r--r-- 1 philip 127747728 Dec  2  2019 cats-and-dogs.h5
+-rw-r--r-- 1 philip    455883 Dec  3  2019 dog2.jpg
+-rw-r--r-- 1 philip    523307 Dec  3  2019 cat2.jpg
+-rw-r--r-- 1 philip     20918 Dec  3  2019 cat3.jpg
+-rw-r--r-- 1 philip       743 Dec  3  2019 pred01.py
+-rw-r--r-- 1 philip      9893 Dec  3  2019 clas0.py
+-rw-r--r-- 1 philip      1136 Nov 16 05:13 ,a
+-rw-r--r-- 1 philip         0 Nov 16 05:15 cats-and-dogs
