@@ -1,0 +1,2 @@
+['imdbEr.txt', 'test', 'imdb.vocab', 'README', 'train']
+['urls_unsup.txt', 'neg', 'urls_pos.txt', 'unsup', 'urls_neg.txt', 'pos', 'unsupBow.feat', 'labeledBow.feat']

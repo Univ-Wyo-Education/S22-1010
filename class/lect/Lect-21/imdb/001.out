@@ -1,0 +1,5 @@
+python imdb.py
+2.8.0
+Downloading data from https://ai.stanford.edu/~amaas/data/sentiment/aclImdb_v1.tar.gz
+84131840/84125825 [==============================] - 4s 0us/step
+84140032/84125825 [==============================] - 4s 0us/step
