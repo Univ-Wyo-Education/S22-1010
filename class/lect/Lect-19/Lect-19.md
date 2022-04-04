@@ -15,7 +15,7 @@
 </style>
 
 
-# Lecture 25 - Machine Learning Models
+# Lecture 19 - Simple Linear Model
 
 
 

@@ -191,3 +191,31 @@ plt.ylabel('Accuracy')
 plt.legend(loc='lower right')
 
 plt.show()
+
+
+
+export_model = tf.keras.Sequential([
+	vectorize_layer,
+	model,
+	layers.Activation('sigmoid')
+])
+
+export_model.compile(
+    loss=losses.BinaryCrossentropy(from_logits=False), optimizer="adam", metrics=['accuracy']
+)
+
+# Test it with `raw_test_ds`, which yields raw strings
+loss, accuracy = export_model.evaluate(raw_test_ds)
+print(accuracy)
+
+
+
+examples = [
+	"The movie was great!",
+	"The movie was okay.",
+	"The movie was terrible...",
+	"The best time ever",
+	"Horrid waste of time"
+]
+
+print ( export_model.predict(examples) )

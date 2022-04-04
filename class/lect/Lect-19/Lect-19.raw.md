@@ -1,6 +1,6 @@
 m4_include(../../../setup.m4)
 
-# Lecture 25 - Machine Learning Models
+# Lecture 19 - Simple Linear Model
 
 
 

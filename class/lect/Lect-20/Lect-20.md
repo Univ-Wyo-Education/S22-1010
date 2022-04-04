@@ -76,7 +76,7 @@ capitalism” (Zuboff 2019)."
 [https://plato.stanford.edu/entries/ethics-ai/](https://plato.stanford.edu/entries/ethics-ai/)
 (Read for Final!)
 
-All of us has a "native" that we want to tell other people that is not really our life.
+All of us has a "narrative" that we want to tell other people that is not really our life.
 How much of your real "life" do you want to have revealed.
 
 1. Credit scores are used to determine what you can rent (apartments, cars, etc) what jobs you get.
