@@ -44,3 +44,8 @@ Text looks like this
 m4_include(imdb/imdb.py.nu)
 ```
 
+
+## References
+
+Images taken from [https://www.researchgate.net/publication/331540139_A_State-of-the-Art_Survey_on_Deep_Learning_Theory_and_Architectures/figures?lo=1](https://www.researchgate.net/publication/331540139_A_State-of-the-Art_Survey_on_Deep_Learning_Theory_and_Architectures/figures?lo=1)
+
