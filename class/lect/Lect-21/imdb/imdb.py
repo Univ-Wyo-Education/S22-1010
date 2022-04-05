@@ -1,3 +1,6 @@
+# ----------------------------------------------------------------------------
+# Setup
+# ----------------------------------------------------------------------------
 import matplotlib.pyplot as plt
 import os
 import re
@@ -9,6 +12,13 @@ from tensorflow.keras import layers
 from tensorflow.keras import losses
 
 print(tf.__version__)
+
+
+# ----------------------------------------------------------------------------
+# Get data.
+# ----------------------------------------------------------------------------
+
+# Location to pull data from
 
 url = "https://ai.stanford.edu/~amaas/data/sentiment/aclImdb_v1.tar.gz"
 
@@ -31,9 +41,14 @@ with open(sample_file) as f:
 	print(f.read())
 
 
-
+# Discard data we are not using.
 remove_dir = os.path.join(train_dir, 'unsup')
 shutil.rmtree(remove_dir)
+
+
+# ----------------------------------------------------------------------------
+# xyzzy
+# ----------------------------------------------------------------------------
 
 batch_size = 32
 seed = 42
@@ -53,6 +68,12 @@ for text_batch, label_batch in raw_train_ds.take(1):
 print("Label 0 corresponds to", raw_train_ds.class_names[0])
 print("Label 1 corresponds to", raw_train_ds.class_names[1])
 
+
+
+# ----------------------------------------------------------------------------
+# xyzzy
+# ----------------------------------------------------------------------------
+
 raw_val_ds = tf.keras.utils.text_dataset_from_directory(
 	'aclImdb/train',
 	batch_size=batch_size,
@@ -70,6 +91,10 @@ def custom_standardization(input_data):
 	stripped_html = tf.strings.regex_replace(lowercase, '<br />', ' ')
 	return tf.strings.regex_replace(stripped_html, '[%s]' % re.escape(string.punctuation), '')
 
+
+# ----------------------------------------------------------------------------
+# pooling of data
+# ----------------------------------------------------------------------------
 
 max_features = 10000
 sequence_length = 250
@@ -105,6 +130,10 @@ print('Vocabulary size: {}'.format(len(vectorize_layer.get_vocabulary())))
 
 
 
+# ----------------------------------------------------------------------------
+# Setup Training / Testing Data
+# ----------------------------------------------------------------------------
+
 
 train_ds = raw_train_ds.map(vectorize_text)
 val_ds = raw_val_ds.map(vectorize_text)
@@ -122,6 +151,9 @@ test_ds = test_ds.cache().prefetch(buffer_size=AUTOTUNE)
 embedding_dim = 16
 
 
+# ----------------------------------------------------------------------------
+# Multi Layer Model
+# ----------------------------------------------------------------------------
 
 model = tf.keras.Sequential([
 	layers.Embedding(max_features + 1, embedding_dim),
@@ -139,6 +171,11 @@ model.compile(loss=losses.BinaryCrossentropy(from_logits=True),
 
 
 
+
+# ----------------------------------------------------------------------------
+# Train Model
+# ----------------------------------------------------------------------------
+
 epochs = 10
 history = model.fit(
 	train_ds,
@@ -147,7 +184,9 @@ history = model.fit(
 
 
 
-
+# ----------------------------------------------------------------------------
+# Evaluate Model
+# ----------------------------------------------------------------------------
 
 loss, accuracy = model.evaluate(test_ds)
 
@@ -159,6 +198,8 @@ history_dict = history.history
 history_dict.keys()
 
 
+
+# Review results of Training
 
 
 acc = history_dict['binary_accuracy']
@@ -193,6 +234,9 @@ plt.legend(loc='lower right')
 plt.show()
 
 
+# ----------------------------------------------------------------------------
+# Export Model so we can use it.
+# ----------------------------------------------------------------------------
 
 export_model = tf.keras.Sequential([
 	vectorize_layer,
@@ -209,6 +253,11 @@ loss, accuracy = export_model.evaluate(raw_test_ds)
 print(accuracy)
 
 
+
+
+# ----------------------------------------------------------------------------
+# Test with new data.
+# ----------------------------------------------------------------------------
 
 examples = [
 	"The movie was great!",
