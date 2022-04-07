@@ -39,6 +39,8 @@ m4_include(data2.py.nu)
 
 Now let's take care of the column with " MPG" in it.
 
+<dib class="pagebreak"></div>
+
 We have a problem - how to find values that match a "pattern" instead of a single value.
 
 29 MPG
@@ -183,6 +185,8 @@ m4_include(sub1.py.nu)
 
 
 
+
+<dib class="pagebreak"></div>
 
 ## Part 2 - list comprehension
 

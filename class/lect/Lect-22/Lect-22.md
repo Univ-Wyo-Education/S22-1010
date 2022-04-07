@@ -134,6 +134,8 @@ File: data2.py
 
 Now let's take care of the column with " MPG" in it.
 
+<dib class="pagebreak"></div>
+
 We have a problem - how to find values that match a "pattern" instead of a single value.
 
 29 MPG
@@ -289,6 +291,8 @@ File: sub1.py
 
 
 
+
+<dib class="pagebreak"></div>
 
 ## Part 2 - list comprehension
 
