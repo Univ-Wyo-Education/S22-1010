@@ -37,6 +37,8 @@ Add in some sections - add some graphs.
 
 ## Part 1 - read data.
 
+File: lab-11_input.py
+
 ```
   1: 
   2: # Step 1 - Just do the input and verify the file works.
@@ -72,6 +74,8 @@ Add in some sections - add some graphs.
 ## Part 2 - First cleanup.
 
 Get rid of columns you don't need at all.  Get rid of missing data.
+
+File: lab-11_first_cleanup.py
 
 ```
   1: 
@@ -124,6 +128,8 @@ Get rid of columns you don't need at all.  Get rid of missing data.
 
 Get rid of Text in numeric fields.
 
+File: lab-11_text_in_fields.py
+
 ```
   1: 
   2: import numpy as np
@@ -174,6 +180,8 @@ Get rid of Text in numeric fields.
 ## Part 4 - Fix strings
 
 Convert numbers, get rid of more missing data.
+
+File: lab-11_numbers_and_missing_data.py
 
 ```
   1: 
@@ -240,6 +248,8 @@ Convert numbers, get rid of more missing data.
 ## Part 5 - Km to Miles (And 1st part of Lab Data Cleanup)
 
 This is the first part where you have some work to do in the data cleanup.
+
+File: lab-11_km_to_miles.py
 
 ```
   1: 
@@ -344,6 +354,8 @@ This is the first part where you have some work to do in the data cleanup.
 ## Part 6 - One hot encoding
 
 This is the second part where you have some work to do.
+
+File:lab-11_one_hot.py
 
 ```
   1: 
@@ -468,6 +480,8 @@ This is the second part where you have some work to do.
 ## Part 7 - Plot some stuff.
 
 This is the third part where you have some work to do in the data cleanup.
+
+File: lab-11_plot_stuff.py
 
 ```
   1: 
@@ -612,6 +626,8 @@ This is the third part where you have some work to do in the data cleanup.
 
 This code is in the lab pdf also - with a link to download your file.
 
+File: lab-11_start.py
+
 ```
   1: 
   2: import numpy as np
@@ -674,72 +690,68 @@ This code is in the lab pdf also - with a link to download your file.
  59: dataset['Engine'] = pd.Series([float(str(val))
  60:     for val in dataset['Engine']], index = dataset.index)
  61: 
- 62: dataset['Power'] = pd.Series([float(str(val))
- 63:     for val in dataset['Power']], index = dataset.index)
- 64: dataset['Seats'] = pd.Series([float(str(val))
- 65:     for val in dataset['Seats']], index = dataset.index)
- 66: ## Lab 09 - TODO - for the column 'Power' in the dataset, convert it to a float 
- 67: ## Lab 09 - TODO - for the column 'Seats' in the dataset, convert it to a float 
- 68: ## Lab 09 - TODO - create the column 'Miles_Driven' from the column
- 69: ##                'Kilometers_Driven' by converting to a float and 
- 70: ##                 Multiplying by 0.621371, then convert to an integer so
- 71: ##                 that we don't have small fractional values.
- 72: ##
- 73: ##                 Example of Conversion in just code
- 74: ##                 x = "23.0"      # A string, with a number in it.
- 75: ##                 r = int(float(x)*0.621371)  
- 76: ##                     # Convert from string to float,
- 77: ##                     # Km to Mi, then back to an integer.
+ 62: ## Lab 11 - TODO - for the column 'Power' in the dataset, convert it to a float 
+ 63: ## Lab 11 - TODO - for the column 'Seats' in the dataset, convert it to a float 
+ 64: ## Lab 11 - TODO - create the column 'Miles_Driven' from the column
+ 65: ##                'Kilometers_Driven' by converting to a float and 
+ 66: ##                 Multiplying by 0.621371, then convert to an integer so
+ 67: ##                 that we don't have small fractional values.
+ 68: ##
+ 69: ##                 Example of Conversion in just code
+ 70: ##                 x = "23.0"      # A string, with a number in it.
+ 71: ##                 r = int(float(x)*0.621371)  
+ 72: ##                     # Convert from string to float,
+ 73: ##                     # Km to Mi, then back to an integer.
+ 74: 
+ 75: dataset = dataset.drop(columns=['Kilometers_Driven'])
+ 76: 
+ 77: print ( dataset.head() )
  78: 
- 79: dataset = dataset.drop(columns=['Kilometers_Driven'])
+ 79: dataset.to_csv(path_or_buf="new-car-data.csv")
  80: 
- 81: print ( dataset.head() )
+ 81: 
  82: 
- 83: dataset.to_csv(path_or_buf="new-car-data.csv")
+ 83: ## One-Hot the Fule_Type
  84: 
- 85: 
- 86: 
- 87: ## One-Hot the Fule_Type
- 88: 
- 89: print(dataset['Fuel_Type'].unique())
- 90: dataset['Fuel_Type'] = pd.Categorical(dataset['Fuel_Type'])
- 91: dfFuel_Type = pd.get_dummies(dataset['Fuel_Type'], prefix = 'Fuel_Type')
- 92: print ( dfFuel_Type.head() )
- 93: 
- 94: ## One-Hot the Transmission
- 95: ## Lab -09 - TODO - do a similar one-hot encoding for the values in 
- 96: ##                 the Transmission column.
- 97: ## Lab -09 - TODO - do a similar one-hot encoding for the values in 
- 98: ##                 the Owner_Type column.
- 99: 
-100: ## Concat it all together
-101: 
-102: ## TODO - when you get the 2 sections above working you will need:
-103: #### dataset = pd.concat([dataset, dfFuel_Type, dfTransmission, dfOwner_Type], axis=1)
-104: 
-105: ## instead of just the dfFule_type 
-106: dataset = pd.concat([dataset, dfFuel_Type], axis=1)
+ 85: print(dataset['Fuel_Type'].unique())
+ 86: dataset['Fuel_Type'] = pd.Categorical(dataset['Fuel_Type'])
+ 87: dfFuel_Type = pd.get_dummies(dataset['Fuel_Type'], prefix = 'Fuel_Type')
+ 88: print ( dfFuel_Type.head() )
+ 89: 
+ 90: ## One-Hot the Transmission
+ 91: ## Lab 11 - TODO - do a similar one-hot encoding for the values in 
+ 92: ##                 the Transmission column.
+ 93: ## Lab 11 - TODO - do a similar one-hot encoding for the values in 
+ 94: ##                 the Owner_Type column.
+ 95: 
+ 96: ## Concat it all together
+ 97: 
+ 98: ## TODO - when you get the 2 sections above working you will need:
+ 99: #### dataset = pd.concat([dataset, dfFuel_Type, dfTransmission, dfOwner_Type], axis=1)
+100: 
+101: ## instead of just the dfFule_type 
+102: dataset = pd.concat([dataset, dfFuel_Type], axis=1)
+103: 
+104: dataset = dataset.drop(columns=['Owner_Type', 'Transmission', 'Fuel_Type'])
+105: print ( dataset.head() )
+106: 
 107: 
-108: dataset = dataset.drop(columns=['Owner_Type', 'Transmission', 'Fuel_Type'])
-109: print ( dataset.head() )
-110: 
+108: # Save the data again - take a look at it.
+109: 
+110: dataset.to_csv(path_or_buf="new-car-data2.csv")
 111: 
-112: # Save the data again - take a look at it.
-113: 
-114: dataset.to_csv(path_or_buf="new-car-data2.csv")
+112: ############################### ###############################
+113: # Plot some stuff.
+114: ############################### ###############################
 115: 
-116: ############################### ###############################
-117: # Plot some stuff.
-118: ############################### ###############################
+116: 
+117: dataset.plot(kind='scatter',x='Price',y='Year',color='blue')
+118: plt.show()
 119: 
-120: 
-121: dataset.plot(kind='scatter',x='Price',y='Year',color='blue')
-122: plt.show()
-123: 
-124: ## Lab - 09 - TODO - Plot Price v.s. Miles_Driven
-125: ## Lab - 09 - TODO - Plot Price v.s. Power
-126: ## Lab - 09 - TODO - Plot Price v.s. Milage
-127: ## Lab - 09 - TODO - Plot Price v.s. Seats
+120: ## Lab 11 - TODO - Plot Price v.s. Miles_Driven
+121: ## Lab 11 - TODO - Plot Price v.s. Power
+122: ## Lab 11 - TODO - Plot Price v.s. Milage
+123: ## Lab 11 - TODO - Plot Price v.s. Seats
 
 ```
 

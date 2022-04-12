@@ -22,6 +22,8 @@ Add in some sections - add some graphs.
 
 ## Part 1 - read data.
 
+File: lab-11_input.py
+
 ```
 m4_include(lab-11_input.py.nu)
 ```
@@ -31,6 +33,8 @@ m4_include(lab-11_input.py.nu)
 ## Part 2 - First cleanup.
 
 Get rid of columns you don't need at all.  Get rid of missing data.
+
+File: lab-11_first_cleanup.py
 
 ```
 m4_include(lab-11_first_cleanup.py.nu)
@@ -42,6 +46,8 @@ m4_include(lab-11_first_cleanup.py.nu)
 
 Get rid of Text in numeric fields.
 
+File: lab-11_text_in_fields.py
+
 ```
 m4_include(lab-11_text_in_fields.py.nu)
 ```
@@ -51,6 +57,8 @@ m4_include(lab-11_text_in_fields.py.nu)
 ## Part 4 - Fix strings
 
 Convert numbers, get rid of more missing data.
+
+File: lab-11_numbers_and_missing_data.py
 
 ```
 m4_include(lab-11_numbers_and_missing_data.py.nu)
@@ -62,6 +70,8 @@ m4_include(lab-11_numbers_and_missing_data.py.nu)
 
 This is the first part where you have some work to do in the data cleanup.
 
+File: lab-11_km_to_miles.py
+
 ```
 m4_include(lab-11_km_to_miles.py.nu)
 ```
@@ -72,6 +82,8 @@ m4_include(lab-11_km_to_miles.py.nu)
 
 This is the second part where you have some work to do.
 
+File:lab-11_one_hot.py
+
 ```
 m4_include(lab-11_one_hot.py.nu)
 ```
@@ -81,6 +93,8 @@ m4_include(lab-11_one_hot.py.nu)
 ## Part 7 - Plot some stuff.
 
 This is the third part where you have some work to do in the data cleanup.
+
+File: lab-11_plot_stuff.py
 
 ```
 m4_include(lab-11_plot_stuff.py.nu)
@@ -101,6 +115,8 @@ m4_include(lab-11_plot_stuff.py.nu)
 ## Your Code to start with for the lab.
 
 This code is in the lab pdf also - with a link to download your file.
+
+File: lab-11_start.py
 
 ```
 m4_include(lab-11_start.py.nu)
