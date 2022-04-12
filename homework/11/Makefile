@@ -3,7 +3,11 @@ PP=`pwd`
 FN=Assignment-11-data-cleanup
 DIR=./../../
 IMG=
-PY=  
+PY=  \
+	lab-11_start.py \
+	new-car-data.csv \
+	new-car-data2.csv \
+	train-data.csv
 
 all: all0 ${FN}.html 
 

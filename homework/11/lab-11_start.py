@@ -59,9 +59,9 @@ dataset['Mileage'] = pd.Series([int(float(str(val))*2.3521458)
 dataset['Engine'] = pd.Series([float(str(val))
     for val in dataset['Engine']], index = dataset.index)
 
-## Lab 09 - TODO - for the column 'Power' in the dataset, convert it to a float 
-## Lab 09 - TODO - for the column 'Seats' in the dataset, convert it to a float 
-## Lab 09 - TODO - create the column 'Miles_Driven' from the column
+## Lab 11 - TODO - for the column 'Power' in the dataset, convert it to a float 
+## Lab 11 - TODO - for the column 'Seats' in the dataset, convert it to a float 
+## Lab 11 - TODO - create the column 'Miles_Driven' from the column
 ##                'Kilometers_Driven' by converting to a float and 
 ##                 Multiplying by 0.621371, then convert to an integer so
 ##                 that we don't have small fractional values.
@@ -88,9 +88,9 @@ dfFuel_Type = pd.get_dummies(dataset['Fuel_Type'], prefix = 'Fuel_Type')
 print ( dfFuel_Type.head() )
 
 ## One-Hot the Transmission
-## Lab -09 - TODO - do a similar one-hot encoding for the values in 
+## Lab 11 - TODO - do a similar one-hot encoding for the values in 
 ##                 the Transmission column.
-## Lab -09 - TODO - do a similar one-hot encoding for the values in 
+## Lab 11 - TODO - do a similar one-hot encoding for the values in 
 ##                 the Owner_Type column.
 
 ## Concat it all together
@@ -117,7 +117,7 @@ dataset.to_csv(path_or_buf="new-car-data2.csv")
 dataset.plot(kind='scatter',x='Price',y='Year',color='blue')
 plt.show()
 
-## Lab - 09 - TODO - Plot Price v.s. Miles_Driven
-## Lab - 09 - TODO - Plot Price v.s. Power
-## Lab - 09 - TODO - Plot Price v.s. Milage
-## Lab - 09 - TODO - Plot Price v.s. Seats
+## Lab 11 - TODO - Plot Price v.s. Miles_Driven
+## Lab 11 - TODO - Plot Price v.s. Power
+## Lab 11 - TODO - Plot Price v.s. Milage
+## Lab 11 - TODO - Plot Price v.s. Seats
