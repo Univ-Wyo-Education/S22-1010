@@ -1,4 +1,6 @@
 
+m4_include(../../../setup.m4)
+
 # Lecture 29 - Git - a very important software tool
 
 ## What is Version Control?

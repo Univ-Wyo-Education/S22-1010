@@ -3,8 +3,10 @@ PP=`pwd`
 FN=Lect-24
 DIR=../../../
 IMG=
-PY= 
-
+PY=  \
+github01.png \
+github02.png \
+github03.png
 
 all: setup all2
 
