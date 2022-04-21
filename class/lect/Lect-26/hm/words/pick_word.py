@@ -611,45 +611,12 @@ class Word:
         wordIndex = random.randint(0, len(wordList) - 1)
         return wordList[wordIndex]
 
-
-# words.pick_words - pickSecretWord
-#            showResults ()
-#        dead = guessLetter ( opt )
-
     def showResults( self ) :
+        # TODO
         print ( "" )
-        if self.n_success >= len(self.word):
-            print ( "!!!! Yea - you guesssed {} !!!!".format(self.word) )
-            return
-        if len(self.letters_picked ) == 0 :
-            print ( "No Letters Picked" )
-        else: 
-            print ( "Letters Picked: {}".format(self.letters_picked ), end="" )
-            s = ""
-            for c in "abcdefghijklmnopqrstuvwxyz":
-                if c in self.letters_picked:
-                    x = 1
-                else:
-                    s = s + c
-            print ( "    Letters Left: {}".format(s) )
-
-        print("Word: ") 
-        for c in self.word:
-            if c in self.letters_picked:
-                print ( "{} ".format(c), end="" )
-            else:
-                print ( "_ ", end="" )
-        print("") 
 
     def guessLetter ( self, letter ) :
-        if letter not in self.letters_picked:
-            self.letters_picked = self.letters_picked + letter
-        if letter in self.word:
-            self.n_success += 1
-        else:
-            self.n_incorrect_letters += 1
-        if self.n_incorrect_letters > 8:
-            return True
+        # TODO
         return False
 
     def getHint ( self ):
@@ -659,12 +626,9 @@ class Word:
                 self.n_success += 1
                 return
 
-    def pickSecretWord ( self, mode ) :
+    def pickSecretWord ( self ) :
         print ( "I Picked a New Animal..." )
-        self.word = self.getRandomWord(self.words)
-        self.letters_picked = ""
-        self.n_incorrect_letters = 0
-        self.n_success = 0
+        # TODO
 
     def getWord ( self ) :
         return self.word
@@ -674,6 +638,9 @@ class Word:
 
     def nSuccess ( self ) :
         return self.n_success
+
+    def youWon ( self ) :
+        # TODO
 
     def AlreadyPicked ( self, letter ):
         if letter in self.letters_picked:

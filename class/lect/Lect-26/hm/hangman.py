@@ -11,7 +11,7 @@ cmd = input()
 cmd_list = cmd.split()
 art = display.display.Display()
 ww = words.pick_word.Word()
-ww.pickSecretWord ( 'init' )
+ww.pickSecretWord()
 while not done :
 
     n = ww.nMistakes()
@@ -48,25 +48,26 @@ Commands
         done = True
 
     elif cmd_list[0] == 'new':
-        ww.pickSecretWord ( 'again' )
+        ww.pickSecretWord()
 
     elif cmd_list[0] == 'hint':
         ww.getHint()
         ww.showResults ()
 
     elif len(cmd_list) == 1 and len(cmd_list[0]) == 1 :
-        if len(cmd_list) > 1 :
-            opt = cmd_list[1]
-        else :
-            opt = cmd_list[0]
+        opt = cmd_list[0]
         if ww.AlreadyPicked ( opt ):
             print ( "You already picked {}".format(opt) )
+            if ww.youWon():
+                done = ww.pickSecretWord ()
         else:
             dead = ww.guessLetter ( opt )
             ww.showResults ()
             if dead :
                 print ( "The animal was: {}".format( ww.getWord() ) ) 
-                done = ww.pickSecretWord ( 'again' )
+                ww.pickSecretWord ()
+            elif ww.youWon():
+                ww.pickSecretWord ()
 
     else:
         print ( """I did not understand {}
