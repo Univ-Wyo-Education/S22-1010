@@ -9,9 +9,13 @@ done = False
 print ( "=> ", end="" )
 cmd = input()
 cmd_list = cmd.split()
+art = display.display.Display()
 ww = words.pick_word.Word()
 ww.pickSecretWord ( 'init' )
 while not done :
+
+    n = ww.nMistakes()
+    art.show_man ( n )
 
     ww.showResults ()
 
@@ -31,10 +35,10 @@ If you guess all the letters in the word then you win.
 To quit enter 'bye'.
 
 Commands
-  guess <letter>
   bye
   new
   help
+  hint
   <letter>
 """ )
 
@@ -46,7 +50,11 @@ Commands
     elif cmd_list[0] == 'new':
         ww.pickSecretWord ( 'again' )
 
-    elif ( cmd_list[0] == 'guess' and len(cmd_list) == 2 ) or len(cmd_list) == 1:
+    elif cmd_list[0] == 'hint':
+        ww.getHint()
+        ww.showResults ()
+
+    elif len(cmd_list) == 1 and len(cmd_list[0]) == 1 :
         if len(cmd_list) > 1 :
             opt = cmd_list[1]
         else :
@@ -55,17 +63,18 @@ Commands
             print ( "You already picked {}".format(opt) )
         else:
             dead = ww.guessLetter ( opt )
+            ww.showResults ()
             if dead :
-                ww.showResults ()
+                print ( "The animal was: {}".format( ww.getWord() ) ) 
                 done = ww.pickSecretWord ( 'again' )
 
     else:
         print ( """I did not understand {}
 Try
-  guess <letter>
   bye
   new
   help
+  hint
   <letter>
 """.format(cmd) )
 
@@ -74,4 +83,5 @@ Try
     if not done :
         print ( "=> ", end="" )
         cmd = input()
+        cmd_list = cmd.split()
 
