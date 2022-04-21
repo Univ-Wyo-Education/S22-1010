@@ -61,6 +61,8 @@ class Display:
         else:
             print ( "to big" )
 
+# Test Code.
+
 if __name__ == "__main__":
     art = Display()
     print ( "=> ", end="" )

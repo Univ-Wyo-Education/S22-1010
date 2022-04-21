@@ -1,5 +1,8 @@
 import random
-words = [ 
+
+class Word:
+
+    words = [ 
 "aardvark",
 "aardwolf",
 "abyssinian",
@@ -586,7 +589,6 @@ words = [
 "worm",
 "wrasse",
 "xerus",
-"xoloitzcuintli",
 "yak",
 "yoranian",
 "yorkie-poo",
@@ -597,12 +599,46 @@ words = [
 "zuchon",
 ]
 
-# This function returns a random string from the passed list of strings.
-def getRandomWord(wordList):
-    wordIndex = random.randint(0, len(wordList) - 1)
-    return wordList[wordIndex]
 
+    def __init__(self):
+        self.word = ""
+        self.letters_picked = ""
+        self.n_incorect_letters = 0
+
+    # This function returns a random string from the passed list of strings.
+    def getRandomWord(self, wordList):
+        wordIndex = random.randint(0, len(wordList) - 1)
+        return self.wordList[wordIndex]
+
+
+# words.pick_words - pickSecretWord
+#            showResults ()
+#        dead = guessLetter ( opt )
+
+    def showResults( self ) :
+        print ( "Results" )
+
+    def guessLetter ( self, letter ) :
+        return False
+
+    def pickSecretWord ( self ) :
+        print ( "Picked a New Word" )
+        self.word = self.getRandomWord(self.words)
+
+    def wordPicked ( self ) :
+        return self.word
+
+
+    def pickSecretWord ( self, mode ) :
+        x = 1
+
+
+
+# Test Code.
 
 if __name__ == "__main__":
-    print ( getRandomWord( words ) )
+    ww = Word()
+    ww.pickSecretWord()
+    print ( ww.wordPicked() )
+
 
