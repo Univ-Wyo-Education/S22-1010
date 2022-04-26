@@ -3,7 +3,10 @@ PP=`pwd`
 FN=Lect-27
 DIR=../../../
 IMG=
-PY=  
+PY=   \
+ins_hm/hangman.py \
+ins_hm/display/display.py \
+ins_hm/words/pick_word.py
 
 all: setup all2
 

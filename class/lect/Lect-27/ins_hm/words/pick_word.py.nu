@@ -645,56 +645,49 @@
 645:         print("") 
 646: 
 647:     def guessLetter ( self, letter ) :
-648:         if letter not in self.letters_picked:
-649:             self.letters_picked = self.letters_picked + letter
-650:         if letter in self.word:
-651:             self.n_success += 1
-652:         else:
-653:             self.n_incorrect_letters += 1
-654:         if self.n_incorrect_letters > 8:
-655:             return True
-656:         return False
+648:         # Add / Modify Code -- At This Point ------------------------------------------
+649:         return False
+650: 
+651:     def getHint ( self ):
+652:         for c in self.word:
+653:             if c not in self.letters_picked:
+654:                 self.letters_picked += c
+655:                 self.n_success += 1
+656:                 return
 657: 
-658:     def getHint ( self ):
-659:         for c in self.word:
-660:             if c not in self.letters_picked:
-661:                 self.letters_picked += c
-662:                 self.n_success += 1
-663:                 return
+658:     def pickSecretWord ( self ) :
+659:         print ( "I Picked a New Animal..." )
+660:         self.word = self.getRandomWord(self.words)
+661:         self.letters_picked = ""
+662:         self.n_incorrect_letters = 0
+663:         self.n_success = 0
 664: 
-665:     def pickSecretWord ( self ) :
-666:         print ( "I Picked a New Animal..." )
-667:         self.word = self.getRandomWord(self.words)
-668:         self.letters_picked = ""
-669:         self.n_incorrect_letters = 0
-670:         self.n_success = 0
-671: 
-672:     def getWord ( self ) :
-673:         return self.word
-674: 
-675:     def nMistakes ( self ) :
-676:         return self.n_incorrect_letters
-677: 
-678:     def nSuccess ( self ) :
-679:         return self.n_success
-680: 
-681:     def youWon ( self ) :
-682:         if self.n_success >= len(self.word):
-683:             print ( "!!!! Yea - you guesssed {} !!!!".format(self.word) )
-684:             return True
-685:         return False
-686: 
-687:     def AlreadyPicked ( self, letter ):
-688:         if letter in self.letters_picked:
-689:             return True
-690:         return False
-691:  
+665:     def getWord ( self ) :
+666:         return self.word
+667: 
+668:     def nMistakes ( self ) :
+669:         return self.n_incorrect_letters
+670: 
+671:     def nSuccess ( self ) :
+672:         return self.n_success
+673: 
+674:     def youWon ( self ) :
+675:         if self.n_success >= len(self.word):
+676:             print ( "!!!! Yea - you guesssed {} !!!!".format(self.word) )
+677:             return True
+678:         return False
+679: 
+680:     def AlreadyPicked ( self, letter ):
+681:         if letter in self.letters_picked:
+682:             return True
+683:         return False
+684:  
+685: 
+686: # Test Code.
+687: 
+688: if __name__ == "__main__":
+689:     ww = Word()
+690:     ww.pickSecretWord( 'init' )
+691:     print ( ww.wordPicked() )
 692: 
-693: # Test Code.
-694: 
-695: if __name__ == "__main__":
-696:     ww = Word()
-697:     ww.pickSecretWord( 'init' )
-698:     print ( ww.wordPicked() )
-699: 
-700: 
+693: 

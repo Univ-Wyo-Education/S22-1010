@@ -645,14 +645,7 @@ class Word:
         print("") 
 
     def guessLetter ( self, letter ) :
-        if letter not in self.letters_picked:
-            self.letters_picked = self.letters_picked + letter
-        if letter in self.word:
-            self.n_success += 1
-        else:
-            self.n_incorrect_letters += 1
-        if self.n_incorrect_letters > 8:
-            return True
+        # Add / Modify Code -- At This Point ------------------------------------------
         return False
 
     def getHint ( self ):
