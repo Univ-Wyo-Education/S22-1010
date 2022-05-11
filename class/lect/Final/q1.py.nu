@@ -31,5 +31,5 @@
  31:     fib_prev[n] = x
  32:     return x
  33: 
- 34: print ( "Fib of {} = {}".format( 6, fib ( 6 ) ) ) 
+ 34: print ( "Fib of {} = {}".format( 3, fib ( 3 ) ) ) 
  35: 

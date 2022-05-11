@@ -3,7 +3,7 @@ PP=`pwd`
 FN=Final
 DIR=../../../
 IMG=
-PY=  
+PY=  q1.py
 
 all: all0 ${FN}.html 
 
